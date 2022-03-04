@@ -1,0 +1,26 @@
+.partnerProfile {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+}
+
+.partnerImg {
+    height:75%;
+    width:75%;
+}
+
+.partnerTitle {
+font-family: Arvo,sans-serif;
+}
+
+.partnerDescription {
+    font-family: Robotico, sans-serif
+}
+
+.profilePhoto:hover > .partnerImg {
+    height: 100%;
+    width: 100%;
+    transition: all .5s;
+}
+

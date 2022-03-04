@@ -1,6 +1,7 @@
 import logo from '../../assets/logo.svg'
 import './home.css';
 import {enableScroll, disableScroll} from '../../utils/scroll';
+import PartnerBubble from '../partner-bubble/PartnerBubble';
 
 const Home = () => {
     const test = (event) => {
@@ -57,7 +58,9 @@ const Home = () => {
         </div>
         <div className="partners-container home-container">
             <h1 className="home-header">PARTNERS</h1>
-            Partners are going here
+            <div className="partnerBubble">
+            <PartnerBubble  title="Strikers Discord" description="The one true discord for Mario Strikers" image="discord_logo.png" link="https://discord.gg/mariostrikers" />
+            </div>
         </div>
     </div>
     )
