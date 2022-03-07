@@ -18,6 +18,8 @@ jobs:
           node-version: 'v16.6'
     - run: npm install
     - run: npm run build
+      env:
+        CI: false
 
 
     - name: Configure AWS Credentials
