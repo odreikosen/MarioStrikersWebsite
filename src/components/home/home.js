@@ -1,18 +1,8 @@
-import logo from '../../assets/logo.svg'
 import './home.css';
 import {enableScroll, disableScroll} from '../../utils/scroll';
 import PartnerBubble from '../partner-bubble/PartnerBubble';
 
 const Home = () => {
-    const test = (event) => {
-        console.log(event);
-        window.scrollTo({
-            top: 100,
-            left: 100,
-            behavior: 'smooth'
-          });
-    }
-
     const containers = ['base', 'about','partners']
     const mapping = {
         'base': 0,

@@ -1,4 +1,3 @@
-import Container from 'react-bootstrap/Container'
 import { Routes, Route } from "react-router-dom";
 import "./App.css"
 import NavBar from './navbar/navbar';
