@@ -1,4 +1,4 @@
-const Rules = () => {
+const SmsRules = () => {
     return (
         <div>
             Rules are going here!
@@ -6,4 +6,4 @@ const Rules = () => {
     )
 }
 
-export default Rules;
+export default SmsRules;

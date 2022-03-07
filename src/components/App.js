@@ -4,7 +4,8 @@ import "./App.css"
 import NavBar from './navbar/navbar';
 import Home from './home/home';
 import Rankings from './ranking/ranking';
-import Rules from './rules/rules';
+import MscRules from './rules/mscrules';
+import SmsRules from './rules/smsrules';
 
 
 const App = () => {
@@ -25,7 +26,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/rankings" element={<Rankings />} />
-        <Route path="/rules" element={<Rules />} />
+        <Route path="/msc-rules" element={<MscRules />} />
+        <Route path="/sms-rules" element={<SmsRules />} />
       
   </Routes>
   </div>

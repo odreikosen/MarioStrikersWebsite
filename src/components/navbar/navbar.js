@@ -1,5 +1,5 @@
 import Container from 'react-bootstrap/Container'
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap'
 import discord_logo from '../../assets/discord_logo.png'
 
@@ -8,7 +8,9 @@ import discord_logo from '../../assets/discord_logo.png'
 const NavBar = () => {
 
     const navSelect = (key) => {
-        console.log(key)
+        if (key === 'join') {
+            window.location.href = "https://discord.gg/mariostrikers";
+        }
     }
 
     return(
@@ -27,15 +29,21 @@ const NavBar = () => {
             </LinkContainer>
             <Nav onSelect={navSelect}>
             <Nav.Item>
+                    <Nav.Link eventKey="join">Join</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
                 <LinkContainer to="/">
                     <Nav.Link eventKey="home">Home</Nav.Link>
                 </LinkContainer>
             </Nav.Item>
-            <Nav.Item>
-                <LinkContainer to="/rules">
-                    <Nav.Link eventKey="rules">Rules</Nav.Link>
-                </LinkContainer>
-            </Nav.Item>
+            <NavDropdown title="Rules">
+                <NavDropdown.Item href="/msc-rules">
+                    MSC
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/sms-rules">
+                    SMS
+                    </NavDropdown.Item>
+                </NavDropdown>
             <Nav.Item>
                 <LinkContainer to="/rankings">
                     <Nav.Link eventkey="rankings">Rankings</Nav.Link>
