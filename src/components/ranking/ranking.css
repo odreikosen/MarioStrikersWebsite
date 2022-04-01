@@ -1,3 +1,15 @@
 .ranking {
     height: 2000px;
 }
+
+.ranking-card {
+    width:500px
+    
+}
+
+.ranking-card-container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}

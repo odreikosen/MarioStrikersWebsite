@@ -8,9 +8,7 @@ import discord_logo from '../../assets/discord_logo.png'
 const NavBar = () => {
 
     const navSelect = (key) => {
-        if (key === 'join') {
-            window.location.href = "https://discord.gg/mariostrikers";
-        }
+
     }
 
     return(
@@ -27,9 +25,13 @@ const NavBar = () => {
                     />{' '}
                 </Navbar.Brand>
             </LinkContainer>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
             <Nav onSelect={navSelect}>
             <Nav.Item>
+                <LinkContainer to="/join">
                     <Nav.Link eventKey="join">Join</Nav.Link>
+                </LinkContainer>
             </Nav.Item>
             <Nav.Item>
                 <LinkContainer to="/">
@@ -44,12 +46,16 @@ const NavBar = () => {
                     SMS
                     </NavDropdown.Item>
                 </NavDropdown>
-            <Nav.Item>
-                <LinkContainer to="/rankings">
-                    <Nav.Link eventkey="rankings">Rankings</Nav.Link>
-                </LinkContainer>
-            </Nav.Item>
+            <NavDropdown title="Rankings">
+                <NavDropdown.Item href="/rankings?game=msc">
+                    MSC
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/rankings?game=sms">
+                    SMS
+                    </NavDropdown.Item>
+                </NavDropdown>
             </Nav>
+            </Navbar.Collapse>
         </Container>
       </Navbar>
     )
