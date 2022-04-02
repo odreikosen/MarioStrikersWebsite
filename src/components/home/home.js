@@ -3,39 +3,6 @@ import {enableScroll, disableScroll} from '../../utils/scroll';
 import PartnerBubble from '../partner-bubble/PartnerBubble';
 
 const Home = () => {
-    const containers = ['base', 'about','partners']
-    const mapping = {
-        'base': 0,
-        'about': 1080,
-        'partners': 2160
-    }
-
-    let currContainer = 0;
-    let scrollReady = true;
-
-    document.addEventListener('scroll', function(e, prev) {
-        if (scrollReady) {
-            disableScroll();
-            scrollReady = false;
-            mapping[containers[currContainer]] < window.scrollY ? currContainer += 1 : currContainer -= 1;
-            if (currContainer === containers.length) {
-                currContainer = containers.length - 1;
-            }
-            if (currContainer === -1) {
-                currContainer = 0;
-            }
-            window.scrollTo({
-                top: mapping[containers[currContainer]],
-                left: 100,
-                behavior: 'smooth'
-              });
-            setTimeout(() => {
-                scrollReady = true
-                enableScroll();
-            },1000);
-        }
-    });
-    
 
     return (
     <div className="home">
