@@ -5,8 +5,8 @@ const RankingsToggle = ({name , rank, rating, eventKey}) => {
     const clicked = useAccordionButton(eventKey,() => (1));
     console.log(rank)
     return (
-        <div>
-            <a className={rank} onClick={clicked}>{name}    {rating}</a>
+        <div onClick={clicked} className="clickable-header">
+            <span className={rank}>{name}    {rating}</span>
         </div>
     )
 }

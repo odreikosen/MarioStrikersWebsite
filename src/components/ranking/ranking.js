@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Card from 'react-bootstrap/Card'
 import Accordion from 'react-bootstrap/Accordion'
 import RankingsToggle from './RankingsToggle';
+
 const Ranking = () => {
     const [rankings, setRankings] = useState([]);
 
@@ -16,17 +17,18 @@ const Ranking = () => {
             setRankings(data.data)
         })
     }, [])
+
     return (
         <div>
             <Accordion>
             {rankings.map((ranking, i) =>
                 <div key={i} className="ranking-card-container">
                     <Card className="ranking-card">
-                        <Card.Header>
+                        <Card.Header className="card-header">
                             <RankingsToggle name={ranking.name} rank={ranking.rank} rating={ranking.rating} eventKey={i} />
                             </Card.Header>
                         <Accordion.Collapse eventKey={i}>
-                            <Card.Body>Player profile here</Card.Body>
+                            <Card.Body className="profile-body">Player profile here</Card.Body>
                         </Accordion.Collapse>
                     </Card>
                 </div>
