@@ -19,21 +19,21 @@
 }
 
 .megastriker {
-    color: orange;
+    color: orange !important;
 }
 
 .legend {
-    color: purple;
+    color: purple !important;
 }
 
 .superstar {
-    color: #4da6ff;
+    color: #4da6ff !important;
 }
 
 .professional {
-    color:#cccc00;
+    color:#cccc00 !important;
 }
 
 .rookie {
-    color: green;
+    color: green !important;
 }
