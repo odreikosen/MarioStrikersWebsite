@@ -51,21 +51,22 @@
   flex-direction: column;
   color: black;
   text-shadow: 0 0 5px #fff;
+  background-color: #adb5bd;
+  background: linear-gradient(170deg, #adb5bd 70%, black 30%)
 }
   
-.about-container::before {
-  background: url("../../assets/charged_background.png") no-repeat;
-  background-size: 100% 100%;
-  opacity: 0.4;
-  position: absolute;
-  top:0px;
-  left: 0px;
-  width:100%;
-  height:100vh;
-  z-index:-1;
-  content:'';
-
+.information-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
 }
+
+.sms-column {
+  padding-right: 300px;
+}
+
 
 
 .home-header {
@@ -86,7 +87,8 @@
 }
 
 .partners-container {
-  background: #1b1b1b;
+  background: linear-gradient(170deg, black 70%, #adb5bd 30%);
+
   color: white;
   position: relative;
   display: flex;

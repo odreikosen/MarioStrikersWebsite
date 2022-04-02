@@ -12,7 +12,7 @@ const NavBar = () => {
     }
 
     return(
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" collapseOnSelect>
         <Container fluid>
             <LinkContainer to="/">
                 <Navbar.Brand> 

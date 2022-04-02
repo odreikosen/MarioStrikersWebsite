@@ -6,17 +6,19 @@ const Home = () => {
 
     return (
     <div className="home">
-        <div className="base-container home-container">
-
-        </div>
         < div className="about-container home-container">
-            <h1 className="home-header">ABOUT US</h1>           
-            About us information is going here
+            <h1 className="home-header">Mario Strikers Competitive</h1>           
+            <span>Welcome to the home for all things Mario Strikers! </span>
+            <div className="information-container">
+                <div className="sms-column">SMS</div>
+                <div className="msc-column">MSC</div>
+            </div>
         </div>
+        
         <div className="partners-container home-container">
             <h1 className="home-header">PARTNERS</h1>
             <div className="partnerBubble">
-            <PartnerBubble  title="Strikers Discord" description="The one true discord for Mario Strikers" image="discord_logo.png" link="https://discord.gg/mariostrikers" />
+            <PartnerBubble  title="Strikers Discord" description="The home for all things competitive Mario Strikers" image="discord_logo.png" link="https://discord.gg/mariostrikers" />
             </div>
         </div>
     </div>
