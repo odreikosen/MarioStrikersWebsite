@@ -6,27 +6,23 @@ import Card from 'react-bootstrap/Card'
 const Ranking = () => {
     const [rankings, setRankings] = useState([]);
 
-    const logstuff = () => {
-        console.log(rankings)
-    }
-
     useEffect(() => {
         const gametype = window.location.search.split("=")[1] === "msc" ? 1 : 2;
-        axios.get(`http://3.83.120.24:3000/ratings?gametype=${gametype}`)
+        axios.get(`http://localhost:3000/ratings?gametype=${gametype}`)
         .then(data =>{
+            console.log(data)
             setRankings(data.data)
         })
     }, [])
     return (
         <div>
-            {rankings.map((ranking, i) => 
-               <div key={i} className="ranking-card-container">
+            {rankings.map((ranking, i) =>
+                <div key={i} className="ranking-card-container">
                     <Card className="ranking-card">
-                        <Card.Body>{ranking.line}</Card.Body>
+                        <Card.Body className={ranking.rank}>{ranking.name}   {ranking.rating}</Card.Body>
                     </Card>
                 </div>
             )}
-            <button onClick={logstuff}></button>
         </div>
     )
    
