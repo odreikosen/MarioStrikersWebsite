@@ -16,9 +16,13 @@ const Home = () => {
         </div>
         
         <div className="partners-container home-container">
-            <h1 className="home-header">PARTNERS</h1>
+            <div>    
+                <h1 className="home-header">PARTNERS</h1>
+            </div>
             <div className="partnerBubble">
-            <PartnerBubble  title="Strikers Discord" description="The home for all things competitive Mario Strikers" image="discord_logo.png" link="https://discord.gg/mariostrikers" />
+                <PartnerBubble  title="Strikers Discord" image="discord_logo.png" link="https://discord.gg/mariostrikers" />
+                <PartnerBubble title="Ragnarok" image="Ragnarok_logo.png" link="https://discord.gg/Q86CRCNmcX" />
+                <PartnerBubble title="Wolf TV" image="WolfTV.png" link="https://discord.gg/xFejWpb" />
             </div>
         </div>
     </div>

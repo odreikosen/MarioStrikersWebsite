@@ -10,6 +10,13 @@
     width:75%;
 }
 
+.profilePhoto {
+    height: 150px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
 .partnerTitle {
 font-family: Arvo,sans-serif;
 }

@@ -1,7 +1,7 @@
 import Image from 'react-bootstrap/Image'
 import './PartnerBubble.css'
 
-const PartnerBubble = ({title, description, image, link}) => {
+const PartnerBubble = ({title, image, link}) => {
     return (
         <div className="partnerProfile">
 
@@ -10,7 +10,6 @@ const PartnerBubble = ({title, description, image, link}) => {
                 <Image  src={require(`../../assets/${image}`)} alt={title} className="rounded-circle partnerImg"/>
             </a>
             <span className="partnerTitle">{title}</span>
-            <span className="partnerDescription">{description}</span>
 
         </div>
     )
