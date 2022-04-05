@@ -9,7 +9,7 @@ const DiscordInvite = () => {
 
     return (
         <div>
-           <span>If you didn't get redirected click <a href="https://discord.com/invite/mariostrikers">here</a> </span>
+           <span>If you didn't get redirected click <a href="https://discord.gg/de2YaWg">here</a> </span>
         </div>
     )
 }
