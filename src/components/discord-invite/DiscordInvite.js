@@ -4,7 +4,7 @@ import { useEffect } from "react";
 const DiscordInvite = () => {
 
     useEffect(() => {
-        window.location.href="https://discord.com/invite/mariostrikers"
+        window.location.href="https://discord.gg/de2YaWg"
     })
 
     return (
