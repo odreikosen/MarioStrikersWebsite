@@ -27,6 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://odreikosen.github.io/MarioStrikersWebsite/",
   "eslintConfig": {
     "extends": [
       "react-app",
