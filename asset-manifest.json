@@ -1,20 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.16819575.css",
-    "main.js": "/static/js/main.a7b0ce50.js",
+    "main.css": "/static/css/main.37ad88da.css",
+    "main.js": "/static/js/main.35b79bdc.js",
     "static/js/787.4fbafe53.chunk.js": "/static/js/787.4fbafe53.chunk.js",
     "static/media/strikers_background.png": "/static/media/strikers_background.0b4a877c92c0421a8c18.png",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.7a8b4f130182d19a2d7c.svg",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.2f517e09eb2ca6650ff5.svg",
     "static/media/charged_background.png": "/static/media/charged_background.3241899db537b5b3067a.png",
+    "static/media/worldcup.jpg": "/static/media/worldcup.abca486db3cd36b34045.jpg",
     "static/media/Ragnarok_logo.png": "/static/media/Ragnarok_logo.2c1b9e81b18a37c976e2.png",
+    "static/media/trophy.png": "/static/media/trophy.1972d274a6daca04c85a.png",
     "static/media/fa-solid-900.eot": "/static/media/fa-solid-900.9bbb245e67a133f6e486.eot",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.be9ee23c0c6390141475.ttf",
     "static/media/discord_logo.png": "/static/media/discord_logo.ae9339fd4329f98984bd.png",
+    "static/media/crumbLogo.png": "/static/media/crumbLogo.32701f7e2c367152c921.png",
     "static/media/fa-regular-400.svg": "/static/media/fa-regular-400.4689f52cc96215721344.svg",
+    "static/media/wclogo.png": "/static/media/wclogo.f81f7aa6257123e8351e.png",
     "static/media/fa-brands-400.eot": "/static/media/fa-brands-400.23f19bb08961f37aaf69.eot",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.527940b104eb2ea366c8.ttf",
+    "static/media/worldcup.png": "/static/media/worldcup.2becef544d73ab0c28ba.png",
+    "static/media/wcp.png": "/static/media/wcp.6592c40172611f65a1cc.png",
+    "static/media/332288.png": "/static/media/332288.46cbaf0ef68a4c34a1d3.png",
     "static/media/fa-solid-900.woff": "/static/media/fa-solid-900.eeccf4f66002c6f2ba24.woff",
+    "static/media/wc.jpg": "/static/media/wc.70a1ca666a27b42a0758.jpg",
     "static/media/fa-brands-400.woff": "/static/media/fa-brands-400.2285773e6b4b172f07d9.woff",
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.1551f4f60c37af51121f.woff2",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.d878b0a6a1144760244f.woff2",
@@ -28,12 +36,12 @@
     "index.html": "/index.html",
     "static/media/arrow_left.svg": "/static/media/arrow_left.db6e2d88c7c35a775ce4.svg",
     "static/media/arrow_right.svg": "/static/media/arrow_right.f7c6ac6d310d3b82f0a0.svg",
-    "main.16819575.css.map": "/static/css/main.16819575.css.map",
-    "main.a7b0ce50.js.map": "/static/js/main.a7b0ce50.js.map",
+    "main.37ad88da.css.map": "/static/css/main.37ad88da.css.map",
+    "main.35b79bdc.js.map": "/static/js/main.35b79bdc.js.map",
     "787.4fbafe53.chunk.js.map": "/static/js/787.4fbafe53.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.16819575.css",
-    "static/js/main.a7b0ce50.js"
+    "static/css/main.37ad88da.css",
+    "static/js/main.35b79bdc.js"
   ]
 }
