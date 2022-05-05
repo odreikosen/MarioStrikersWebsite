@@ -1,4 +1,5 @@
 import "./rules.css"
+import React from 'react';
 
 const SmsRules = () => {
     return (
