@@ -69,7 +69,7 @@ const HomeAOS = () => {
             <section className="home-section" id="section-about-02">
                 <div className="home-container">
                     <h2 className="section-title">About Us</h2>
-                    <div className="about-container aos-init" data-aos="fade-up" data-aos-duration="2000">
+                    <div className="about-container aos-init" data-aos="fade-up" data-aos-duration="1500">
                         <p>
                             Welcome to the home of Mario Strikers! Play with or against others, participate in
                             tournaments or just hang out with the community!
@@ -121,8 +121,12 @@ const HomeAOS = () => {
                             <p>Bienvenue sur le serveur francophone de Mario Strikers !</p>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className="home-section" id="section-partners-03">
+                <div className="home-container">
                     <h2 className="section-title">Partners</h2>
-                    <div className="partner-container aos-init" data-aos="fade-up" data-aos-duration="2500">
+                    <div className="partner-container aos-init" data-aos="fade-up" data-aos-duration="1500">
                         <div className="partner">
                             <a href="https://discord.gg/xFejWpb" rel="noopener noreferrer"
                                target="_blank">
