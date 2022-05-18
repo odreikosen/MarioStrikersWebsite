@@ -1,10 +1,8 @@
 import './homeAOS.css';
-import PartnerBubble from '../partner-bubble/PartnerBubble';
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Col from 'react-bootstrap/Col';
 import querystring from "querystring";
 import discord_icon from '../../assets/discord_icon_black.png'
 
@@ -12,28 +10,28 @@ const HomeAOS = () => {
 
     const discordOauth = () => {
         window.location.href = "https://discord.com/api/oauth2/authorize?client_id=903749670919077898&redirect_uri=https%3A%2F%2Fmariostrikers.gg&response_type=code&scope=guilds.members.read%20identify%20guilds%20guilds.join"
-    }
+    };
 
     useEffect(() => {
         const urlSearchParams = new URLSearchParams(window.location.search);
         const code = urlSearchParams.get("code");
         if (code) {
-            const API_ENDPOINT = "https://discord.com/api/v8"
-            const CLIENT_ID = "903749670919077898"
-            const CLIENT_SECRET = "J78LrUk9BjM4bXv7-pE_CF76KQh9dzsn"
-            const REDIRECT_URI = "https://mariostrikers.gg"
+            const API_ENDPOINT = "https://discord.com/api/v8";
+            const CLIENT_ID = "903749670919077898";
+            const CLIENT_SECRET = "J78LrUk9BjM4bXv7-pE_CF76KQh9dzsn";
+            const REDIRECT_URI = "https://mariostrikers.gg";
             const data = {
                 'client_id': CLIENT_ID,
                 'client_secret': CLIENT_SECRET,
                 'grant_type': 'authorization_code',
                 'code': code,
                 'redirect_uri': REDIRECT_URI
-            }
+            };
             const headers = {
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 }
-            }
+            };
             axios.post(`${API_ENDPOINT}/oauth2/token`, querystring.stringify(data), headers)
                 .then((token) => {
                     axios.get('https://discord.com/api/users/@me', {
@@ -56,7 +54,7 @@ const HomeAOS = () => {
         <div className="home-aos">
             <div className="backgrounds overlay">
                 <div className="background aos-init aos-animate" data-aos="fade-in" data-aos-duration="1500"
-                     data-aos-anchor=".section--hero"></div>
+                     data-aos-anchor=".section--hero"/>
             </div>
             <section className="landing-section" id="section-title-01">
                 <div className="landing-container">
@@ -142,23 +140,23 @@ const HomeAOS = () => {
                                 <div className="partner-image" id="partner-2"/>
                             </a>
                             <h1>Wii Sports</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt
-                                ut labore et dolore magna aliqua.</p>
+                            <p>A server for all fans and players of the series! Get to know other fans of the game and
+                                join the community today!</p>
                         </div>
                         <div className="partner">
                             <a href="https://discord.gg/Q86CRCNmcX" rel="noopener noreferrer" target="_blank">
                                 <div className="partner-image" id="partner-3"/>
                             </a>
                             <h1>Ragnarok Inazuma 11</h1>
-                            <p>The Ragnarok Server was founded to unite the entire competitive Inazuma Eleven community.</p>
+                            <p>The Ragnarok Server was founded to unite the entire competitive Inazuma Eleven
+                                community.</p>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
     );
-}
+};
 
 const JoinDiscordButton = () => {
 
@@ -186,6 +184,6 @@ const JoinDiscordButton = () => {
             </div>
         </button>
     </a>
-}
+};
 
 export default HomeAOS;

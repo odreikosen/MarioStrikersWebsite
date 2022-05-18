@@ -1,65 +1,105 @@
-import Container from 'react-bootstrap/Container'
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import {LinkContainer} from 'react-router-bootstrap'
-import { Link } from "react-router-dom";
-import discord_logo from '../../assets/discord_logo.png'
-import React from 'react';
+import './navbar.css';
 
+import React, {useState} from 'react';
 
 
 const NavBar = () => {
 
-    const navSelect = (key) => {
+    const discordOauth = () => {
+        let uriEncodedHostname = window.location.href.replace("://", "%3A%2F%2F");
+        window.location.href = "https://discord.com/api/oauth2/authorize?client_id=903749670919077898" +
+            "&redirect_uri="+uriEncodedHostname+"&response_type=code" +
+            "&scope=guilds.members.read%20identify%20guilds%20guilds.join"
+    };
 
-    }
+    const [isActive, setIsActive] = useState(false);
 
-    return(
-        <Navbar bg="dark" expand="lg" variant="dark" collapseOnSelect>
-            <Container fluid>
-                <LinkContainer to="/">
-                    <Navbar.Brand> 
-                        <img
-                        alt=""
-                        src={discord_logo}
-                        width="100"
-                        height="100"
-                        className="d-inline-block align-top"
-                        />{' '}
-                    </Navbar.Brand>
-                </LinkContainer>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
-                    <Nav onSelect={navSelect}>
-                        <Nav.Item>
-                                <Nav.Link as = {Link} to="/join" eventKey="join">Join</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                                <Nav.Link as = {Link} to="/" eventKey="home">Home</Nav.Link>
-                        </Nav.Item>
-                        <NavDropdown title="Rules">
-                            <NavDropdown.Item as = {Link} to="/msc-rules">
-                                MSC
-                            </NavDropdown.Item>
-                            <NavDropdown.Item as = {Link} to="/sms-rules">
-                                SMS
-                                </NavDropdown.Item>
-                            </NavDropdown>
-                        <NavDropdown title="Rankings">
-                            <NavDropdown.Item as = {Link} to="/msc-rankings">
-                                MSC
-                            </NavDropdown.Item>
-                            <NavDropdown.Item as = {Link} to="/sms-rankings">
-                                SMS
-                                </NavDropdown.Item>
-                            </NavDropdown>
-                            <Nav.Item>
-                                <Nav.Link as = {Link} to="/tournaments" eventKey="tournaments">Tournaments</Nav.Link>
-                            </Nav.Item>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-      </Navbar>
-    )
-}
+    return (
+        <nav className="navbar is-black" role="navigation" aria-label="main navigation">
+            <div className="navbar-brand">
+                <a className="navbar-item" href="/">
+                    <img id={"home-logo"}/>
+                </a>
+
+                <a role="button" className={`navbar-burger ${isActive ? "is-active" : ""}`} aria-label="menu"
+                   aria-expanded="false" data-target="navbarMSGG" onClick={() => {
+                    console.log("click on burger");
+                    setIsActive(!isActive)
+                }}>
+                    <span aria-hidden="true"/>
+                    <span aria-hidden="true"/>
+                    <span aria-hidden="true"/>
+                </a>
+            </div>
+
+            <div id="navbarMSGG" className={`navbar-menu ${isActive ? "is-active" : ""}`}>
+                <div className="navbar-end">
+
+                    <div className="navbar-item has-dropdown is-hoverable ml-5 mr-3">
+                        <a className="navbar-link">
+                            Mario Strikers<br/>Battle League
+                        </a>
+
+                        <div className="navbar-dropdown">
+                            <a className="navbar-item">
+                                Clubs
+                            </a>
+                            <a className="navbar-item">
+                                Players
+                            </a>
+                            <a className="navbar-item">
+                                Guides
+                            </a>
+                        </div>
+                    </div>
+                    <div className="navbar-item has-dropdown is-hoverable ml-3 mr-3">
+                        <a className="navbar-link">
+                            Mario Strikers<br/>Charged
+                        </a>
+
+                        <div className="navbar-dropdown">
+                            <a className="navbar-item">
+                                Clubs
+                            </a>
+                            <a className="navbar-item">
+                                Players
+                            </a>
+                            <a className="navbar-item" href="#/msc-rules">
+                                Guides
+                            </a>
+                        </div>
+                    </div>
+                    <div className="navbar-item has-dropdown is-hoverable ml-3">
+                        <a className="navbar-link">
+                            Super Mario<br/>Strikers
+                        </a>
+
+                        <div className="navbar-dropdown">
+                            <a className="navbar-item">
+                                Clubs
+                            </a>
+                            <a className="navbar-item">
+                                Players
+                            </a>
+                            <a className="navbar-item" href="#/sms-rules">
+                                Guides
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="navbar-item">
+                        <div className="buttons">
+                            <a className="button is-light" onClick={discordOauth}>
+                                <span>Login with <b>Discord</b>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    );
+
+};
 
 export default NavBar;
