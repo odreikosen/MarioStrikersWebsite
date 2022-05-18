@@ -6,9 +6,9 @@ import React, {useState} from 'react';
 const NavBar = () => {
 
     const discordOauth = () => {
-        let uriEncodedHostname = window.location.href.replace("://", "%3A%2F%2F");
+        let encodedRedirectedUri = encodeURIComponent(window.location.protocol+"//"+window.location.host);
         window.location.href = "https://discord.com/api/oauth2/authorize?client_id=903749670919077898" +
-            "&redirect_uri="+uriEncodedHostname+"&response_type=code" +
+            "&redirect_uri=" + encodedRedirectedUri + "&response_type=code" +
             "&scope=guilds.members.read%20identify%20guilds%20guilds.join"
     };
 
@@ -37,7 +37,7 @@ const NavBar = () => {
 
                     <div className="navbar-item has-dropdown is-hoverable ml-5 mr-3">
                         <a className="navbar-link">
-                            Mario Strikers<br/>Battle League
+                            Mario Strikers:<br/>Battle League
                         </a>
 
                         <div className="navbar-dropdown">
@@ -61,7 +61,7 @@ const NavBar = () => {
                             <a className="navbar-item">
                                 Clubs
                             </a>
-                            <a className="navbar-item">
+                            <a className="navbar-item" href="#/msc-rankings">
                                 Players
                             </a>
                             <a className="navbar-item" href="#/msc-rules">
@@ -69,7 +69,7 @@ const NavBar = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="navbar-item has-dropdown is-hoverable ml-3">
+                    <div className="navbar-item has-dropdown is-hoverable ml-3 mr-3">
                         <a className="navbar-link">
                             Super Mario<br/>Strikers
                         </a>
@@ -78,7 +78,7 @@ const NavBar = () => {
                             <a className="navbar-item">
                                 Clubs
                             </a>
-                            <a className="navbar-item">
+                            <a className="navbar-item" href="#/sms-rankings">
                                 Players
                             </a>
                             <a className="navbar-item" href="#/sms-rules">
@@ -86,6 +86,9 @@ const NavBar = () => {
                             </a>
                         </div>
                     </div>
+                    <a className="navbar-item" href="#/tournaments">
+                        Mario Strikers<br/>League
+                    </a>
 
                     <div className="navbar-item">
                         <div className="buttons">
