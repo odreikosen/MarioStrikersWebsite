@@ -14,31 +14,36 @@ export const getBaseUrl = () => {
         }
     }
     if (baseUrl.endsWith("/")) {
-        baseUrl = baseUrl.substring(0, baseUrl.length-1);
+        baseUrl = baseUrl.substring(0, baseUrl.length - 1);
     }
     return baseUrl;
 };
 
-const OAUTH_CLIENT_ID = "976164178203123732"; // 903749670919077898
+const OAUTH_CLIENT_ID = "903749670919077898";
+const OAUTH_CLIENT_SECRET = "J78LrUk9BjM4bXv7-pE_CF76KQh9dzsn";
 const DISCORD_HOST = "https://discord.com";
+const DISCORD_TOKEN_KEY = "DISCORD_ACCESS_TOKEN_OBJ";
+const DISCORD_ACC_KEY = "DISCORD_USER_ACCOUNT_OBJ";
 
 const NavBar = () => {
     const baseUrl = getBaseUrl();
 
     const discordOauth = () => {
         let encodedRedirectedUri = encodeURIComponent(baseUrl);
-        let redirection = DISCORD_HOST+"/oauth2/authorize?client_id=" + OAUTH_CLIENT_ID +
+        let redirection = DISCORD_HOST + "/oauth2/authorize?client_id=" + OAUTH_CLIENT_ID +
             "&redirect_uri=" + encodedRedirectedUri + "&response_type=code" +
             "&scope=guilds.members.read%20identify%20guilds%20guilds.join";
         window.location.href = redirection;
     };
 
+    const [isActive, setIsActive] = useState(false);
+    const [userDiscordAccount, setUserDiscordAccount] = useState(JSON.parse(localStorage.getItem(DISCORD_ACC_KEY)));
+
     useEffect(() => {
         const urlSearchParams = new URLSearchParams(window.location.search);
         const code = urlSearchParams.get("code");
         if (code) {
-            const API_ENDPOINT = DISCORD_HOST+"/api/v8";
-            const OAUTH_CLIENT_SECRET = "6DI96hoqna2WjJhUpuzNY1rM9Vrz2tv4";// "J78LrUk9BjM4bXv7-pE_CF76KQh9dzsn";
+            const API_ENDPOINT = DISCORD_HOST + "/api/v8";
             const REDIRECT_URI = baseUrl;
             const data = {
                 'client_id': OAUTH_CLIENT_ID,
@@ -54,18 +59,23 @@ const NavBar = () => {
             };
             axios.post(`${API_ENDPOINT}/oauth2/token`, querystring.stringify(data), headers)
                 .then((token) => {
-                    axios.get(DISCORD_HOST+'/api/users/@me', {
+                    if (token && token.data && token.data.expires_in) {
+                        const now = new Date();
+                        token.data.expires_at = new Date(now.getTime() + token.data.expires_in * 1000);
+                    }
+                    localStorage.setItem(DISCORD_TOKEN_KEY, JSON.stringify(token.data));
+                    axios.get(DISCORD_HOST + '/api/users/@me', {
                         headers: {
                             authorization: `${token.data.token_type} ${token.data.access_token}`
                         }
                     }).then((result) => {
-                        console.log(result)
+                        console.log(result);
+                        localStorage.setItem(DISCORD_ACC_KEY, JSON.stringify(result.data));
+                        setUserDiscordAccount(result.data);
                     });
                 });
         }
-    }, []);
-
-    const [isActive, setIsActive] = useState(false);
+    }, [userDiscordAccount]);
 
     return (
         <nav className="navbar is-black" role="navigation" aria-label="main navigation">
@@ -142,19 +152,62 @@ const NavBar = () => {
                         </div>
                     </div>
 
-                    <div className="navbar-item">
-                        <div className="buttons">
-                            <a className="button is-light" onClick={discordOauth}>
-                                <span>Login with <b>Discord</b>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
+                    <DiscordAccount discordAcc={userDiscordAccount} setDiscordAcc={setUserDiscordAccount} handleClick={discordOauth}/>
+
+                    {/*<div className="navbar-item">*/}
+                    {/*    <div className="buttons">*/}
+                    {/*        <a className="button is-light" onClick={discordOauth}>*/}
+                    {/*            <span>Login with <b>Discord</b>*/}
+                    {/*            </span>*/}
+                    {/*        </a>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </nav>
     );
 
+};
+
+const DiscordAccount = ({discordAcc, setDiscordAcc, handleClick}) => {
+
+    function clearUserDiscordAccount() {
+        localStorage.removeItem(DISCORD_TOKEN_KEY);
+        localStorage.removeItem(DISCORD_ACC_KEY);
+        setDiscordAcc(null);
+    }
+
+    if (discordAcc) {
+        return (
+            <div className="navbar-item has-dropdown is-hoverable ml-5 mr-3">
+                <a className="navbar-link">
+                    <figure className="image is-24x24">
+                        <img src={`https://cdn.discordapp.com/avatars/${discordAcc.id}/${discordAcc.avatar}`}/>
+                    </figure>
+                    <span>
+                        {`${discordAcc.username}#${discordAcc.discriminator}`}
+                    </span>
+                </a>
+
+                <div className="navbar-dropdown">
+                    <a className="navbar-item" onClick={clearUserDiscordAccount}>
+                        Log Out
+                    </a>
+                </div>
+            </div>
+        );
+    } else {
+        return (
+            <div className="navbar-item">
+                <div className="buttons">
+                    <a className="button is-light" onClick={handleClick}>
+                                <span>Login with <b>Discord</b>
+                                </span>
+                    </a>
+                </div>
+            </div>
+        );
+    }
 };
 
 export default NavBar;
