@@ -31,7 +31,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://damien-owl.github.io/MarioStrikersWebsite",
+  "homepage": "https://mariostrikers.gg",
   "eslintConfig": {
     "extends": [
       "react-app",
