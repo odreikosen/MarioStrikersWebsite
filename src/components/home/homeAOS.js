@@ -3,47 +3,11 @@ import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import querystring from "querystring";
-import discord_icon from '../../assets/discord_icon_black.png'
+import discord_icon from '../../assets/discord_icon_black.png';
 
 const HomeAOS = () => {
 
-    const discordOauth = () => {
-        window.location.href = "https://discord.com/api/oauth2/authorize?client_id=903749670919077898&redirect_uri=https%3A%2F%2Fmariostrikers.gg&response_type=code&scope=guilds.members.read%20identify%20guilds%20guilds.join"
-    };
-
     useEffect(() => {
-        const urlSearchParams = new URLSearchParams(window.location.search);
-        const code = urlSearchParams.get("code");
-        if (code) {
-            const API_ENDPOINT = "https://discord.com/api/v8";
-            const CLIENT_ID = "903749670919077898";
-            const CLIENT_SECRET = "J78LrUk9BjM4bXv7-pE_CF76KQh9dzsn";
-            const REDIRECT_URI = "https://mariostrikers.gg";
-            const data = {
-                'client_id': CLIENT_ID,
-                'client_secret': CLIENT_SECRET,
-                'grant_type': 'authorization_code',
-                'code': code,
-                'redirect_uri': REDIRECT_URI
-            };
-            const headers = {
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                }
-            };
-            axios.post(`${API_ENDPOINT}/oauth2/token`, querystring.stringify(data), headers)
-                .then((token) => {
-                    axios.get('https://discord.com/api/users/@me', {
-                        headers: {
-                            authorization: `${token.data.token_type} ${token.data.access_token}`
-                        }
-                    })
-                        .then((result) => {
-                            console.log(result)
-                        });
-                });
-        }
         AOS.init();
         AOS.refresh();
         console.log("AOS initialized!");

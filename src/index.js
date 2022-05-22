@@ -36,7 +36,7 @@ ReactDOM.render(
             <link rel="preconnect" href="https://fonts.gstatic.com"/>
             <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet"/>
             <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet"/>
-            <div class="bg-img">
+            <div className="bg-img">
                 <NavBar/>
                 <Routes>
                     <Route exact path="/join" element={<DiscordInvite/>}/>

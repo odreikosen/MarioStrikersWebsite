@@ -15,3 +15,7 @@ img#home-logo {
 .navbar-item, .navbar-link {
     color: white
 }
+
+#discord-account-link span {
+    font-weight: bold
+}
