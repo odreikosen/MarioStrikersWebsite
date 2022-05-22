@@ -44,11 +44,30 @@ const NavBar = () => {
         window.location.href = "/";
     };
 
-    const clearUserDiscordAccount = () => {
-        console.log(`clearing user '${userDiscordAccount.username}' data from local storage`);
-        localStorage.removeItem(DISCORD_TOKEN_KEY);
-        localStorage.removeItem(DISCORD_ACC_KEY);
-        setUserDiscordAccount(null);
+    const revokeUserDiscordAccount = () => {
+        console.log(`clearing user '${userDiscordAccount.username}' data from local storage and revoking discord token`);
+        let tokenData = JSON.parse(localStorage.getItem(DISCORD_TOKEN_KEY));
+        const API_ENDPOINT = DISCORD_HOST + "/api/v10";
+        const data = {
+            'client_id': OAUTH_CLIENT_ID,
+            'client_secret': OAUTH_CLIENT_SECRET,
+            'token': tokenData.access_token
+        };
+        const headers = {
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            }
+        };
+        axios.post(`${API_ENDPOINT}/oauth2/token/revoke`, querystring.stringify(data), headers)
+            .then((result) => {
+                if (result.status == 200) {
+                    localStorage.removeItem(DISCORD_TOKEN_KEY);
+                    localStorage.removeItem(DISCORD_ACC_KEY);
+                    setUserDiscordAccount(null);
+                } else {
+                    console.error(`Call to GET ${API_ENDPOINT}/oauth2/token/revoke' failed : ${result}`);
+                }
+            });
     };
 
     const [isActive, setIsActive] = useState(false);
@@ -58,7 +77,7 @@ const NavBar = () => {
         const urlSearchParams = new URLSearchParams(window.location.search);
         const code = urlSearchParams.get(DISCORD_CODE_PARAM);
         if (code && !userDiscordAccount) {
-            const API_ENDPOINT = DISCORD_HOST + "/api/v8";
+            const API_ENDPOINT = DISCORD_HOST + "/api/v10";
             const REDIRECT_URI = baseUrl;
             const data = {
                 'client_id': OAUTH_CLIENT_ID,
@@ -86,8 +105,7 @@ const NavBar = () => {
                     }).then((result) => {
                         if (result.status == 200) {
                             initUserDiscordAccount(token.data, result.data);
-                        }
-                        else {
+                        } else {
                             console.error(`Call to GET ${DISCORD_HOST + '/api/users/@me'} failed : ${result}`);
                         }
                     });
@@ -170,7 +188,7 @@ const NavBar = () => {
                         </div>
                     </div>
 
-                    <DiscordAccount discordAcc={userDiscordAccount} clearDiscordAcc={clearUserDiscordAccount}
+                    <DiscordAccount discordAcc={userDiscordAccount} clearDiscordAcc={revokeUserDiscordAccount}
                                     handleClick={discordOauth}/>
                 </div>
             </div>
