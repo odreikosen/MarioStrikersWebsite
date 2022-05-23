@@ -22,7 +22,7 @@ jobs:
       with:
           node-version: 'v16.6'
     - run: npm install
-    - run: echo 
+    - run: echo "mariostrikers.gg" > public/CNAME
     - run: npm run deploy
       env:
         CI: false
