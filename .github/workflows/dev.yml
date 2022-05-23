@@ -22,6 +22,7 @@ jobs:
       with:
           node-version: 'v16.6'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_API_TOKEN }}
     - run: npm install
     - run: npm run deploy
       env:
