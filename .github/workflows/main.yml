@@ -16,7 +16,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
           node-version: 'v16.6'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
     - run: npm install
     - run: npm run deploy
       env:
         CI: false
+        
