@@ -1,0 +1,70 @@
+.tourn-photo {
+    height:600px;
+    width:100%;
+    margin:auto;
+    display:flex;
+    cursor: pointer;
+}
+
+.carousel-container {
+    border: .2rem solid #ececec;
+    border-top-color: rgb(236, 236, 236);
+    border-top-style: solid;
+    border-top-width: 0.2rem;
+    border-right-color: rgb(236, 236, 236);
+    border-right-style: solid;
+    border-right-width: 0.2rem;
+    border-bottom-color: rgb(236, 236, 236);
+    border-bottom-style: solid;
+    border-bottom-width: 0.2rem;
+    border-left-color: rgb(236, 236, 236);
+    border-left-style: solid;
+    border-left-width: 0.2rem;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    width: 60%;
+    margin:auto;
+        
+}
+
+.tourney-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.tourney-content {
+    text-align: center;
+    padding-right: 200px;
+}
+
+.crumble-subheader {
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
+
+.crumble-interview {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.tourney-results {
+    padding-right:100px;
+}
+
+
+@media (max-width: 768px) {
+    .crumble-interview {
+            text-align: left;
+     } 
+    
+     .tourney-content {
+         padding-right: 0
+     }
+  }

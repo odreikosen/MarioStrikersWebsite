@@ -1,22 +1,23 @@
 import "./ranking.css";
 
 import axios from "axios"
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Card from 'react-bootstrap/Card'
 import Accordion from 'react-bootstrap/Accordion'
 import RankingsToggle from './RankingsToggle';
 
-const Ranking = () => {
+const Ranking = ({gametype}) => {
     const [rankings, setRankings] = useState([]);
-
+    
     useEffect(() => {
-        const gametype = window.location.search.split("=")[1] === "msc" ? 1 : 2;
-        axios.get(`http://3.83.120.24:3000/ratings?gametype=${gametype}`)
+        axios.get(`https://3.83.120.24:3000/ratings?gametype=${gametype}`)
         .then(data =>{
-            console.log(data)
             setRankings(data.data)
         })
-    }, [])
+        .catch(err => {
+            console.log(err)
+        })
+    }, [gametype])
 
     return (
         <div>

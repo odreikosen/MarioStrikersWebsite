@@ -58,13 +58,21 @@
 .information-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   padding-top: 100px;
 }
 
 .sms-column {
   padding-right: 300px;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.msc-column {
+  font-size: 32px;
 }
 
 
@@ -108,4 +116,18 @@
   padding-top: 50px;
   
   margin: auto;
+}
+
+.home-button {
+  border-radius: 12px;
+}
+
+.discord-auth {
+
+}
+
+.home-header-container {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-end;
 }
