@@ -12,7 +12,7 @@
   "static/media/discord_logo.png": "/static/media/discord_logo.17b45243.png",
   "static/media/crumbLogo.png": "/static/media/crumbLogo.035c37f4.png",
   "static/media/wclogo.png": "/static/media/wclogo.a8fc83da.png",
-  "static/media/mdb.css": "/static/media/arrow_right.8ef6a08c.svg",
+  "static/media/mdb.css": "/static/media/Roboto-Bold.ecdd509c.eot",
   "static/media/strikers_background.png": "/static/media/strikers_background.2b298bfe.png",
   "static/media/332288.png": "/static/media/332288.9e85f94d.png",
   "static/media/Ragnarok_logo.png": "/static/media/Ragnarok_logo.3333ddb7.png",
@@ -28,6 +28,6 @@
   "static/css/main.a9124b5e.chunk.css.map": "/static/css/main.a9124b5e.chunk.css.map",
   "static/css/2.b98b0b59.chunk.css.map": "/static/css/2.b98b0b59.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.5ef863e7dcb76dd98eeeb7241447429b.js": "/precache-manifest.5ef863e7dcb76dd98eeeb7241447429b.js",
+  "precache-manifest.e34f7fdeed4f252a150686c9c281b5c2.js": "/precache-manifest.e34f7fdeed4f252a150686c9c281b5c2.js",
   "service-worker.js": "/service-worker.js"
 }
