@@ -28,63 +28,79 @@ const DISCORD_ACC_KEY = "DISCORD_USER_ACCOUNT_OBJ";
 
 const NavBar = () => {
     const baseUrl = getBaseUrl();
-
     const discordOauth = () => {
-        let encodedRedirectedUri = encodeURIComponent(baseUrl);
-        let redirection = DISCORD_HOST + "/oauth2/authorize?client_id=" + OAUTH_CLIENT_ID +
-            "&redirect_uri=" + encodedRedirectedUri + "&response_type=code" +
-            "&scope=guilds.members.read%20identify%20guilds%20guilds.join";
-        window.location.href = redirection;
+        let discordToken = getLocalValidDiscordToken();
+        if (!discordToken) {
+            let encodedRedirectedUri = encodeURIComponent(baseUrl);
+            let redirection = DISCORD_HOST + "/api/oauth2/authorize?client_id=" + OAUTH_CLIENT_ID +
+                "&redirect_uri=" + encodedRedirectedUri + "&response_type=code" +
+                "&scope=guilds.members.read%20identify%20guilds%20guilds.join";
+            window.location.href = redirection;
+        }
+        else {
+            axios.get(DISCORD_HOST + '/api/users/@me', {
+                headers: {
+                    authorization: `${discordToken.token_type} ${discordToken.access_token}`
+                }
+            }).then((result) => {
+                if (result.status == 200) {
+                    initUserDiscordAccount(discordToken, result.data);
+                } else {
+                    console.error(`Call to GET ${DISCORD_HOST + '/api/users/@me'} failed : ${result}`);
+                }
+            });
+        }
+    };
+
+    const getLocalValidDiscordToken = () => {
+        const isExpired = (t) => {
+            return t && (new Date(t.expires_at).getTime() < (new Date().getTime()));
+        };
+
+        let token = JSON.parse(localStorage.getItem(DISCORD_TOKEN_KEY));
+        if (token) {
+            if (!isExpired(token)) {
+                return token;
+            }
+            else {
+                localStorage.removeItem(DISCORD_TOKEN_KEY);
+            }
+        }
+        return null;
     };
 
     const initUserDiscordAccount = (tokenData, userData) => {
         localStorage.setItem(DISCORD_TOKEN_KEY, JSON.stringify(tokenData));
         localStorage.setItem(DISCORD_ACC_KEY, JSON.stringify(userData));
         setUserDiscordAccount(userData);
-        window.location.href = "/";
+        window.location.href = baseUrl;
     };
 
-    const revokeUserDiscordAccount = () => {
-        console.log(`clearing user '${userDiscordAccount.username}' data from local storage and revoking discord token`);
-        let tokenData = JSON.parse(localStorage.getItem(DISCORD_TOKEN_KEY));
-        const API_ENDPOINT = DISCORD_HOST + "/api/v10";
-        const data = {
-            'client_id': OAUTH_CLIENT_ID,
-            'client_secret': OAUTH_CLIENT_SECRET,
-            'token': tokenData.access_token
-        };
-        const headers = {
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            }
-        };
-        axios.post(`${API_ENDPOINT}/oauth2/token/revoke`, querystring.stringify(data), headers)
-            .then((result) => {
-                if (result.status == 200) {
-                    localStorage.removeItem(DISCORD_TOKEN_KEY);
-                    localStorage.removeItem(DISCORD_ACC_KEY);
-                    setUserDiscordAccount(null);
-                } else {
-                    console.error(`Call to GET ${API_ENDPOINT}/oauth2/token/revoke' failed : ${result}`);
-                }
-            });
+    const clearUserDiscordAccount = () => {
+        console.log(`clearing user '${userDiscordAccount.username}'`);
+        localStorage.removeItem(DISCORD_ACC_KEY);
+        setUserDiscordAccount(null);
+    };
+
+    const fetchUserDiscountAccountFromLocalStorage = () => {
+        return JSON.parse(localStorage.getItem(DISCORD_ACC_KEY));
     };
 
     const [isActive, setIsActive] = useState(false);
-    const [userDiscordAccount, setUserDiscordAccount] = useState(JSON.parse(localStorage.getItem(DISCORD_ACC_KEY)));
+    const [userDiscordAccount, setUserDiscordAccount] = useState(fetchUserDiscountAccountFromLocalStorage());
 
     useEffect(() => {
         const urlSearchParams = new URLSearchParams(window.location.search);
         const code = urlSearchParams.get(DISCORD_CODE_PARAM);
+        console.log(`code=${code}, user=${userDiscordAccount}`);
         if (code && !userDiscordAccount) {
             const API_ENDPOINT = DISCORD_HOST + "/api/v10";
-            const REDIRECT_URI = baseUrl;
             const data = {
                 'client_id': OAUTH_CLIENT_ID,
                 'client_secret': OAUTH_CLIENT_SECRET,
                 'grant_type': 'authorization_code',
                 'code': code,
-                'redirect_uri': REDIRECT_URI
+                'redirect_uri': baseUrl
             };
             const headers = {
                 headers: {
@@ -188,7 +204,7 @@ const NavBar = () => {
                         </div>
                     </div>
 
-                    <DiscordAccount discordAcc={userDiscordAccount} clearDiscordAcc={revokeUserDiscordAccount}
+                    <DiscordAccount discordAcc={userDiscordAccount} clearDiscordAcc={clearUserDiscordAccount}
                                     handleClick={discordOauth}/>
                 </div>
             </div>
