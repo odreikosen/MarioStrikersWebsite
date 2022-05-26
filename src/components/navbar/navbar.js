@@ -7,10 +7,10 @@ import querystring from "querystring";
 
 export const getBaseUrl = () => {
     let baseUrl = window.location.href;
-    let delimitersAfterBaseUrl = ['#', '?'];
-    for (let index in delimitersAfterBaseUrl) {
-        if (baseUrl.includes(delimitersAfterBaseUrl[index])) {
-            baseUrl = baseUrl.substring(0, baseUrl.indexOf(delimitersAfterBaseUrl[index]));
+    let delimiters = ['#', '?'];
+    for (let delimiter of delimiters) {
+        if (baseUrl.includes(delimiter)) {
+            baseUrl = baseUrl.substring(0, baseUrl.indexOf(delimiter));
         }
     }
     if (baseUrl.endsWith("/")) {
@@ -92,7 +92,7 @@ const NavBar = () => {
     useEffect(() => {
         const urlSearchParams = new URLSearchParams(window.location.search);
         const code = urlSearchParams.get(DISCORD_CODE_PARAM);
-        console.log(`code=${code}, user=${userDiscordAccount}`);
+        // console.log(`code=${code}, user=${userDiscordAccount}`);
         if (code && !userDiscordAccount) {
             const API_ENDPOINT = DISCORD_HOST + "/api/v10";
             const data = {
@@ -132,7 +132,7 @@ const NavBar = () => {
     return (
         <nav className="navbar is-black" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
-                <a className="navbar-item" href="/">
+                <a className="navbar-item" href={baseUrl}>
                     <img id={"home-logo"}/>
                 </a>
 
