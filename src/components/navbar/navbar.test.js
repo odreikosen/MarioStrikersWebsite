@@ -1,4 +1,9 @@
-import {getBaseUrl} from './navbar';
+import React from 'react';
+import NavBar from './navbar';
+import {getBaseUrl} from "./navbar";
+import {render, fireEvent, cleanup} from '@testing-library/react';
+
+afterEach(cleanup);
 
 describe('getBaseUrl', () => {
     let location;
@@ -26,4 +31,18 @@ describe('getBaseUrl', () => {
     });
 });
 
+describe("the Login with Discord button", () => {
+    test("No Discord User Account in localStorage displays a Login button", () => {
+        const { getByText } = render(<NavBar />);
+        expect(getByText(/login/i).textContent).toBe("Login with Discord");
+    });
 
+    test("A Discord User Account in localStorage displays the user name and avatar", () => {
+        jest.spyOn(window.localStorage.__proto__, 'getItem').mockReturnValue(
+            JSON.stringify({ "id": "890951031947677708", "username": "owl", "avatar": "f0a4dba012635d0c1b77aa481d248ddf", "discriminator": "0609"})
+        );
+        const { getByText } = render(<NavBar />);
+        expect(getByText(/owl/i).textContent).toBe("owl#0609");
+    });
+
+});
