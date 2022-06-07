@@ -21,7 +21,7 @@ const HomeAOS = () => {
                      data-aos-anchor=".section--hero"/>
             </div>
             <section className="landing-section" id="section-title-01">
-                <div className="landing-container">
+                <div className="landing-container content">
                     <h1 data-aos="fade" className="aos-init aos-animate">MARIO STRIKERS DISCORD</h1>
                     <h4 data-aos="fade" className="aos-init aos-animate">Join THE Mario Strikers Discord today! Since
                         2017</h4>
@@ -29,24 +29,24 @@ const HomeAOS = () => {
                 </div>
             </section>
             <section className="home-section" id="section-about-02">
-                <div className="home-container">
+                <div className="home-container content">
                     <h2 className="section-title">About Us</h2>
-                    <div className="about-container aos-init" data-aos="fade-up" data-aos-duration="1500">
+                    <div className="about-container aos-init" data-aos="fade-up" data-aos-duration="600">
                         <p>
                             Welcome to the home of Mario Strikers! Play with or against others, participate in
                             tournaments or just hang out with the community!
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua.
+                            This international community was founded in January 2007 and has continued to grow ever
+                            since, as we finally had a new place for Mario Strikers fans from all over the world.
                         </p>
                         <p>
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat.
+                            The community has been explosively growing with the announcement of
+                            <b> Mario Strikers: Battle League</b>, and we hope to welcome many more Mario Strikers fans in the future!
                         </p>
                         <p>
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.
+                            We are also running a competitive Championship Series for all three games in the series, the <b>Mario Strikers League</b>, or <b>MSL</b>.
+                            There you can compete against the best players and clubs from all over the world and prove that you belong to the true elite players!
                         </p>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ const HomeAOS = () => {
             <section className="home-section" id="section-partners-03">
                 <div className="home-container">
                     <h2 className="section-title">Affiliates</h2>
-                    <div className="partner-container aos-init" data-aos="fade-up" data-aos-duration="2000">
+                    <div className="partner-container aos-init" data-aos="fade-up" data-aos-duration="700">
                         <div className="partner">
                             <a href="https://discord.gg/vUGjy4mgqN" rel="noopener noreferrer"
                                target="_blank">
@@ -71,9 +71,9 @@ const HomeAOS = () => {
                                 <div className="partner-image" id="affiliate-2"/>
                             </a>
                             <h1>Mario Strikers - Deutsch</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt
-                                ut labore et dolore magna aliqua.</p>
+                            <p>
+                                Größter deutschsprachiger Mario Striker - Discord. Trette bei und überzeuge dich selbst
+                            </p>
                         </div>
                         <div className="partner">
                             <a href="https://discord.gg/ndZSSap7VB" rel="noopener noreferrer" target="_blank">
@@ -82,13 +82,20 @@ const HomeAOS = () => {
                             <h1>Mario Strikers France</h1>
                             <p>Bienvenue sur le serveur francophone de Mario Strikers !</p>
                         </div>
+                        <div className="partner">
+                            <a href="https://discord.gg/hynRcpeTqu" rel="noopener noreferrer" target="_blank">
+                                <div className="partner-image" id="affiliate-4"/>
+                            </a>
+                            <h1>Mario Strikers - Nederland</h1>
+                            <p>De officiële Nederlandse Mario Strikers Discord!</p>
+                        </div>
                     </div>
                 </div>
             </section>
             <section className="home-section" id="section-partners-03">
                 <div className="home-container">
                     <h2 className="section-title">Partners</h2>
-                    <div className="partner-container aos-init" data-aos="fade-up" data-aos-duration="1500">
+                    <div className="partner-container aos-init" data-aos="fade-up" data-aos-duration="700">
                         <div className="partner">
                             <a href="https://discord.gg/xFejWpb" rel="noopener noreferrer"
                                target="_blank">

@@ -155,7 +155,7 @@ const NavBar = () => {
                         </a>
 
                         <div className="navbar-dropdown">
-                            <a className="navbar-item">
+                            <a className="navbar-item" href="#/clubs">
                                 Clubs
                             </a>
                             <a className="navbar-item">

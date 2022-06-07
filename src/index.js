@@ -20,6 +20,7 @@ import SmsRules from './components/rules/smsrules';
 import DiscordInvite from './components/discord-invite/DiscordInvite';
 import {Routes, Route} from "react-router-dom";
 import NavBar from './components/navbar/navbar';
+import Clubs from './components/club/clubs';
 
 
 ReactDOM.render(
@@ -40,6 +41,7 @@ ReactDOM.render(
                 <NavBar/>
                 <Routes>
                     <Route exact path="/join" element={<DiscordInvite/>}/>
+                    <Route exact path="/clubs" element={<Clubs/>}/>
                     <Route exact path="/sms-rankings" element={<Rankings gametype="2"/>}/>
                     <Route exact path="/msc-rankings" element={<Rankings gametype="1"/>}/>
                     <Route exact path="/msc-rules" element={<MscRules/>}/>

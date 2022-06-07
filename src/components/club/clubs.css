@@ -1,0 +1,23 @@
+.hero.is-link {
+    background-color: transparent;
+}
+
+#clubs-table {
+
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    color: white;
+}
+
+#clubs-table td {
+    vertical-align: middle;
+}
+
+#clubs-table th {
+    color: white
+}
+
+#placeholder-table-while-clubs-are-loading {
+    height: 100vh;
+}

@@ -60,12 +60,14 @@ body, html {
 }
 
 .landing-container>h1 {
+  color: white;
   font-weight: bolder;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 
 .landing-container>h4 {
+  color: white;
   font-weight: bolder;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
@@ -205,7 +207,7 @@ section {
 
 .section-title {
   text-align: center;
-  color: #FFF;
+  color: white !important;
   text-transform: uppercase;
   font-weight: normal;
   -webkit-text-stroke-width: 1px;
@@ -295,6 +297,10 @@ section {
 
 #affiliate-3 {
   background-image: url(../../assets/mario_strikers_france_logo.png);
+}
+
+#affiliate-4 {
+  background-image: url(../../assets/mario_strikers_nederland_logo.png);
 }
 
 #partner-1 {
