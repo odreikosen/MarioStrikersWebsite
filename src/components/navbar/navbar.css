@@ -1,0 +1,21 @@
+img#home-logo {
+    content: url(../../assets/discord_logo.png);
+    width: 110px;
+    max-height: 3.75rem;
+}
+
+.navbar-menu {
+    background-color: black
+}
+
+.navbar-dropdown {
+    background-color: black
+}
+
+.navbar-item, .navbar-link {
+    color: white
+}
+
+#discord-account-link span {
+    font-weight: bold
+}

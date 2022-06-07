@@ -10,7 +10,7 @@ const Ranking = ({gametype}) => {
     const [rankings, setRankings] = useState([]);
     
     useEffect(() => {
-        axios.get(`https://3.83.120.24:3000/ratings?gametype=${gametype}`)
+        axios.get(`https://api.mariostrikers.gg/ratings?gametype=${gametype}`)
         .then(data =>{
             setRankings(data.data)
         })

@@ -1,65 +1,251 @@
-import Container from 'react-bootstrap/Container'
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import {LinkContainer} from 'react-router-bootstrap'
-import { Link } from "react-router-dom";
-import discord_logo from '../../assets/discord_logo.png'
-import React from 'react';
+import './navbar.css';
+
+import React, {useEffect, useState} from 'react';
+import axios from "axios";
+import querystring from "querystring";
 
 
+export const getBaseUrl = () => {
+    let baseUrl = window.location.href;
+    let delimiters = ['#', '?'];
+    for (let delimiter of delimiters) {
+        if (baseUrl.includes(delimiter)) {
+            baseUrl = baseUrl.substring(0, baseUrl.indexOf(delimiter));
+        }
+    }
+    if (baseUrl.endsWith("/")) {
+        baseUrl = baseUrl.substring(0, baseUrl.length - 1);
+    }
+    return baseUrl;
+};
+
+const OAUTH_CLIENT_ID = "976164178203123732";
+const OAUTH_CLIENT_SECRET = "6DI96hoqna2WjJhUpuzNY1rM9Vrz2tv4";
+const DISCORD_HOST = "https://discord.com";
+const DISCORD_CODE_PARAM = "code";
+const DISCORD_TOKEN_KEY = "DISCORD_ACCESS_TOKEN_OBJ";
+const DISCORD_ACC_KEY = "DISCORD_USER_ACCOUNT_OBJ";
 
 const NavBar = () => {
+    const baseUrl = getBaseUrl();
+    const discordOauth = () => {
+        let discordToken = getLocalValidDiscordToken();
+        if (!discordToken) {
+            let encodedRedirectedUri = encodeURIComponent(baseUrl);
+            let redirection = DISCORD_HOST + "/api/oauth2/authorize?client_id=" + OAUTH_CLIENT_ID +
+                "&redirect_uri=" + encodedRedirectedUri + "&response_type=code" +
+                "&scope=guilds.members.read%20identify%20guilds%20guilds.join";
+            window.location.href = redirection;
+        }
+        else {
+            axios.get(DISCORD_HOST + '/api/users/@me', {
+                headers: {
+                    authorization: `${discordToken.token_type} ${discordToken.access_token}`
+                }
+            }).then((result) => {
+                if (result.status == 200) {
+                    initUserDiscordAccount(discordToken, result.data);
+                } else {
+                    console.error(`Call to GET ${DISCORD_HOST + '/api/users/@me'} failed : ${result}`);
+                }
+            });
+        }
+    };
 
-    const navSelect = (key) => {
+    const getLocalValidDiscordToken = () => {
+        const isExpired = (t) => {
+            return t && (new Date(t.expires_at).getTime() < (new Date().getTime()));
+        };
 
+        let token = JSON.parse(localStorage.getItem(DISCORD_TOKEN_KEY));
+        if (token) {
+            if (!isExpired(token)) {
+                return token;
+            }
+            else {
+                localStorage.removeItem(DISCORD_TOKEN_KEY);
+            }
+        }
+        return null;
+    };
+
+    const initUserDiscordAccount = (tokenData, userData) => {
+        localStorage.setItem(DISCORD_TOKEN_KEY, JSON.stringify(tokenData));
+        localStorage.setItem(DISCORD_ACC_KEY, JSON.stringify(userData));
+        setUserDiscordAccount(userData);
+        window.location.href = baseUrl;
+    };
+
+    const clearUserDiscordAccount = () => {
+        console.log(`clearing user '${userDiscordAccount.username}'`);
+        localStorage.removeItem(DISCORD_ACC_KEY);
+        setUserDiscordAccount(null);
+    };
+
+    const fetchUserDiscountAccountFromLocalStorage = () => {
+        return JSON.parse(localStorage.getItem(DISCORD_ACC_KEY));
+    };
+
+    const [isActive, setIsActive] = useState(false);
+    const [userDiscordAccount, setUserDiscordAccount] = useState(fetchUserDiscountAccountFromLocalStorage());
+
+    useEffect(() => {
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const code = urlSearchParams.get(DISCORD_CODE_PARAM);
+        // console.log(`code=${code}, user=${userDiscordAccount}`);
+        if (code && !userDiscordAccount) {
+            const API_ENDPOINT = DISCORD_HOST + "/api/v10";
+            const data = {
+                'client_id': OAUTH_CLIENT_ID,
+                'client_secret': OAUTH_CLIENT_SECRET,
+                'grant_type': 'authorization_code',
+                'code': code,
+                'redirect_uri': baseUrl
+            };
+            const headers = {
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            };
+            axios.post(`${API_ENDPOINT}/oauth2/token`, querystring.stringify(data), headers)
+                .then((token) => {
+                    if (token && token.data && token.data.expires_in) {
+                        const now = new Date();
+                        token.data.expires_at = new Date(now.getTime() + token.data.expires_in * 1000);
+                    }
+
+                    axios.get(DISCORD_HOST + '/api/users/@me', {
+                        headers: {
+                            authorization: `${token.data.token_type} ${token.data.access_token}`
+                        }
+                    }).then((result) => {
+                        if (result.status == 200) {
+                            initUserDiscordAccount(token.data, result.data);
+                        } else {
+                            console.error(`Call to GET ${DISCORD_HOST + '/api/users/@me'} failed : ${result}`);
+                        }
+                    });
+                });
+        }
+    }, []);
+
+    return (
+        <nav className="navbar is-black" role="navigation" aria-label="main navigation">
+            <div className="navbar-brand">
+                <a className="navbar-item" href={baseUrl}>
+                    <img id={"home-logo"}/>
+                </a>
+
+                <a role="button" className={`navbar-burger ${isActive ? "is-active" : ""}`} aria-label="menu"
+                   aria-expanded="false" data-target="navbarMSGG" onClick={() => {
+                    setIsActive(!isActive)
+                }}>
+                    <span aria-hidden="true"/>
+                    <span aria-hidden="true"/>
+                    <span aria-hidden="true"/>
+                </a>
+            </div>
+
+            <div id="navbarMSGG" className={`navbar-menu ${isActive ? "is-active" : ""}`}>
+                <div className="navbar-end">
+
+                    <div className="navbar-item has-dropdown is-hoverable ml-5 mr-3">
+                        <a className="navbar-link">
+                            Mario Strikers:<br/>Battle League
+                        </a>
+
+                        <div className="navbar-dropdown">
+                            <a className="navbar-item" href="#/clubs">
+                                Clubs
+                            </a>
+                            <a className="navbar-item">
+                                Players
+                            </a>
+                            <a className="navbar-item">
+                                Guides
+                            </a>
+                        </div>
+                    </div>
+                    <div className="navbar-item has-dropdown is-hoverable ml-3 mr-3">
+                        <a className="navbar-link">
+                            Mario Strikers<br/>Charged
+                        </a>
+
+                        <div className="navbar-dropdown">
+                            <a className="navbar-item" href="#/msc-rules">
+                                Guides
+                            </a>
+                        </div>
+                    </div>
+                    <div className="navbar-item has-dropdown is-hoverable ml-3 mr-3">
+                        <a className="navbar-link">
+                            Super Mario<br/>Strikers
+                        </a>
+
+                        <div className="navbar-dropdown">
+                            <a className="navbar-item" href="#/sms-rules">
+                                Guides
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="navbar-item has-dropdown is-hoverable ml-3 mr-3">
+                        <a className="navbar-link">
+                            Mario Strikers<br/>League
+                        </a>
+
+                        <div className="navbar-dropdown">
+                            <a className="navbar-item" href="#/tournaments">
+                                Season 2022
+                            </a>
+                            <a className="navbar-item">
+                                Season 2021
+                            </a>
+                        </div>
+                    </div>
+
+                    <DiscordAccount discordAcc={userDiscordAccount} clearDiscordAcc={clearUserDiscordAccount}
+                                    handleClick={discordOauth}/>
+                </div>
+            </div>
+        </nav>
+    );
+
+};
+
+const DiscordAccount = ({discordAcc, clearDiscordAcc, handleClick}) => {
+
+    if (discordAcc) {
+        return (
+            <div className="navbar-item has-dropdown is-hoverable ml-5 mr-3">
+                <a className="navbar-link" id={"discord-account-link"}>
+                    <figure className="image is-24x24 mr-3">
+                        <img src={`https://cdn.discordapp.com/avatars/${discordAcc.id}/${discordAcc.avatar}`}/>
+                    </figure>
+                    <span>
+                        {`${discordAcc.username}#${discordAcc.discriminator}`}
+                    </span>
+                </a>
+
+                <div className="navbar-dropdown">
+                    <a className="navbar-item" onClick={clearDiscordAcc}>
+                        Log Out
+                    </a>
+                </div>
+            </div>
+        );
+    } else {
+        return (
+            <div className="navbar-item">
+                <div className="buttons">
+                    <a className="button is-light" onClick={handleClick}>
+                                <span>Login with <b>Discord</b>
+                                </span>
+                    </a>
+                </div>
+            </div>
+        );
     }
-
-    return(
-        <Navbar bg="dark" expand="lg" variant="dark" collapseOnSelect>
-            <Container fluid>
-                <LinkContainer to="/">
-                    <Navbar.Brand> 
-                        <img
-                        alt=""
-                        src={discord_logo}
-                        width="100"
-                        height="100"
-                        className="d-inline-block align-top"
-                        />{' '}
-                    </Navbar.Brand>
-                </LinkContainer>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
-                    <Nav onSelect={navSelect}>
-                        <Nav.Item>
-                                <Nav.Link as = {Link} to="/join" eventKey="join">Join</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                                <Nav.Link as = {Link} to="/" eventKey="home">Home</Nav.Link>
-                        </Nav.Item>
-                        <NavDropdown title="Rules">
-                            <NavDropdown.Item as = {Link} to="/msc-rules">
-                                MSC
-                            </NavDropdown.Item>
-                            <NavDropdown.Item as = {Link} to="/sms-rules">
-                                SMS
-                                </NavDropdown.Item>
-                            </NavDropdown>
-                        <NavDropdown title="Rankings">
-                            <NavDropdown.Item as = {Link} to="/msc-rankings">
-                                MSC
-                            </NavDropdown.Item>
-                            <NavDropdown.Item as = {Link} to="/sms-rankings">
-                                SMS
-                                </NavDropdown.Item>
-                            </NavDropdown>
-                            <Nav.Item>
-                                <Nav.Link as = {Link} to="/tournaments" eventKey="tournaments">Tournaments</Nav.Link>
-                            </Nav.Item>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-      </Navbar>
-    )
-}
+};
 
 export default NavBar;

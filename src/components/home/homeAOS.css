@@ -1,0 +1,317 @@
+body, html {
+  height: 100%;
+}
+
+.backgrounds {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: -1;
+}
+
+.overlay:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  /*background: #3F51B5;*/
+  opacity: 0.8;
+}
+
+.backgrounds .background {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /*background-image: url(../../assets/landing_page_bg2.png);*/
+  /*background-attachment: fixed;*/
+}
+
+.home-aos {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.landing-section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  color: #FFF;
+  text-align: center;
+}
+
+.landing-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  height: 100vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.landing-container>h1 {
+  color: white;
+  font-weight: bolder;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.landing-container>h4 {
+  color: white;
+  font-weight: bolder;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.discordButton {
+  border: 4px solid #7289da;
+  background-color: #7289da;
+}
+
+.joinLink {
+  font-family: assistant,sans-serif;
+  font-weight: 900;
+  padding: 10px 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+  transition: .3s;
+  margin: 0;
+  margin: 10px 10px 10px 0;
+  width: 250px!important;
+}
+
+.joinLink>div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.joinLink>div>img {
+  height: 40px;
+  width: auto;
+  transition: all .5s ease;
+  margin-right: 10px;
+}
+
+.rotate-now {
+  color:#afafaf;
+  -moz-animation: spin .3s 1 linear;
+  -o-animation: spin .3s 1 linear;
+  -webkit-animation: spin .3s 1 linear;
+  animation: spin .3s 1 linear;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); }
+}
+
+@-moz-keyframes spin {
+  0% { -moz-transform: rotate(0deg); }
+  100% { -moz-transform: rotate(359deg); }
+}
+
+@-o-keyframes spin {
+  0% { -o-transform: rotate(0deg); }
+  100% { -o-transform: rotate(359deg); }
+}
+
+@-ms-keyframes spin {
+  0% { -ms-transform: rotate(0deg); }
+  100% { -ms-transform: rotate(359deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+
+.counter-rotate-now {
+  color:#afafaf;
+  -moz-animation: counter-spin .3s 1 linear;
+  -o-animation: counter-spin .3s 1 linear;
+  -webkit-animation: counter-spin .3s 1 linear;
+  animation: counter-spin .3s 1 linear;
+}
+
+@-webkit-keyframes counter-spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(-359deg); }
+}
+
+@-moz-keyframes counter-spin {
+  0% { -moz-transform: rotate(0deg); }
+  100% { -moz-transform: rotate(-359deg); }
+}
+
+@-o-keyframes counter-spin {
+  0% { -o-transform: rotate(0deg); }
+  100% { -o-transform: rotate(-359deg); }
+}
+
+@-ms-keyframes counter-spin {
+  0% { -ms-transform: rotate(0deg); }
+  100% { -ms-transform: rotate(-359deg); }
+}
+
+@keyframes counter-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-359deg); }
+}
+
+.section {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+section {
+  display: block;
+}
+
+.home-section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  color: #FFF;
+  text-align: center;
+}
+
+.home-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: normal;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  padding: 1% 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+
+.about-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  height: 70vh;
+  width: 90vw;
+  position: relative;
+  transform: translateX(-50%);
+  text-shadow: 0 0 5px #000;
+}
+
+.about-container p {
+  font-size: 2.2vh;
+  margin: 5px 0;
+}
+.about-container>p {
+  font-size: 22px;
+  margin: 10px;
+  text-align-last: center;
+}
+
+.partner-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  transform: translateX(-50%);
+  position: relative;
+  overflow-y: auto;
+}
+
+.partner {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px;
+  cursor: default;
+  height: 40%;
+  width: 33%;
+  overflow-y: visible;
+}
+
+.partner>h1 {
+  font-size: 18px;
+  font-weight: 100;
+  margin: 1% 0;
+}
+
+.partner-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  box-shadow: 0 0 15px 1px #000;
+  transition: all .2s ease;
+  border-radius: 50%;
+  transform: scale(1);
+}
+
+.partner-image:hover {
+  transform: scale(1.3);
+}
+
+#affiliate-1 {
+  background-image: url(../../assets/mario_strikers_speedrunning_logo.png);
+}
+
+#affiliate-2 {
+  background-image: url(../../assets/mario_strikers_deutsch_logo.png);
+}
+
+#affiliate-3 {
+  background-image: url(../../assets/mario_strikers_france_logo.png);
+}
+
+#affiliate-4 {
+  background-image: url(../../assets/mario_strikers_nederland_logo.png);
+}
+
+#partner-1 {
+  background-image: url(../../assets/WolfTV.png);
+}
+
+#partner-2 {
+  background-image: url(../../assets/wii_sports_logo.png);
+}
+
+#partner-3 {
+  background-image: url(../../assets/Ragnarok_logo.png);
+}
+
