@@ -12,7 +12,7 @@ const Clubs = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        axios.get(`https://api.mariostrikers.gg/clubs`)
+        axios.get(`https://api.mariostrikers.gg/clubs?with_member_count=true`)
             .then(data => {
                 setClubs(data.data);
                 setIsLoading(false);
@@ -79,6 +79,7 @@ function buildClubTable(isLoading, clubs) {
                 <th>Logo</th>
                 <th>Club Name</th>
                 <th>Club Tag</th>
+                <th>Member Count</th>
                 <th>Region</th>
                 <th><abbr title="Joining Conditions">Status</abbr></th>
             </tr>
@@ -98,6 +99,7 @@ function buildClubTableBody(isLoading, clubs) {
             <td></td>
             <td></td>
             <td></td>
+            <td></td>
         </tr>
     }
     else {
@@ -108,8 +110,9 @@ function buildClubTableBody(isLoading, clubs) {
                         {buildTeamImgElement(club.logo)}
                     </figure>
                 </td>
-                <td>{club.name}</td>
+                <td data-testid={"club-name-"+num}>{club.name}</td>
                 <td>{club.tag}</td>
+                <td>{club.memberCount}</td>
                 <td>{club.region}</td>
                 <td>{buildClubJoinConditions(club.joinConditions)}</td>
             </tr>);

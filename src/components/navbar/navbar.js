@@ -36,8 +36,7 @@ const NavBar = () => {
                 "&redirect_uri=" + encodedRedirectedUri + "&response_type=code" +
                 "&scope=guilds.members.read%20identify%20guilds%20guilds.join";
             window.location.href = redirection;
-        }
-        else {
+        } else {
             axios.get(DISCORD_HOST + '/api/users/@me', {
                 headers: {
                     authorization: `${discordToken.token_type} ${discordToken.access_token}`
@@ -61,8 +60,7 @@ const NavBar = () => {
         if (token) {
             if (!isExpired(token)) {
                 return token;
-            }
-            else {
+            } else {
                 localStorage.removeItem(DISCORD_TOKEN_KEY);
             }
         }
@@ -158,10 +156,10 @@ const NavBar = () => {
                             <a className="navbar-item" href="#/clubs">
                                 Clubs
                             </a>
-                            <a className="navbar-item">
+                            <a className="navbar-item is-disabled">
                                 Players
                             </a>
-                            <a className="navbar-item">
+                            <a className="navbar-item is-disabled">
                                 Guides
                             </a>
                         </div>
@@ -172,6 +170,9 @@ const NavBar = () => {
                         </a>
 
                         <div className="navbar-dropdown">
+                            <a className="navbar-item" href="#/msc-rankings">
+                                Player Rankings
+                            </a>
                             <a className="navbar-item" href="#/msc-rules">
                                 Guides
                             </a>
@@ -183,6 +184,9 @@ const NavBar = () => {
                         </a>
 
                         <div className="navbar-dropdown">
+                            <a className="navbar-item" href="#/sms-rankings">
+                                Player Rankings
+                            </a>
                             <a className="navbar-item" href="#/sms-rules">
                                 Guides
                             </a>
@@ -195,10 +199,11 @@ const NavBar = () => {
                         </a>
 
                         <div className="navbar-dropdown">
-                            <a className="navbar-item" href="#/tournaments">
+                            <a className="navbar-item" href="https://start.gg/league/msl-2022-1" target="_blank"
+                               rel="noopener noreferrer">
                                 Season 2022
                             </a>
-                            <a className="navbar-item">
+                            <a className="navbar-item is-disabled">
                                 Season 2021
                             </a>
                         </div>
