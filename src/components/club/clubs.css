@@ -3,7 +3,6 @@
 }
 
 #clubs-table {
-
     margin-left: auto;
     margin-right: auto;
     background-color: transparent;
@@ -12,10 +11,16 @@
 
 #clubs-table td {
     vertical-align: middle;
+    text-align: center;
+}
+
+#clubs-table td img {
+    height: 100%;
 }
 
 #clubs-table th {
-    color: white
+    color: white;
+    text-align: center;
 }
 
 #placeholder-table-while-clubs-are-loading {
