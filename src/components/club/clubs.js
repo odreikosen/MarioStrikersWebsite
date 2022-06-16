@@ -28,7 +28,7 @@ const Clubs = () => {
             <div className="columns">
                 <div className="column">
                     <div className="columns">
-                        <div className="column is-2" />
+                        <div className="column is-2"/>
                         <div className="column is-2">
                             <figure className="image">
                                 <img src={mario_img}/>
@@ -42,7 +42,7 @@ const Clubs = () => {
                                     </p>
                                     <p className="subtitle">
                                         Here you'll find all Clubs registered on the
-                                        <LinkDiscordServer />.
+                                        <LinkDiscordServer/>.
                                         If you wish to join a Club, reach out to their owner first.
                                         Alternatively, you can create a new Club from scratch and add players by
                                         yourself!<br/>
@@ -55,14 +55,14 @@ const Clubs = () => {
                                 </div>
                             </section>
                         </div>
-                        <div className="column is-2" />
+                        <div className="column is-2"/>
                     </div>
                 </div>
             </div>
             <div className="columns">
-                <div className="column is-2" />
+                <div className="column is-2"/>
                 {buildClubTable(isLoading, clubs)}
-                <div className="column is-2" />
+                <div className="column is-2"/>
             </div>
         </div>
 
@@ -73,21 +73,25 @@ const Clubs = () => {
 function buildClubTable(isLoading, clubs) {
     const theId = isLoading ? "placeholder-table-while-clubs-are-loading" : "column-for-clubs-table";
     return <div className="column is-8" id={theId}>
-        <table className="table is-fullwidth is-fullheight" id={"clubs-table"}>
-            <thead>
-            <tr>
-                <th>Logo</th>
-                <th>Club Name</th>
-                <th>Club Tag</th>
-                <th>Member Count</th>
-                <th>Region</th>
-                <th><abbr title="Joining Conditions">Status</abbr></th>
-            </tr>
-            </thead>
-            <tbody>
-            {buildClubTableBody(isLoading, clubs)}
-            </tbody>
-        </table>
+        <div className="box">
+            <div className="table-container">
+                <table className="table is-fullwidth is-fullheight" id={"clubs-table"}>
+                    <thead>
+                    <tr>
+                        <th>Logo</th>
+                        <th>Club Name</th>
+                        <th>Club Tag</th>
+                        <th>Member Count</th>
+                        <th>Region</th>
+                        <th><abbr title="Joining Conditions">Status</abbr></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {buildClubTableBody(isLoading, clubs)}
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 }
 
@@ -101,8 +105,7 @@ function buildClubTableBody(isLoading, clubs) {
             <td></td>
             <td></td>
         </tr>
-    }
-    else {
+    } else {
         return clubs.map((club, num) =>
             <tr key={"club-row" + num}>
                 <td>
@@ -110,7 +113,7 @@ function buildClubTableBody(isLoading, clubs) {
                         {buildTeamImgElement(club.logo)}
                     </figure>
                 </td>
-                <td data-testid={"club-name-"+num}>{club.name}</td>
+                <td data-testid={"club-name-" + num}>{club.name}</td>
                 <td>{club.tag}</td>
                 <td>{club.memberCount}</td>
                 <td>{club.region}</td>

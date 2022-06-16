@@ -44,6 +44,7 @@ ReactDOM.render(
                     <Route exact path="/clubs" element={<Clubs/>}/>
                     <Route exact path="/sms-rankings" element={<Rankings gametype="2"/>}/>
                     <Route exact path="/msc-rankings" element={<Rankings gametype="1"/>}/>
+                    <Route exact path="/msbl-rankings" element={<Rankings gametype="3"/>}/>
                     <Route exact path="/msc-rules" element={<MscRules/>}/>
                     <Route exact path="/sms-rules" element={<SmsRules/>}/>
                     <Route exact path="/tournaments" element={<Tournaments/>}/>

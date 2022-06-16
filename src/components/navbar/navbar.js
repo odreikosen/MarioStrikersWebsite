@@ -153,11 +153,11 @@ const NavBar = () => {
                         </a>
 
                         <div className="navbar-dropdown">
+                            <a className="navbar-item is-disabled" href="#/msbl-rankings">
+                                Player Rankings
+                            </a>
                             <a className="navbar-item" href="#/clubs">
                                 Clubs
-                            </a>
-                            <a className="navbar-item is-disabled">
-                                Players
                             </a>
                             <a className="navbar-item is-disabled">
                                 Guides
