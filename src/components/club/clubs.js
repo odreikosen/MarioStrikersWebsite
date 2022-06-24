@@ -1,6 +1,6 @@
 import "./clubs.css";
 
-import axios from "axios"
+import axios from "axios";
 import React, {useEffect, useState} from "react";
 
 import mario_img from '../../assets/mario.retourne.bw.png';
