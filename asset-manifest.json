@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a973e1e6.css",
-    "main.js": "/static/js/main.436d5cc5.js",
+    "main.css": "/static/css/main.5dab7abe.css",
+    "main.js": "/static/js/main.7ebe8e9d.js",
     "static/js/787.4fbafe53.chunk.js": "/static/js/787.4fbafe53.chunk.js",
     "static/media/landing_page_bg2.png": "/static/media/landing_page_bg2.c792aaba29b8514d965c.png",
     "static/media/Ragnarok_logo.png": "/static/media/Ragnarok_logo.2c1b9e81b18a37c976e2.png",
@@ -12,22 +12,27 @@
     "static/media/mario-strikers-charged-bw.png": "/static/media/mario-strikers-charged-bw.100b8f22cd39bf563ff4.png",
     "static/media/crumbLogo.png": "/static/media/crumbLogo.32701f7e2c367152c921.png",
     "static/media/msc.peach.bw.png": "/static/media/msc.peach.bw.f108cd1e79b45630b0b4.png",
+    "static/media/nintenhub_logo.png": "/static/media/nintenhub_logo.8ef7b18594c73c5ad88a.png",
     "static/media/wclogo.png": "/static/media/wclogo.f81f7aa6257123e8351e.png",
     "static/media/sms.peach.bw.png": "/static/media/sms.peach.bw.7afdaf27c3fc99fce084.png",
     "static/media/wii_sports_logo.png": "/static/media/wii_sports_logo.bc8bb4a06f9d5ab83704.png",
     "static/media/mario_strikers_france_logo.png": "/static/media/mario_strikers_france_logo.ed6ea169dbb7aa2f5362.png",
     "static/media/mario_strikers_nederland_logo.png": "/static/media/mario_strikers_nederland_logo.db9fced3bef5b4684488.png",
     "static/media/mario_strikers_speedrunning_logo.png": "/static/media/mario_strikers_speedrunning_logo.53aa132fa9f07a91bad9.png",
-    "static/media/mario_strikers_deutsch_logo.png": "/static/media/mario_strikers_deutsch_logo.c5777511808436f69c50.png",
     "static/media/WolfTV.png": "/static/media/WolfTV.77a30cb854425bb71253.png",
+    "static/media/rank_rookie.png": "/static/media/rank_rookie.782eb0728e4a59f2c9dc.png",
+    "static/media/rank_professional.png": "/static/media/rank_professional.a8af2668b6e5be52c053.png",
+    "static/media/rank_megastriker.png": "/static/media/rank_megastriker.5ea6d8fae377273c1579.png",
+    "static/media/rank_legend.png": "/static/media/rank_legend.c7aa8938936be7396771.png",
+    "static/media/rank_superstar.png": "/static/media/rank_superstar.d771da9724bb8bdca8ff.png",
     "static/media/discord_icon_black.png": "/static/media/discord_icon_black.fcb1b31f7dec865b27fe.png",
     "index.html": "/index.html",
-    "main.a973e1e6.css.map": "/static/css/main.a973e1e6.css.map",
-    "main.436d5cc5.js.map": "/static/js/main.436d5cc5.js.map",
+    "main.5dab7abe.css.map": "/static/css/main.5dab7abe.css.map",
+    "main.7ebe8e9d.js.map": "/static/js/main.7ebe8e9d.js.map",
     "787.4fbafe53.chunk.js.map": "/static/js/787.4fbafe53.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a973e1e6.css",
-    "static/js/main.436d5cc5.js"
+    "static/css/main.5dab7abe.css",
+    "static/js/main.7ebe8e9d.js"
   ]
 }
