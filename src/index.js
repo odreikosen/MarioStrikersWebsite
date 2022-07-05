@@ -10,8 +10,6 @@ import reportWebVitals from './reportWebVitals';
 // import Home from './components/home/home';
 import HomeAOS from './components/home/homeAOS';
 import Rankings from './components/ranking/ranking';
-import SMSRankings from './components/ranking/SMSRanking'
-import MSCRankings from './components/ranking/MSCRanking'
 import Tournaments from './components/tournament/Tournament';
 import Crumble from './components/tournament/Crumble';
 import WorldCup from './components/tournament/WorldCup';
@@ -21,6 +19,7 @@ import DiscordInvite from './components/discord-invite/DiscordInvite';
 import {Routes, Route} from "react-router-dom";
 import NavBar from './components/navbar/navbar';
 import Clubs from './components/club/clubs';
+import Club from './components/club/club';
 
 
 ReactDOM.render(
@@ -42,6 +41,7 @@ ReactDOM.render(
                 <Routes>
                     <Route exact path="/join" element={<DiscordInvite/>}/>
                     <Route exact path="/clubs" element={<Clubs/>}/>
+                    <Route path="/club/:clubid" element={<Club/>}/>
                     <Route exact path="/sms-rankings" element={<Rankings gametype="2"/>}/>
                     <Route exact path="/msc-rankings" element={<Rankings gametype="1"/>}/>
                     <Route exact path="/msbl-rankings" element={<Rankings gametype="3"/>}/>

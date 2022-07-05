@@ -13,14 +13,23 @@
     color: white;
 }
 
+#rankings-table th {
+    color: white;
+    text-align: center;
+}
+
 #rankings-table td {
     vertical-align: middle;
     text-align: center;
 }
 
-#rankings-table th {
-    color: white;
-    text-align: center;
+#rankings-table td figure {
+    display: block;
+    margin: 0 auto;
+}
+
+#rankings-table .player-name {
+    text-align: left;
 }
 
 #placeholder-table-while-rankings-are-loading {

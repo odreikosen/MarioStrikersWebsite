@@ -1,7 +1,8 @@
 import "./clubs.css";
 
-import axios from "axios"
+import axios from "axios";
 import React, {useEffect, useState} from "react";
+import { Link } from 'react-router-dom';
 
 import mario_img from '../../assets/mario.retourne.bw.png';
 import no_img from '../../assets/no-image-icon.png';
@@ -113,7 +114,9 @@ function buildClubTableBody(isLoading, clubs) {
                         {buildTeamImgElement(club.logo)}
                     </figure>
                 </td>
-                <td data-testid={"club-name-" + num}>{club.name}</td>
+                <td data-testid={"club-name-" + num}>{club.name}
+                    {/*<Link to={"/club/"+club.id}> {club.name} </Link>*/}
+                </td>
                 <td>{club.tag}</td>
                 <td>{club.memberCount}</td>
                 <td>{club.region}</td>
