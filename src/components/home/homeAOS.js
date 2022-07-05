@@ -56,23 +56,24 @@ const HomeAOS = () => {
                     <h2 className="section-title">Affiliates</h2>
                     <div className="partner-container aos-init" data-aos="fade-up" data-aos-duration="700">
                         <div className="partner">
+                            <a href="https://discord.gg/DFT5Dyy" rel="noopener noreferrer" target="_blank">
+                                <div className="partner-image" id="affiliate-1"/>
+                            </a>
+                            <h1>NintenHub</h1>
+                            <p>
+                                All your favorite Nintendo-oriented communities under one source.<br />
+                                Find your community with NintenHub!
+                            </p>
+                        </div>
+                        <div className="partner">
                             <a href="https://discord.gg/vUGjy4mgqN" rel="noopener noreferrer"
                                target="_blank">
-                                <div className="partner-image" id="affiliate-1"/>
+                                <div className="partner-image" id="affiliate-2"/>
                             </a>
                             <h1>Mario Strikers Speedrunning</h1>
                             <p>Whether you are a Speedrunner, a professional striker, or just a casual player of the
                                 game,
                                 we welcome you with open arms!
-                            </p>
-                        </div>
-                        <div className="partner">
-                            <a href="https://discord.gg/GB4z4U6Z7D" rel="noopener noreferrer" target="_blank">
-                                <div className="partner-image" id="affiliate-2"/>
-                            </a>
-                            <h1>Mario Strikers - Deutsch</h1>
-                            <p>
-                                Größter deutschsprachiger Mario Striker - Discord. Trette bei und überzeuge dich selbst
                             </p>
                         </div>
                         <div className="partner">

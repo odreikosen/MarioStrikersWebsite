@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {act, render, fireEvent, cleanup, waitFor} from '@testing-library/react';
+import {act, render, fireEvent, cleanup, waitFor, within} from '@testing-library/react';
 
 import axiosMock from "axios";
 import Ranking from "./ranking";
@@ -43,10 +43,12 @@ test('A list of MSBL Players, ordered by ranking, is displayed', async () => {
     expect(getByText(/Rankings for/i).textContent).toBe("Rankings for Mario Strikers: Battle League")
 
     const resolvedPlayer01Elem = await waitFor(() => getByTestId("player-name-0"));
+    const resolvedPlayer01RankIcon = within(await waitFor(() => getByTestId("player-rank-icon-0")));
     const resolvedPlayer02Elem = await waitFor(() => getByTestId("player-name-1"));
     const resolvedPlayer03Elem = await waitFor(() => getByTestId("player-name-2"));
 
     expect((resolvedPlayer01Elem).textContent).toBe("Agent A");
+    expect((resolvedPlayer01RankIcon).getByRole('img').src).toContain("rank_legend.png");
     expect((resolvedPlayer02Elem).textContent).toBe("xAlex");
     expect((resolvedPlayer03Elem).textContent).toBe("Jimray3");
 

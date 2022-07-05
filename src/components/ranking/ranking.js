@@ -5,6 +5,11 @@ import React, {useEffect, useState} from "react";
 import sms_peach_img from "../../assets/sms.peach.bw.png";
 import msc_peach_img from "../../assets/msc.peach.bw.png";
 import msbl_peach_img from "../../assets/msbl.peach.bw.png";
+import rookie_img from "../../assets/rank_rookie.png";
+import professional_img from "../../assets/rank_professional.png";
+import superstar_img from "../../assets/rank_superstar.png";
+import legend_img from "../../assets/rank_legend.png";
+import megastriker_img from "../../assets/rank_megastriker.png";
 import LinkDiscordServer from "../links/discordserver";
 
 const Ranking = ({gametype}) => {
@@ -86,9 +91,10 @@ function buildRankingTable(isLoading, rankings) {
                 <table className="table is-fullwidth is-fullheight" id={"rankings-table"}>
                     <thead>
                     <tr>
-                        <th>Player Name</th>
+                        <th>#</th>
+                        <th className={"player-name"}>Player Name</th>
                         <th>Rating</th>
-                        <th>Wins/Losses/Draws</th>
+                        <th>Wins - Losses</th>
                         <th>Rank</th>
                     </tr>
                     </thead>
@@ -108,25 +114,33 @@ function buildRankingTableBody(isLoading, rankings) {
             <td/>
             <td/>
             <td/>
+            <td/>
         </tr>
     } else {
         return rankings.map((ranking, num) =>
             <tr key={"ranking-row" + num}>
-                <td data-testid={"player-name-" + num}>{ranking.name}</td>
-                <td>{ranking.rating}</td>
-                <td>{ranking.numWins}/{ranking.numLosses}/{ranking.numDraws}</td>
-                <td>{buildRank(ranking.rank)}</td>
+                <td>{num + 1}</td>
+                <td data-testid={"player-name-" + num} className={"player-name"}>{ranking.name}</td>
+                <td>{Number(ranking.rating).toLocaleString("en")}</td>
+                <td>{ranking.numWins} - {ranking.numLosses}</td>
+                <td data-testid={"player-rank-icon-" + num}>{buildRank(ranking.rank)}</td>
             </tr>);
     }
 }
 
 function buildRank(rank) {
-    if (rank) {
-        if (rank.trim().toLowerCase() === "megastriker") {
-            return <span className="tag is-warning is-light is-capitalized">{rank}</span>;
-        } else if (rank.trim().toLowerCase() === "legend") {
-            return <span className="tag is-link is-light is-capitalized">{rank}</span>;
-        }
+    const mapRankImgs = {
+        "rookie": rookie_img,
+        "professional": professional_img,
+        "superstar": superstar_img,
+        "legend": legend_img,
+        "megastriker": megastriker_img
+    };
+    const normalizedRank = rank ? rank.trim().toLowerCase() : null;
+    if (normalizedRank && normalizedRank in mapRankImgs) {
+        return <figure className="image is-48x48">
+            <img src={mapRankImgs[normalizedRank]} title={rank} alt={{rank}}/>
+        </figure>
     }
     return <span className="is-capitalized">{rank}</span>;
 }

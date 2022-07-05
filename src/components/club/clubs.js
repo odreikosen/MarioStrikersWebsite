@@ -114,7 +114,7 @@ function buildClubTableBody(isLoading, clubs) {
                         {buildTeamImgElement(club.logo)}
                     </figure>
                 </td>
-                <td data-testid={"club-name-" + num}> {club.name}
+                <td data-testid={"club-name-" + num}>{club.name}
                     {/*<Link to={"/club/"+club.id}> {club.name} </Link>*/}
                 </td>
                 <td>{club.tag}</td>
