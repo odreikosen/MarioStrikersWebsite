@@ -27,6 +27,15 @@
     text-align: center;
 }
 
+#clubs-table tr:hover {
+    background-color: hsla(132, 6%, 83%, 0.3);
+
+}
+
 #placeholder-table-while-clubs-are-loading {
     height: 100vh;
+}
+
+.clickable-club {
+    color: white;
 }

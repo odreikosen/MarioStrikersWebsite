@@ -88,7 +88,7 @@ function buildRankingTable(isLoading, rankings) {
     return <div className="column is-8" id={theId}>
         <div className="box">
             <div className="table-container">
-                <table className="table is-fullwidth is-fullheight" id={"rankings-table"}>
+                <table className="table is-fullwidth is-fullheight is-narrow" id={"rankings-table"}>
                     <thead>
                     <tr>
                         <th>#</th>
@@ -138,7 +138,7 @@ function buildRank(rank) {
     };
     const normalizedRank = rank ? rank.trim().toLowerCase() : null;
     if (normalizedRank && normalizedRank in mapRankImgs) {
-        return <figure className="image is-48x48">
+        return <figure className="image is-32x32">
             <img src={mapRankImgs[normalizedRank]} title={rank} alt={{rank}}/>
         </figure>
     }

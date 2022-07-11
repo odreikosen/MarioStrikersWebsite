@@ -2,7 +2,7 @@ import "./club.css";
 
 import axios from "axios";
 import React, {useEffect, useLayoutEffect, useState} from "react";
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import no_img from "../../assets/no-image-icon.png";
 import LinkDiscordServer from "../links/discordserver";
 
@@ -32,24 +32,47 @@ const Club = () => {
             <div className="columns">
                 <div className="column is-2"/>
                 <div className="column is-8">
-                    <p className="title">
+                    <p className="title big-header">
                         Club Profile
                     </p>
                 </div>
                 <div className="column is-2"/>
             </div>
             {buildClubProfile(club)}
+
             <div className="columns">
                 <div className="column is-2"/>
                 <div className="column is-8">
-                    <p className="title">
+                    <p className="title big-header">
                         Club Members
                     </p>
                 </div>
                 <div className="column is-2"/>
             </div>
-
-            {buildClubRoster(isLoading, club)}
+            <div className="columns">
+                <div className="column is-2"/>
+                <div className="column is-8" id="club-roster-column">
+                    <div className="box">
+                        <div className="table-container">
+                            <table className="table is-fullwidth is-fullheight is-narrow" id={"club-roster"}>
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Member Name</th>
+                                    <th>Country</th>
+                                    <th>Switch Friend Code(s)</th>
+                                    <th>Status</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {buildClubRosterBody(isLoading, club)}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div className="column is-2"/>
+            </div>
 
         </div>
 
@@ -60,22 +83,22 @@ function buildClubProfile(club) {
     return (
         <div className="columns">
             <div className="column is-2"/>
-            <div className="column is-2">
+            <div className="column is-2 club-logo-container">
                 <figure className="image is-128x128">
                     {buildTeamImgElement(club.logo)}
                 </figure>
-                {buildClubJoinConditions(club.joinConditions)}
             </div>
             <div className="column is-6">
                 <section className="hero is-small is-link">
                     <div className="hero-body">
                         <p className="title">
-                            {club.name}
+                            {club.name}  {buildClubJoinConditions(club.joinConditions)}
                         </p>
                         <p className="subtitle">
-                            {club.tag} <br />
-                            {club.region} <br />
-                            {club.discordServer}
+                            Tag: {club.tag} <br />
+                            Region: {club.region} <br />
+                            Discord Server: {club.discordServer ? <a href={club.discordServer} target="_blank" rel="noopener noreferrer" className="is-underlined">{club.discordServer}</a> : ""} <br />
+                            Member Count: {club.roster ? club.roster.length : 0}
                         </p>
                     </div>
                 </section>
@@ -104,25 +127,26 @@ function buildClubJoinConditions(joinConditions) {
     }
 }
 
-function buildClubRoster(isLoading, club) {
-    if (!isLoading && club && club.roster && club.roster.length > 0) {
-        return (
-            <div className="columns">
-                <div className="column is-2"/>
-                <div className="column is-6" id="placeholder-table-while-club-is-loading">
-                    <span className="tag">{club.roster[0].name} {club.roster[0].country}</span>
-                </div>
-                <div className="column is-2"/>
-            </div>
-        );
+function buildClubRosterBody(isLoading, club) {
+    if (isLoading || !club || !club.roster) {
+        return <tr key={"roster-row0"}>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
     } else {
-        return (
-            <div className="columns">
-                <div className="column is-2"/>
-                <div className="column is-6" id="placeholder-table-while-club-is-loading"/>
-                <div className="column is-2"/>
-            </div>
-        );
+        return club.roster.map((member, num) =>
+            <tr key={"roster-row" + num}>
+                <td>
+                    {num + 1}
+                </td>
+                <td>{member.name}</td>
+                <td>{member.country}</td>
+                <td>{member.switchFriendCodes ? member.switchFriendCodes.map((fc, i) => <div>{fc}<br/></div>) : ""}</td>
+                <td>{club.owner === member.discordId ? "owner" : (member.isOfficer ? "officer" : "")}</td>
+            </tr>);
     }
 }
 

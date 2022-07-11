@@ -1,3 +1,35 @@
-#placeholder-table-while-club-is-loading {
+.big-header {
+    color: lightgrey;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.club-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#club-roster-column {
     height: 100vh;
+}
+
+#club-roster {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    color: white;
+}
+
+#club-roster th {
+    color: white;
+    text-align: center;
+}
+
+#club-roster td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+#club-roster td img {
+    height: 100%;
 }
