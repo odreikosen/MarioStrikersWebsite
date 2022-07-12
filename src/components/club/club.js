@@ -4,7 +4,7 @@ import axios from "axios";
 import React, {useEffect, useLayoutEffect, useState} from "react";
 import {Link, useParams} from "react-router-dom";
 import no_img from "../../assets/no-image-icon.png";
-import LinkDiscordServer from "../links/discordserver";
+import CountryFlag from "../../utils/country";
 
 const Club = () => {
     let {clubid} = useParams();
@@ -24,7 +24,7 @@ const Club = () => {
     }, []);
 
     useLayoutEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
     });
 
     return (
@@ -54,7 +54,7 @@ const Club = () => {
                 <div className="column is-8" id="club-roster-column">
                     <div className="box">
                         <div className="table-container">
-                            <table className="table is-fullwidth is-fullheight is-narrow" id={"club-roster"}>
+                            <table className="table is-fullwidth is-narrow" id={"club-roster"}>
                                 <thead>
                                 <tr>
                                     <th>#</th>
@@ -91,7 +91,7 @@ function buildClubProfile(club) {
             <div className="column is-6">
                 <section className="hero is-small is-link">
                     <div className="hero-body">
-                        <p className="title">
+                        <p className="title" data-testid={"club-title-and-joining-conditions"}>
                             {club.name}  {buildClubJoinConditions(club.joinConditions)}
                         </p>
                         <p className="subtitle">
@@ -119,7 +119,7 @@ function buildTeamImgElement(logo) {
 
 function buildClubJoinConditions(joinConditions) {
     if (!joinConditions) {
-        return <div/>;
+        return <span/>;
     } else if (joinConditions.trim().toLowerCase() === "Open to Anyone".toLowerCase()) {
         return <span className="tag is-success">{joinConditions}</span>;
     } else {
@@ -143,8 +143,8 @@ function buildClubRosterBody(isLoading, club) {
                     {num + 1}
                 </td>
                 <td>{member.name}</td>
-                <td>{member.country}</td>
-                <td>{member.switchFriendCodes ? member.switchFriendCodes.map((fc, i) => <div>{fc}<br/></div>) : ""}</td>
+                <td><CountryFlag country={member.country}/></td>
+                <td>{member.switchFriendCodes ? member.switchFriendCodes.map((fc, i) => <span key={`fc-${num}-${i}`}>{fc}<br/></span>) : ""}</td>
                 <td>{club.owner === member.discordId ? "owner" : (member.isOfficer ? "officer" : "")}</td>
             </tr>);
     }

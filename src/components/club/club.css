@@ -10,7 +10,7 @@
 }
 
 #club-roster-column {
-    height: 100vh;
+    height: 200vh;
 }
 
 #club-roster {
@@ -32,4 +32,9 @@
 
 #club-roster td img {
     height: 100%;
+}
+
+.image.country-flag {
+    width: 32px;
+    margin: auto;
 }

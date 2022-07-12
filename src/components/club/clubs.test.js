@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import {act, render, fireEvent, cleanup, waitFor} from '@testing-library/react';
 
 import axiosMock from "axios";
@@ -33,7 +34,7 @@ test('The List of Clubs is displayed', async () => {
         }]
     });
 
-    const {getByText, getByTestId, rerender} = render(<Clubs/>);
+    const {getByText, getByTestId, rerender} = render(<Router><Clubs/></Router>);
 
     const resolvedTitle01Elem = await waitFor(() => getByTestId("club-name-0"));
     const resolvedTitle02Elem = await waitFor(() => getByTestId("club-name-1"));
