@@ -76,7 +76,7 @@ function buildClubTable(isLoading, clubs) {
     return <div className="column is-8" id={theId}>
         <div className="box">
             <div className="table-container">
-                <table className="table is-fullwidth is-fullheight" id={"clubs-table"}>
+                <table className="table is-fullwidth is-fullheight is-hoverable" id={"clubs-table"}>
                     <thead>
                     <tr>
                         <th>Logo</th>
@@ -114,8 +114,8 @@ function buildClubTableBody(isLoading, clubs) {
                         {buildTeamImgElement(club.logo)}
                     </figure>
                 </td>
-                <td data-testid={"club-name-" + num}>{club.name}
-                    {/*<Link to={"/club/"+club.id}> {club.name} </Link>*/}
+                <td data-testid={"club-name-" + num}>
+                    <Link to={"/club/"+club.id} className="clickable-club">{club.name}</Link>
                 </td>
                 <td>{club.tag}</td>
                 <td>{club.memberCount}</td>
