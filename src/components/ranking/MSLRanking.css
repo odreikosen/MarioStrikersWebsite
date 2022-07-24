@@ -1,0 +1,23 @@
+.box {
+    background-color: transparent;
+}
+
+#mslrankings-table {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    color: white;
+}
+
+#ranking-row-header > th {
+    text-transform: capitalize;
+    color: white;
+}
+
+.ranking-cell-1 {
+    text-align: left;
+}
+
+#placeholder-table-while-mslrankings-are-loading {
+    height: 100vh;
+}

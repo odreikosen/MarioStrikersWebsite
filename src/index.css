@@ -18,6 +18,14 @@ body {
     background-attachment: fixed;
 }
 
+.image img {
+    margin: auto;
+    display: block;
+    max-height: 200px;
+    height: 70%;
+    width: auto;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

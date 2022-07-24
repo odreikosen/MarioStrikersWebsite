@@ -159,7 +159,7 @@ const NavBar = () => {
                             <a className="navbar-item" href="#/clubs">
                                 Clubs
                             </a>
-                            <a className="navbar-item is-disabled">
+                            <a className="navbar-item" href="#/msbl-rules">
                                 Guides
                             </a>
                         </div>
@@ -199,12 +199,20 @@ const NavBar = () => {
                         </a>
 
                         <div className="navbar-dropdown">
-                            <a className="navbar-item" href="https://start.gg/league/msl-2022-1" target="_blank"
-                               rel="noopener noreferrer">
-                                Season 2022
+                            <a className="navbar-item" href="#/msl-rankings-msbl-1v1-eu">
+                                EU 1v1 Rankings
                             </a>
-                            <a className="navbar-item is-disabled">
-                                Season 2021
+                            <a className="navbar-item" href="#/msl-rankings-msbl-2v2-eu">
+                                EU 2v2 Rankings
+                            </a>
+                            <a className="navbar-item" href="#/msl-rankings-msbl-1v1-na">
+                                NA 1v1 Rankings
+                            </a>
+                            <a className="navbar-item" href="#/msl-rankings-msbl-2v2-na">
+                                NA 2v2 Rankings
+                            </a>
+                            <a className="navbar-item"  href="#/msl-overview">
+                                Overview
                             </a>
                         </div>
                     </div>
