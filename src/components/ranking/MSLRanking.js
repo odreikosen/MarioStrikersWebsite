@@ -102,7 +102,7 @@ function extractFirst2Keys(r) {
 }
 
 function buildRankingTable(isLoading, rankings) {
-    const theId = isLoading ? "placeholder-table-while-mslrankings-are-loading" : "column-for-rankings-table";
+    const theId = isLoading ? "placeholder-table-while-mslrankings-are-loading" : "column-for-mslrankings-table";
     const validRankings = trimToValidRankingsOnly(rankings);
     return <div className="column is-8" id={theId}>
         <div className="box">

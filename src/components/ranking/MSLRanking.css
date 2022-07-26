@@ -27,6 +27,6 @@
     height: 100vh;
 }
 
-#column-for-rankings-table {
-    height: 100vh;
+#column-for-mslrankings-table {
+    min-height: 100vh;
 }
