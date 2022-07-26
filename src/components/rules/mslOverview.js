@@ -24,8 +24,8 @@ const MslOverview = () => {
                                     </p>
                                     <p className="subtitle">
                                         Below you will find the ruleset for <i>MSL</i>, the main competitive league/tournament series
-                                        organized on the
-                                        <LinkDiscordServer />!
+                                        organized on the <LinkDiscordServer />!<br />
+                                        Find more details on the <a href={"https://www.start.gg/league/msl-2022-1"} target="_blank" rel="noopener noreferrer" className="is-underlined">MSL official website</a>
                                     </p>
                                 </div>
                             </section>
