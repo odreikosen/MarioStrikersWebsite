@@ -13,8 +13,11 @@ import Rankings from './components/ranking/ranking';
 import Tournaments from './components/tournament/Tournament';
 import Crumble from './components/tournament/Crumble';
 import WorldCup from './components/tournament/WorldCup';
+import MsblRules from "./components/rules/msblrules";
 import MscRules from './components/rules/mscrules';
 import SmsRules from './components/rules/smsrules';
+import MslRanking from './components/ranking/MSLRanking';
+import MslOverview from "./components/rules/mslOverview";
 import DiscordInvite from './components/discord-invite/DiscordInvite';
 import {Routes, Route} from "react-router-dom";
 import NavBar from './components/navbar/navbar';
@@ -45,8 +48,14 @@ ReactDOM.render(
                     <Route exact path="/sms-rankings" element={<Rankings gametype="2"/>}/>
                     <Route exact path="/msc-rankings" element={<Rankings gametype="1"/>}/>
                     <Route exact path="/msbl-rankings" element={<Rankings gametype="3"/>}/>
+                    <Route exact path="/msbl-rules" element={<MsblRules/>}/>
                     <Route exact path="/msc-rules" element={<MscRules/>}/>
                     <Route exact path="/sms-rules" element={<SmsRules/>}/>
+                    <Route exact path="/msl-rankings-msbl-1v1-eu" element={<MslRanking gametype="3" gamemode="1v1" region="eu"/>}/>
+                    <Route exact path="/msl-rankings-msbl-2v2-eu" element={<MslRanking gametype="3" gamemode="2v2" region="eu"/>}/>
+                    <Route exact path="/msl-rankings-msbl-1v1-na" element={<MslRanking gametype="3" gamemode="1v1" region="na"/>}/>
+                    <Route exact path="/msl-rankings-msbl-2v2-na" element={<MslRanking gametype="3" gamemode="2v2" region="na"/>}/>
+                    <Route exact path="/msl-overview" element={<MslOverview/>}/>
                     <Route exact path="/tournaments" element={<Tournaments/>}/>
                     <Route exact path="/tournaments/crumble" element={<Crumble/>}/>
                     <Route exact path="/tournaments/worldcup" element={<WorldCup/>}/>

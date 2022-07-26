@@ -4,7 +4,7 @@ import axios from "axios";
 import React, {useEffect, useState} from "react";
 import { Link } from 'react-router-dom';
 
-import mario_img from '../../assets/mario.retourne.bw.png';
+import msbl_img from '../../assets/msbl.png';
 import no_img from '../../assets/no-image-icon.png';
 import LinkDiscordServer from '../links/discordserver';
 
@@ -32,7 +32,7 @@ const Clubs = () => {
                         <div className="column is-2"/>
                         <div className="column is-2">
                             <figure className="image">
-                                <img src={mario_img}/>
+                                <img src={msbl_img}/>
                             </figure>
                         </div>
                         <div className="column is-6">

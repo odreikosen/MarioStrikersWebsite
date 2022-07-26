@@ -5,6 +5,6 @@ const SMSRanking = () => {
     return (
         <Ranking gametype="2" />
     )
-}
+};
 
 export default SMSRanking

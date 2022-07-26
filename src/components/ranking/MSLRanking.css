@@ -1,0 +1,28 @@
+.box {
+    background-color: transparent;
+}
+
+#mslrankings-table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background-color: transparent;
+    color: white;
+}
+
+#mslrankings-table tr td:nth-child(-n+8):nth-child(n+3){
+    text-align: center;
+}
+
+#mslrankings-table tr th:nth-child(-n+8):nth-child(n+3){
+    text-align: center;
+}
+
+#ranking-row-header > th {
+    text-transform: capitalize;
+    color: white;
+}
+
+#placeholder-table-while-mslrankings-are-loading {
+    height: 100vh;
+}
