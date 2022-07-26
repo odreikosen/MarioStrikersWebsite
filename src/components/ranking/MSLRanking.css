@@ -26,3 +26,7 @@
 #placeholder-table-while-mslrankings-are-loading {
     height: 100vh;
 }
+
+#column-for-rankings-table {
+    height: 100vh;
+}
