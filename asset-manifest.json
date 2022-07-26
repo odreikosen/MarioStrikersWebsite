@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.c4cffb10.css",
-    "main.js": "/static/js/main.96d3f42a.js",
+    "main.css": "/static/css/main.44ccf54f.css",
+    "main.js": "/static/js/main.1d80304d.js",
     "static/js/787.4fbafe53.chunk.js": "/static/js/787.4fbafe53.chunk.js",
     "static/media/landing_page_bg2.png": "/static/media/landing_page_bg2.c792aaba29b8514d965c.png",
     "static/media/Ragnarok_logo.png": "/static/media/Ragnarok_logo.2c1b9e81b18a37c976e2.png",
+    "static/media/msbl.png": "/static/media/msbl.1553abd295f3e8635b38.png",
     "static/media/mario.retourne.bw.png": "/static/media/mario.retourne.bw.835246193c7b6a3e8866.png",
     "static/media/msbl.peach.bw.png": "/static/media/msbl.peach.bw.e9dd830f4f285dc236da.png",
     "static/media/super-mario-strikers-bw.png": "/static/media/super-mario-strikers-bw.01c951067c33adde4574.png",
+    "static/media/msl.png": "/static/media/msl.2b8b309313c7129c816b.png",
     "static/media/discord_logo.png": "/static/media/discord_logo.ae9339fd4329f98984bd.png",
     "static/media/mario-strikers-charged-bw.png": "/static/media/mario-strikers-charged-bw.100b8f22cd39bf563ff4.png",
     "static/media/crumbLogo.png": "/static/media/crumbLogo.32701f7e2c367152c921.png",
@@ -27,12 +29,12 @@
     "static/media/rank_superstar.png": "/static/media/rank_superstar.d771da9724bb8bdca8ff.png",
     "static/media/discord_icon_black.png": "/static/media/discord_icon_black.fcb1b31f7dec865b27fe.png",
     "index.html": "/index.html",
-    "main.c4cffb10.css.map": "/static/css/main.c4cffb10.css.map",
-    "main.96d3f42a.js.map": "/static/js/main.96d3f42a.js.map",
+    "main.44ccf54f.css.map": "/static/css/main.44ccf54f.css.map",
+    "main.1d80304d.js.map": "/static/js/main.1d80304d.js.map",
     "787.4fbafe53.chunk.js.map": "/static/js/787.4fbafe53.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4cffb10.css",
-    "static/js/main.96d3f42a.js"
+    "static/css/main.44ccf54f.css",
+    "static/js/main.1d80304d.js"
   ]
 }
