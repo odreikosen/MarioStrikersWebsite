@@ -72,7 +72,8 @@ function makeKey(type, mode, region) {
     return `${type.trim()}-${mode.trim()}-${region.trim()}`.toLowerCase();
 }
 
-export function trimEmptyRankings(rankings) {
+export function trimToValidRankingsOnly(rankings) {
+    const whiteListedColumns = ["PLACE", "PLAYER", "POINTS", "SUMMER SPLIT", "FALL SPLIT", "FALL SPLIT 2"];
     if (rankings && rankings.length > 0) {
         const first2Keys = extractFirst2Keys(rankings[0]);
         return rankings.filter((r) =>
@@ -80,7 +81,7 @@ export function trimEmptyRankings(rankings) {
         ).map((r) => {
             var newR = {};
             Object.keys(r).forEach((k) => {
-                if (k) {
+                if (k && whiteListedColumns.includes(k.trim().toUpperCase())) {
                     newR[k] = r[k];
                 }
             });
@@ -102,16 +103,16 @@ function extractFirst2Keys(r) {
 
 function buildRankingTable(isLoading, rankings) {
     const theId = isLoading ? "placeholder-table-while-mslrankings-are-loading" : "column-for-rankings-table";
-    const theRankings = trimEmptyRankings(rankings);
+    const validRankings = trimToValidRankingsOnly(rankings);
     return <div className="column is-8" id={theId}>
         <div className="box">
             <div className="table-container">
                 <table className="table is-fullwidth is-fullheight is-narrow" id={"mslrankings-table"}>
                     <thead>
-                    {buildRankingTableHeader(isLoading, theRankings)}
+                    {buildRankingTableHeader(isLoading, validRankings)}
                     </thead>
                     <tbody>
-                    {buildRankingTableBody(isLoading, theRankings)}
+                    {buildRankingTableBody(isLoading, validRankings)}
                     </tbody>
                 </table>
             </div>
