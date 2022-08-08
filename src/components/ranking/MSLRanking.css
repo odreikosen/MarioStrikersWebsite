@@ -5,22 +5,33 @@
 #mslrankings-table {
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    text-align: center;
     background-color: transparent;
     color: white;
+    width: 100%;
+    word-break: break-all;
 }
 
-#mslrankings-table tr td:nth-child(-n+8):nth-child(n+3){
-    text-align: center;
+#mslrankings-table tr td:nth-child(2){
+    text-align: left;
 }
 
-#mslrankings-table tr th:nth-child(-n+8):nth-child(n+3){
-    text-align: center;
+#mslrankings-table colgroup col:nth-child(1){
+    width: 10%;
+}
+
+#mslrankings-table colgroup col:nth-child(2){
+    width: 25%;
+}
+
+#mslrankings-table tr th:nth-child(2){
+    text-align: left;
 }
 
 #ranking-row-header > th {
     text-transform: capitalize;
     color: white;
+    text-align: center;
 }
 
 #placeholder-table-while-mslrankings-are-loading {

@@ -51,13 +51,13 @@ describe("trimToValidRankingsOnly", () => {
         }, {
             "Place": "3",
             "": "",
-            "Player": "",
-            "Points": "",
-            "SUMMER R1": "",
-            "SUMMER R2": "",
+            "Player": "Fierryy",
+            "Points": "361",
+            "SUMMER R1": "250",
+            "SUMMER R2": "111",
             "SUMMER R3": "",
             "SUMMER MAJOR": "",
-            "Summer Split": "",
+            "Summer Split": "361",
             "FALL R1": "",
             "FALL R2": "",
             "FALL R3": "",
@@ -101,6 +101,13 @@ describe("trimToValidRankingsOnly", () => {
             }, {
                 "Place": "2",
                 "Player": "HQdaan",
+                "Points": "361",
+                "Summer Split": "361",
+                "Fall Split": "",
+                "Fall Split 2": ""
+            }, {
+                "Place": "",
+                "Player": "Fierryy",
                 "Points": "361",
                 "Summer Split": "361",
                 "Fall Split": "",

@@ -1,6 +1,6 @@
 import "./ranking.css";
 
-import axios from "axios"
+import axios from "axios";
 import React, {useEffect, useState} from "react";
 import sms_peach_img from "../../assets/sms.peach.bw.png";
 import msc_peach_img from "../../assets/msc.peach.bw.png";
@@ -89,6 +89,13 @@ function buildRankingTable(isLoading, rankings) {
         <div className="box">
             <div className="table-container">
                 <table className="table is-fullwidth is-fullheight is-narrow" id={"rankings-table"}>
+                    <colgroup>
+                        <col span="1"/>
+                        <col span="2"/>
+                        <col span="3"/>
+                        <col span="4"/>
+                        <col span="5"/>
+                    </colgroup>
                     <thead>
                     <tr>
                         <th>#</th>

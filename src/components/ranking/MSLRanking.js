@@ -74,15 +74,20 @@ function makeKey(type, mode, region) {
 
 export function trimToValidRankingsOnly(rankings) {
     const whiteListedColumns = ["PLACE", "PLAYER", "POINTS", "SUMMER SPLIT", "FALL SPLIT", "FALL SPLIT 2"];
+    const placeIndex = 0;
+    const pointsIndex = 2;
     if (rankings && rankings.length > 0) {
         const first2Keys = extractFirst2Keys(rankings[0]);
-        return rankings.filter((r) =>
+        const filteredRankings = rankings.filter((r) =>
             first2Keys.reduce((aggr, k) => r[k] ? ++aggr : aggr, 0) >= 2
-        ).map((r) => {
+        );
+        const pointsKey = Object.keys(filteredRankings ? filteredRankings[0] : {}).find((k) => k.toUpperCase() === whiteListedColumns[pointsIndex]);
+        return filteredRankings.map((r, i) => {
             var newR = {};
-            Object.keys(r).forEach((k) => {
+            Object.keys(r).forEach((k, keyIndex) => {
                 if (k && whiteListedColumns.includes(k.trim().toUpperCase())) {
-                    newR[k] = r[k];
+                    // console.log(`compare(r[pointsKey]=${r[pointsKey]}, filteredRankings[i-1][pointsKey]=${i > 0 ? filteredRankings[i-1][pointsKey] : ""})`);
+                    newR[k] = (keyIndex === placeIndex && i > 0 && pointsKey && r[pointsKey] === filteredRankings[i-1][pointsKey]) ? "" : r[k];
                 }
             });
             return newR;
@@ -108,6 +113,7 @@ function buildRankingTable(isLoading, rankings) {
         <div className="box">
             <div className="table-container">
                 <table className="table is-fullwidth is-fullheight is-narrow" id={"mslrankings-table"}>
+                    {buildRankingTableColGroup(isLoading, validRankings)}
                     <thead>
                     {buildRankingTableHeader(isLoading, validRankings)}
                     </thead>
@@ -118,6 +124,22 @@ function buildRankingTable(isLoading, rankings) {
             </div>
         </div>
     </div>
+}
+
+function buildRankingTableColGroup(isLoading, rankings) {
+    if (isLoading || !rankings || rankings.length === 0) {
+        return <colgroup>
+                <col span="1"/>
+                <col span="2"/>
+                <col span="3"/>
+                <col span="4"/>
+                <col span="5"/>
+            </colgroup>
+    } else {
+        return <colgroup>
+            {Object.keys(rankings[0]).map(k => <col span={k} />)}
+        </colgroup>
+    }
 }
 
 function buildRankingTableHeader(isLoading, rankings) {
