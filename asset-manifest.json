@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.26736a1b.css",
-    "main.js": "/static/js/main.19723a1f.js",
+    "main.css": "/static/css/main.ad7cfc2c.css",
+    "main.js": "/static/js/main.84d3e96a.js",
     "static/js/787.4fbafe53.chunk.js": "/static/js/787.4fbafe53.chunk.js",
     "static/media/landing_page_bg2.png": "/static/media/landing_page_bg2.c792aaba29b8514d965c.png",
     "static/media/Ragnarok_logo.png": "/static/media/Ragnarok_logo.2c1b9e81b18a37c976e2.png",
@@ -29,12 +29,12 @@
     "static/media/rank_superstar.png": "/static/media/rank_superstar.d771da9724bb8bdca8ff.png",
     "static/media/discord_icon_black.png": "/static/media/discord_icon_black.fcb1b31f7dec865b27fe.png",
     "index.html": "/index.html",
-    "main.26736a1b.css.map": "/static/css/main.26736a1b.css.map",
-    "main.19723a1f.js.map": "/static/js/main.19723a1f.js.map",
+    "main.ad7cfc2c.css.map": "/static/css/main.ad7cfc2c.css.map",
+    "main.84d3e96a.js.map": "/static/js/main.84d3e96a.js.map",
     "787.4fbafe53.chunk.js.map": "/static/js/787.4fbafe53.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26736a1b.css",
-    "static/js/main.19723a1f.js"
+    "static/css/main.ad7cfc2c.css",
+    "static/js/main.84d3e96a.js"
   ]
 }
