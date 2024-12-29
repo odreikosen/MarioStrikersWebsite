@@ -32,7 +32,7 @@ const Ranking = ({gametype}) => {
     const gameImg = mapGameImgs[gametype];
 
     useEffect(() => {
-        axios.get(`https://api.mariostrikers.gg/ratings?gametype=${gametype}`)
+        axios.get(`http://23.22.39.40:8080/ratings?gametype=${gametype}`)
             .then(data => {
                 setRankings(data.data.sort((a, b) => parseInt(b.rating, 10) - parseInt(a.rating, 10)));
                 setIsLoading(false);
