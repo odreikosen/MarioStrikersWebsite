@@ -23,6 +23,7 @@ import {Routes, Route} from "react-router-dom";
 import NavBar from './components/navbar/navbar';
 import Clubs from './components/club/clubs';
 import Club from './components/club/club';
+import SMSWrapped from './components/smsWrapped/smsWrapped';
 
 
 ReactDOM.render(
@@ -59,6 +60,7 @@ ReactDOM.render(
                     <Route exact path="/tournaments" element={<Tournaments/>}/>
                     <Route exact path="/tournaments/crumble" element={<Crumble/>}/>
                     <Route exact path="/tournaments/worldcup" element={<WorldCup/>}/>
+                    <Route exact path="/sms-wrapped" element={<SMSWrapped/>}/>
                     <Route exact path="/" element={<HomeAOS/>}/>
                 </Routes>
             </div>

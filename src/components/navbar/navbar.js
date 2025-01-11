@@ -184,6 +184,9 @@ const NavBar = () => {
                         </a>
 
                         <div className="navbar-dropdown">
+                            <a className="navbar-item" href="#/sms-wrapped">
+                                SMS Wrapped 2024
+                            </a>
                             <a className="navbar-item" href="#/sms-rankings">
                                 Player Rankings
                             </a>

@@ -1,0 +1,3024 @@
+{
+	"735622943274434640": {
+		"mostUsedCaptainId": [
+			4,
+			3
+		],
+		"mostUsedSidekick": [
+			0,
+			3
+		],
+		"headToHeadResult": [
+			"173943679310888960",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 3,
+				"TotalMatchesPlayedAgainstEachOther": 3,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "173943679310888960",
+				"OpponentDiscordGlobalName": "NEO! Stephen",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/173943679310888960/312ab1b061e4d54efc66a82baaddf4eb"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 3,
+		"totalGamesWon": 0,
+		"totalSeconds": 900
+	},
+	"337550098861129728": {
+		"mostUsedCaptainId": [
+			0,
+			112
+		],
+		"mostUsedSidekick": [
+			0,
+			228
+		],
+		"headToHeadResult": [
+			"189095395320659969",
+			{
+				"WinsByUs": 51,
+				"WinsByOpponent": 75,
+				"TotalMatchesPlayedAgainstEachOther": 126,
+				"PercentageWonByUs": 40.476190476190478,
+				"OpponentDiscordId": "189095395320659969",
+				"OpponentDiscordGlobalName": "Milozaki",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/189095395320659969/8ccdc768e64ec6400c28ec9db1f0e9f6"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			68
+		],
+		"totalGames": 228,
+		"totalGamesWon": 97,
+		"totalSeconds": 69399.09999999999
+	},
+	"572236811468800010": {
+		"mostUsedCaptainId": [
+			6,
+			13
+		],
+		"mostUsedSidekick": [
+			0,
+			18
+		],
+		"headToHeadResult": [
+			"415217672104574977",
+			{
+				"WinsByUs": 2,
+				"WinsByOpponent": 3,
+				"TotalMatchesPlayedAgainstEachOther": 5,
+				"PercentageWonByUs": 40,
+				"OpponentDiscordId": "415217672104574977",
+				"OpponentDiscordGlobalName": "einBirnenbaum",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/415217672104574977/ba5f1f6ef5037a25d240e9154d18cf1a"
+			}
+		],
+		"stadiumWinningResult": [
+			5,
+			6
+		],
+		"totalGames": 18,
+		"totalGamesWon": 9,
+		"totalSeconds": 5452.6
+	},
+	"415217672104574977": {
+		"mostUsedCaptainId": [
+			2,
+			242
+		],
+		"mostUsedSidekick": [
+			0,
+			509
+		],
+		"headToHeadResult": [
+			"961868377398341632",
+			{
+				"WinsByUs": 41,
+				"WinsByOpponent": 28,
+				"TotalMatchesPlayedAgainstEachOther": 69,
+				"PercentageWonByUs": 59.42028985507246,
+				"OpponentDiscordId": "961868377398341632",
+				"OpponentDiscordGlobalName": "Dan.K",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/961868377398341632/842398f3a2b740866b23b99899e830ab"
+			}
+		],
+		"stadiumWinningResult": [
+			1,
+			84
+		],
+		"totalGames": 607,
+		"totalGamesWon": 388,
+		"totalSeconds": 177102.19999999999
+	},
+	"189095395320659969": {
+		"mostUsedCaptainId": [
+			7,
+			1016
+		],
+		"mostUsedSidekick": [
+			0,
+			1054
+		],
+		"headToHeadResult": [
+			"577133286577405972",
+			{
+				"WinsByUs": 106,
+				"WinsByOpponent": 76,
+				"TotalMatchesPlayedAgainstEachOther": 182,
+				"PercentageWonByUs": 58.24175824175825,
+				"OpponentDiscordId": "577133286577405972",
+				"OpponentDiscordGlobalName": "Vegetrunks",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/577133286577405972/2db334a45ebc15f3d73009c10d9b192b"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			131
+		],
+		"totalGames": 1055,
+		"totalGamesWon": 506,
+		"totalSeconds": 321125.19999999998
+	},
+	"234671808027164672": {
+		"mostUsedCaptainId": [
+			0,
+			309
+		],
+		"mostUsedSidekick": [
+			0,
+			396
+		],
+		"headToHeadResult": [
+			"700142353507155979",
+			{
+				"WinsByUs": 57,
+				"WinsByOpponent": 16,
+				"TotalMatchesPlayedAgainstEachOther": 73,
+				"PercentageWonByUs": 78.08219178082192,
+				"OpponentDiscordId": "700142353507155979",
+				"OpponentDiscordGlobalName": "Jacob",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/700142353507155979/abd04abb11254c4e71f6ebd725d74ad4"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			83
+		],
+		"totalGames": 421,
+		"totalGamesWon": 348,
+		"totalSeconds": 127238.8
+	},
+	"151554896339009536": {
+		"mostUsedCaptainId": [
+			4,
+			1081
+		],
+		"mostUsedSidekick": [
+			0,
+			1168
+		],
+		"headToHeadResult": [
+			"700142353507155979",
+			{
+				"WinsByUs": 181,
+				"WinsByOpponent": 100,
+				"TotalMatchesPlayedAgainstEachOther": 281,
+				"PercentageWonByUs": 64.41281138790036,
+				"OpponentDiscordId": "700142353507155979",
+				"OpponentDiscordGlobalName": "Jacob",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/700142353507155979/abd04abb11254c4e71f6ebd725d74ad4"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			277
+		],
+		"totalGames": 1230,
+		"totalGamesWon": 898,
+		"totalSeconds": 374490.7999999998
+	},
+	"893897900831162388": {
+		"mostUsedCaptainId": [
+			2,
+			36
+		],
+		"mostUsedSidekick": [
+			1,
+			36
+		],
+		"headToHeadResult": [
+			"203707654818758657",
+			{
+				"WinsByUs": 15,
+				"WinsByOpponent": 11,
+				"TotalMatchesPlayedAgainstEachOther": 26,
+				"PercentageWonByUs": 57.692307692307689,
+				"OpponentDiscordId": "203707654818758657",
+				"OpponentDiscordGlobalName": "Lil Homie",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/203707654818758657/e88fb18190b8184a430f814ae14786ab"
+			}
+		],
+		"stadiumWinningResult": [
+			4,
+			16
+		],
+		"totalGames": 36,
+		"totalGamesWon": 20,
+		"totalSeconds": 10873.699999999999
+	},
+	"577133286577405972": {
+		"mostUsedCaptainId": [
+			3,
+			452
+		],
+		"mostUsedSidekick": [
+			3,
+			937
+		],
+		"headToHeadResult": [
+			"349375088119775233",
+			{
+				"WinsByUs": 21,
+				"WinsByOpponent": 110,
+				"TotalMatchesPlayedAgainstEachOther": 131,
+				"PercentageWonByUs": 16.030534351145037,
+				"OpponentDiscordId": "349375088119775233",
+				"OpponentDiscordGlobalName": "JustRun504_",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/349375088119775233/ffc1b4ea2ce8889aae2e05d5259b5a56"
+			}
+		],
+		"stadiumWinningResult": [
+			1,
+			54
+		],
+		"totalGames": 1162,
+		"totalGamesWon": 258,
+		"totalSeconds": 349892.3
+	},
+	"495281989008621590": {
+		"mostUsedCaptainId": [
+			5,
+			258
+		],
+		"mostUsedSidekick": [
+			0,
+			237
+		],
+		"headToHeadResult": [
+			"610690668745981952",
+			{
+				"WinsByUs": 21,
+				"WinsByOpponent": 122,
+				"TotalMatchesPlayedAgainstEachOther": 143,
+				"PercentageWonByUs": 14.685314685314685,
+				"OpponentDiscordId": "610690668745981952",
+				"OpponentDiscordGlobalName": "Febreze (FEBR163)",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/610690668745981952/f92c96fc374640eb153d75c2fbf4cbab"
+			}
+		],
+		"stadiumWinningResult": [
+			5,
+			24
+		],
+		"totalGames": 357,
+		"totalGamesWon": 78,
+		"totalSeconds": 108185.10000000007
+	},
+	"961868377398341632": {
+		"mostUsedCaptainId": [
+			0,
+			890
+		],
+		"mostUsedSidekick": [
+			3,
+			1298
+		],
+		"headToHeadResult": [
+			"774682411052040202",
+			{
+				"WinsByUs": 258,
+				"WinsByOpponent": 377,
+				"TotalMatchesPlayedAgainstEachOther": 635,
+				"PercentageWonByUs": 40.62992125984252,
+				"OpponentDiscordId": "774682411052040202",
+				"OpponentDiscordGlobalName": "TheSweetieMan",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/774682411052040202/e2189b14481133f04da2aaa57c6daffd"
+			}
+		],
+		"stadiumWinningResult": [
+			5,
+			192
+		],
+		"totalGames": 1751,
+		"totalGamesWon": 921,
+		"totalSeconds": 523662.30000000007
+	},
+	"700142353507155979": {
+		"mostUsedCaptainId": [
+			3,
+			1050
+		],
+		"mostUsedSidekick": [
+			0,
+			1061
+		],
+		"headToHeadResult": [
+			"151554896339009536",
+			{
+				"WinsByUs": 112,
+				"WinsByOpponent": 232,
+				"TotalMatchesPlayedAgainstEachOther": 344,
+				"PercentageWonByUs": 32.55813953488372,
+				"OpponentDiscordId": "151554896339009536",
+				"OpponentDiscordGlobalName": "Pied",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/151554896339009536/3cb979217b56878380afc463442f26a1"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			218
+		],
+		"totalGames": 1061,
+		"totalGamesWon": 518,
+		"totalSeconds": 311498.7
+	},
+	"761646775835557929": {
+		"mostUsedCaptainId": [
+			3,
+			153
+		],
+		"mostUsedSidekick": [
+			0,
+			246
+		],
+		"headToHeadResult": [
+			"442070792252162049",
+			{
+				"WinsByUs": 33,
+				"WinsByOpponent": 5,
+				"TotalMatchesPlayedAgainstEachOther": 38,
+				"PercentageWonByUs": 86.8421052631579,
+				"OpponentDiscordId": "442070792252162049",
+				"OpponentDiscordGlobalName": "Johanhunter",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/442070792252162049/f492ebeb544501b702f24acb415b951c"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			38
+		],
+		"totalGames": 252,
+		"totalGamesWon": 175,
+		"totalSeconds": 73818.99999999997
+	},
+	"242759627979096074": {
+		"mostUsedCaptainId": [
+			1,
+			5
+		],
+		"mostUsedSidekick": [
+			0,
+			8
+		],
+		"headToHeadResult": [
+			"761646775835557929",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 3,
+				"TotalMatchesPlayedAgainstEachOther": 3,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "761646775835557929",
+				"OpponentDiscordGlobalName": "XanderG",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/761646775835557929/6c0372a2cff74a70255528373667dfcd"
+			}
+		],
+		"stadiumWinningResult": [
+			1,
+			2
+		],
+		"totalGames": 10,
+		"totalGamesWon": 5,
+		"totalSeconds": 3001.4
+	},
+	"270570878109089792": {
+		"mostUsedCaptainId": [
+			5,
+			435
+		],
+		"mostUsedSidekick": [
+			0,
+			514
+		],
+		"headToHeadResult": [
+			"610690668745981952",
+			{
+				"WinsByUs": 11,
+				"WinsByOpponent": 68,
+				"TotalMatchesPlayedAgainstEachOther": 79,
+				"PercentageWonByUs": 13.924050632911392,
+				"OpponentDiscordId": "610690668745981952",
+				"OpponentDiscordGlobalName": "Febreze (FEBR163)",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/610690668745981952/f92c96fc374640eb153d75c2fbf4cbab"
+			}
+		],
+		"stadiumWinningResult": [
+			0,
+			45
+		],
+		"totalGames": 538,
+		"totalGamesWon": 209,
+		"totalSeconds": 161555.8000000001
+	},
+	"312685078134128640": {
+		"mostUsedCaptainId": [
+			0,
+			59
+		],
+		"mostUsedSidekick": [
+			2,
+			55
+		],
+		"headToHeadResult": [
+			"270356238695399435",
+			{
+				"WinsByUs": 27,
+				"WinsByOpponent": 20,
+				"TotalMatchesPlayedAgainstEachOther": 47,
+				"PercentageWonByUs": 57.446808510638309,
+				"OpponentDiscordId": "270356238695399435",
+				"OpponentDiscordGlobalName": null,
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/270356238695399435/c119541a47702f404d95ee18b1ea7ce0"
+			}
+		],
+		"stadiumWinningResult": [
+			1,
+			15
+		],
+		"totalGames": 64,
+		"totalGamesWon": 40,
+		"totalSeconds": 19719.3
+	},
+	"270356238695399435": {
+		"mostUsedCaptainId": [
+			3,
+			14
+		],
+		"mostUsedSidekick": [
+			0,
+			14
+		],
+		"headToHeadResult": [
+			"312685078134128640",
+			{
+				"WinsByUs": 8,
+				"WinsByOpponent": 6,
+				"TotalMatchesPlayedAgainstEachOther": 14,
+				"PercentageWonByUs": 57.14285714285714,
+				"OpponentDiscordId": "312685078134128640",
+				"OpponentDiscordGlobalName": "[post void]",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/312685078134128640/00490f42a2c63b69fae97378a755a918"
+			}
+		],
+		"stadiumWinningResult": [
+			5,
+			4
+		],
+		"totalGames": 14,
+		"totalGamesWon": 8,
+		"totalSeconds": 4292.4
+	},
+	"294175200642203658": {
+		"mostUsedCaptainId": [
+			4,
+			110
+		],
+		"mostUsedSidekick": [
+			0,
+			154
+		],
+		"headToHeadResult": [
+			"151558433332527104",
+			{
+				"WinsByUs": 46,
+				"WinsByOpponent": 24,
+				"TotalMatchesPlayedAgainstEachOther": 70,
+				"PercentageWonByUs": 65.71428571428571,
+				"OpponentDiscordId": "151558433332527104",
+				"OpponentDiscordGlobalName": "ProtagonistG",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/151558433332527104/bf1330fbbfb77c1ae1e834efd109e133"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			36
+		],
+		"totalGames": 180,
+		"totalGamesWon": 85,
+		"totalSeconds": 55942.49999999998
+	},
+	"151558433332527104": {
+		"mostUsedCaptainId": [
+			2,
+			39
+		],
+		"mostUsedSidekick": [
+			3,
+			68
+		],
+		"headToHeadResult": [
+			"294175200642203658",
+			{
+				"WinsByUs": 11,
+				"WinsByOpponent": 21,
+				"TotalMatchesPlayedAgainstEachOther": 32,
+				"PercentageWonByUs": 34.375,
+				"OpponentDiscordId": "294175200642203658",
+				"OpponentDiscordGlobalName": "Zeiger",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/294175200642203658/085a8e5463d5c866aaeac29365bbfc8d"
+			}
+		],
+		"stadiumWinningResult": [
+			6,
+			7
+		],
+		"totalGames": 89,
+		"totalGamesWon": 34,
+		"totalSeconds": 27199.49999999999
+	},
+	"694098735549906944": {
+		"mostUsedCaptainId": [
+			2,
+			333
+		],
+		"mostUsedSidekick": [
+			0,
+			359
+		],
+		"headToHeadResult": [
+			"495281989008621590",
+			{
+				"WinsByUs": 53,
+				"WinsByOpponent": 12,
+				"TotalMatchesPlayedAgainstEachOther": 65,
+				"PercentageWonByUs": 81.53846153846154,
+				"OpponentDiscordId": "495281989008621590",
+				"OpponentDiscordGlobalName": "bigdaddy",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/495281989008621590/fdf0654df632fe428be660091768347a"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			57
+		],
+		"totalGames": 360,
+		"totalGamesWon": 179,
+		"totalSeconds": 108941.10000000002
+	},
+	"442066105914097677": {
+		"mostUsedCaptainId": [
+			0,
+			230
+		],
+		"mostUsedSidekick": [
+			0,
+			259
+		],
+		"headToHeadResult": [
+			"1270846333506556057",
+			{
+				"WinsByUs": 21,
+				"WinsByOpponent": 16,
+				"TotalMatchesPlayedAgainstEachOther": 37,
+				"PercentageWonByUs": 56.75675675675676,
+				"OpponentDiscordId": "1270846333506556057",
+				"OpponentDiscordGlobalName": "Bigdaddy",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/1270846333506556057/6cdea69d03157968bcd149ba18f46074"
+			}
+		],
+		"stadiumWinningResult": [
+			4,
+			26
+		],
+		"totalGames": 259,
+		"totalGamesWon": 108,
+		"totalSeconds": 73778.40000000001
+	},
+	"241596028829171713": {
+		"mostUsedCaptainId": [
+			4,
+			135
+		],
+		"mostUsedSidekick": [
+			0,
+			293
+		],
+		"headToHeadResult": [
+			"151554896339009536",
+			{
+				"WinsByUs": 8,
+				"WinsByOpponent": 20,
+				"TotalMatchesPlayedAgainstEachOther": 28,
+				"PercentageWonByUs": 28.57142857142857,
+				"OpponentDiscordId": "151554896339009536",
+				"OpponentDiscordGlobalName": "Pied",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/151554896339009536/3cb979217b56878380afc463442f26a1"
+			}
+		],
+		"stadiumWinningResult": [
+			0,
+			28
+		],
+		"totalGames": 305,
+		"totalGamesWon": 148,
+		"totalSeconds": 93246.40000000003
+	},
+	"576433115174666240": {
+		"mostUsedCaptainId": [
+			0,
+			78
+		],
+		"mostUsedSidekick": [
+			0,
+			87
+		],
+		"headToHeadResult": [
+			"151554896339009536",
+			{
+				"WinsByUs": 3,
+				"WinsByOpponent": 8,
+				"TotalMatchesPlayedAgainstEachOther": 11,
+				"PercentageWonByUs": 27.27272727272727,
+				"OpponentDiscordId": "151554896339009536",
+				"OpponentDiscordGlobalName": "Pied",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/151554896339009536/3cb979217b56878380afc463442f26a1"
+			}
+		],
+		"stadiumWinningResult": [
+			1,
+			10
+		],
+		"totalGames": 87,
+		"totalGamesWon": 46,
+		"totalSeconds": 27091.8
+	},
+	"610690668745981952": {
+		"mostUsedCaptainId": [
+			4,
+			347
+		],
+		"mostUsedSidekick": [
+			0,
+			400
+		],
+		"headToHeadResult": [
+			"409337643617484820",
+			{
+				"WinsByUs": 60,
+				"WinsByOpponent": 12,
+				"TotalMatchesPlayedAgainstEachOther": 72,
+				"PercentageWonByUs": 83.33333333333334,
+				"OpponentDiscordId": "409337643617484820",
+				"OpponentDiscordGlobalName": "22agrd",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/409337643617484820/fcf44a0b0f75312131d894acdd9509f5"
+			}
+		],
+		"stadiumWinningResult": [
+			0,
+			83
+		],
+		"totalGames": 404,
+		"totalGamesWon": 259,
+		"totalSeconds": 117864.2
+	},
+	"247568371103563777": {
+		"mostUsedCaptainId": [
+			4,
+			91
+		],
+		"mostUsedSidekick": [
+			0,
+			95
+		],
+		"headToHeadResult": [
+			"610690668745981952",
+			{
+				"WinsByUs": 3,
+				"WinsByOpponent": 12,
+				"TotalMatchesPlayedAgainstEachOther": 15,
+				"PercentageWonByUs": 20,
+				"OpponentDiscordId": "610690668745981952",
+				"OpponentDiscordGlobalName": "Febreze (FEBR163)",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/610690668745981952/f92c96fc374640eb153d75c2fbf4cbab"
+			}
+		],
+		"stadiumWinningResult": [
+			1,
+			9
+		],
+		"totalGames": 110,
+		"totalGamesWon": 37,
+		"totalSeconds": 30271
+	},
+	"386403949906755584": {
+		"mostUsedCaptainId": [
+			5,
+			17
+		],
+		"mostUsedSidekick": [
+			2,
+			17
+		],
+		"headToHeadResult": [
+			"312685078134128640",
+			{
+				"WinsByUs": 4,
+				"WinsByOpponent": 13,
+				"TotalMatchesPlayedAgainstEachOther": 17,
+				"PercentageWonByUs": 23.52941176470588,
+				"OpponentDiscordId": "312685078134128640",
+				"OpponentDiscordGlobalName": "[post void]",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/312685078134128640/00490f42a2c63b69fae97378a755a918"
+			}
+		],
+		"stadiumWinningResult": [
+			1,
+			4
+		],
+		"totalGames": 17,
+		"totalGamesWon": 4,
+		"totalSeconds": 5228.5999999999999
+	},
+	"213151448068784128": {
+		"mostUsedCaptainId": [
+			7,
+			313
+		],
+		"mostUsedSidekick": [
+			0,
+			317
+		],
+		"headToHeadResult": [
+			"476464087904157708",
+			{
+				"WinsByUs": 75,
+				"WinsByOpponent": 34,
+				"TotalMatchesPlayedAgainstEachOther": 109,
+				"PercentageWonByUs": 68.80733944954129,
+				"OpponentDiscordId": "476464087904157708",
+				"OpponentDiscordGlobalName": null,
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/476464087904157708/7a7408c016e063887264f5eab17b54af"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			58
+		],
+		"totalGames": 342,
+		"totalGamesWon": 175,
+		"totalSeconds": 103852.40000000001
+	},
+	"74291015992745984": {
+		"mostUsedCaptainId": [
+			7,
+			367
+		],
+		"mostUsedSidekick": [
+			0,
+			370
+		],
+		"headToHeadResult": [
+			"961868377398341632",
+			{
+				"WinsByUs": 41,
+				"WinsByOpponent": 45,
+				"TotalMatchesPlayedAgainstEachOther": 86,
+				"PercentageWonByUs": 47.674418604651169,
+				"OpponentDiscordId": "961868377398341632",
+				"OpponentDiscordGlobalName": "Dan.K",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/961868377398341632/842398f3a2b740866b23b99899e830ab"
+			}
+		],
+		"stadiumWinningResult": [
+			6,
+			61
+		],
+		"totalGames": 487,
+		"totalGamesWon": 300,
+		"totalSeconds": 141786.10000000007
+	},
+	"349375088119775233": {
+		"mostUsedCaptainId": [
+			1,
+			421
+		],
+		"mostUsedSidekick": [
+			3,
+			321
+		],
+		"headToHeadResult": [
+			"700142353507155979",
+			{
+				"WinsByUs": 20,
+				"WinsByOpponent": 44,
+				"TotalMatchesPlayedAgainstEachOther": 64,
+				"PercentageWonByUs": 31.25,
+				"OpponentDiscordId": "700142353507155979",
+				"OpponentDiscordGlobalName": "Jacob",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/700142353507155979/abd04abb11254c4e71f6ebd725d74ad4"
+			}
+		],
+		"stadiumWinningResult": [
+			5,
+			56
+		],
+		"totalGames": 524,
+		"totalGamesWon": 248,
+		"totalSeconds": 158976.6
+	},
+	"774682411052040202": {
+		"mostUsedCaptainId": [
+			0,
+			355
+		],
+		"mostUsedSidekick": [
+			0,
+			442
+		],
+		"headToHeadResult": [
+			"961868377398341632",
+			{
+				"WinsByUs": 124,
+				"WinsByOpponent": 75,
+				"TotalMatchesPlayedAgainstEachOther": 199,
+				"PercentageWonByUs": 62.311557788944728,
+				"OpponentDiscordId": "961868377398341632",
+				"OpponentDiscordGlobalName": "Dan.K",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/961868377398341632/842398f3a2b740866b23b99899e830ab"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			92
+		],
+		"totalGames": 462,
+		"totalGamesWon": 328,
+		"totalSeconds": 136007.69999999999
+	},
+	"196991923733528576": {
+		"mostUsedCaptainId": [
+			2,
+			2
+		],
+		"mostUsedSidekick": [
+			1,
+			2
+		],
+		"headToHeadResult": [
+			"577133286577405972",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 2,
+				"TotalMatchesPlayedAgainstEachOther": 2,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "577133286577405972",
+				"OpponentDiscordGlobalName": "Vegetrunks",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/577133286577405972/2db334a45ebc15f3d73009c10d9b192b"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 2,
+		"totalGamesWon": 0,
+		"totalSeconds": 600
+	},
+	"380456705823211522": {
+		"mostUsedCaptainId": [
+			7,
+			53
+		],
+		"mostUsedSidekick": [
+			0,
+			45
+		],
+		"headToHeadResult": [
+			"495281989008621590",
+			{
+				"WinsByUs": 1,
+				"WinsByOpponent": 20,
+				"TotalMatchesPlayedAgainstEachOther": 21,
+				"PercentageWonByUs": 4.761904761904762,
+				"OpponentDiscordId": "495281989008621590",
+				"OpponentDiscordGlobalName": "bigdaddy",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/495281989008621590/fdf0654df632fe428be660091768347a"
+			}
+		],
+		"stadiumWinningResult": [
+			5,
+			5
+		],
+		"totalGames": 100,
+		"totalGamesWon": 22,
+		"totalSeconds": 30213.300000000003
+	},
+	"476464087904157708": {
+		"mostUsedCaptainId": [
+			1,
+			267
+		],
+		"mostUsedSidekick": [
+			0,
+			287
+		],
+		"headToHeadResult": [
+			"774682411052040202",
+			{
+				"WinsByUs": 7,
+				"WinsByOpponent": 32,
+				"TotalMatchesPlayedAgainstEachOther": 39,
+				"PercentageWonByUs": 17.94871794871795,
+				"OpponentDiscordId": "774682411052040202",
+				"OpponentDiscordGlobalName": "TheSweetieMan",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/774682411052040202/e2189b14481133f04da2aaa57c6daffd"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			25
+		],
+		"totalGames": 291,
+		"totalGamesWon": 97,
+		"totalSeconds": 83930.00000000002
+	},
+	"513028934326026242": {
+		"mostUsedCaptainId": [
+			4,
+			21
+		],
+		"mostUsedSidekick": [
+			0,
+			22
+		],
+		"headToHeadResult": [
+			"380456705823211522",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 13,
+				"TotalMatchesPlayedAgainstEachOther": 13,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "380456705823211522",
+				"OpponentDiscordGlobalName": "Hydrocity Zone",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/380456705823211522/b3e8213c35c65efbb4b5dc84d7eec740"
+			}
+		],
+		"stadiumWinningResult": [
+			5,
+			2
+		],
+		"totalGames": 29,
+		"totalGamesWon": 2,
+		"totalSeconds": 8802.6
+	},
+	"349113039070560256": {
+		"mostUsedCaptainId": [
+			0,
+			97
+		],
+		"mostUsedSidekick": [
+			0,
+			116
+		],
+		"headToHeadResult": [
+			"585495749526159392",
+			{
+				"WinsByUs": 32,
+				"WinsByOpponent": 4,
+				"TotalMatchesPlayedAgainstEachOther": 36,
+				"PercentageWonByUs": 88.88888888888889,
+				"OpponentDiscordId": "585495749526159392",
+				"OpponentDiscordGlobalName": "Rapidoooo",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/585495749526159392/16646872ee0d9d418f678f1f2818a41f"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			21
+		],
+		"totalGames": 138,
+		"totalGamesWon": 74,
+		"totalSeconds": 38911.1
+	},
+	"756535384686461008": {
+		"mostUsedCaptainId": [
+			4,
+			264
+		],
+		"mostUsedSidekick": [
+			0,
+			267
+		],
+		"headToHeadResult": [
+			"234671808027164672",
+			{
+				"WinsByUs": 1,
+				"WinsByOpponent": 34,
+				"TotalMatchesPlayedAgainstEachOther": 35,
+				"PercentageWonByUs": 2.857142857142857,
+				"OpponentDiscordId": "234671808027164672",
+				"OpponentDiscordGlobalName": "Romomo",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/234671808027164672/1da04653c887636a21d1a132eac90950"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			75
+		],
+		"totalGames": 267,
+		"totalGamesWon": 161,
+		"totalSeconds": 81768.50000000003
+	},
+	"471510708106952704": {
+		"mostUsedCaptainId": [
+			7,
+			219
+		],
+		"mostUsedSidekick": [
+			0,
+			231
+		],
+		"headToHeadResult": [
+			"151554896339009536",
+			{
+				"WinsByUs": 20,
+				"WinsByOpponent": 54,
+				"TotalMatchesPlayedAgainstEachOther": 74,
+				"PercentageWonByUs": 27.027027027027029,
+				"OpponentDiscordId": "151554896339009536",
+				"OpponentDiscordGlobalName": "Pied",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/151554896339009536/3cb979217b56878380afc463442f26a1"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			31
+		],
+		"totalGames": 247,
+		"totalGamesWon": 126,
+		"totalSeconds": 74515.60000000002
+	},
+	"590394810238763028": {
+		"mostUsedCaptainId": [
+			7,
+			5
+		],
+		"mostUsedSidekick": [
+			3,
+			5
+		],
+		"headToHeadResult": [
+			"215318865339482114",
+			{
+				"WinsByUs": 1,
+				"WinsByOpponent": 5,
+				"TotalMatchesPlayedAgainstEachOther": 6,
+				"PercentageWonByUs": 16.666666666666666,
+				"OpponentDiscordId": "215318865339482114",
+				"OpponentDiscordGlobalName": "bit",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/215318865339482114/9c928ad137336c6ed410d9abbd14a65a"
+			}
+		],
+		"stadiumWinningResult": [
+			1,
+			1
+		],
+		"totalGames": 6,
+		"totalGamesWon": 1,
+		"totalSeconds": 1800
+	},
+	"610316604038971424": {
+		"mostUsedCaptainId": [
+			5,
+			18
+		],
+		"mostUsedSidekick": [
+			3,
+			20
+		],
+		"headToHeadResult": [
+			"321320322051866654",
+			{
+				"WinsByUs": 3,
+				"WinsByOpponent": 2,
+				"TotalMatchesPlayedAgainstEachOther": 5,
+				"PercentageWonByUs": 60,
+				"OpponentDiscordId": "321320322051866654",
+				"OpponentDiscordGlobalName": "Rocci",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/321320322051866654/ab91f6fdb15db8844b052126d38b0cb6"
+			}
+		],
+		"stadiumWinningResult": [
+			4,
+			2
+		],
+		"totalGames": 20,
+		"totalGamesWon": 5,
+		"totalSeconds": 6099.2
+	},
+	"683777748702855234": {
+		"mostUsedCaptainId": [
+			0,
+			286
+		],
+		"mostUsedSidekick": [
+			0,
+			289
+		],
+		"headToHeadResult": [
+			"260112946686984192",
+			{
+				"WinsByUs": 24,
+				"WinsByOpponent": 4,
+				"TotalMatchesPlayedAgainstEachOther": 28,
+				"PercentageWonByUs": 85.71428571428571,
+				"OpponentDiscordId": "260112946686984192",
+				"OpponentDiscordGlobalName": "Phorlo",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/260112946686984192/f486beed215659b1ef158aae50f8b3d4"
+			}
+		],
+		"stadiumWinningResult": [
+			0,
+			53
+		],
+		"totalGames": 301,
+		"totalGamesWon": 213,
+		"totalSeconds": 91091.40000000001
+	},
+	"947161846354415636": {
+		"mostUsedCaptainId": [
+			2,
+			265
+		],
+		"mostUsedSidekick": [
+			1,
+			265
+		],
+		"headToHeadResult": [
+			"189095395320659969",
+			{
+				"WinsByUs": 53,
+				"WinsByOpponent": 66,
+				"TotalMatchesPlayedAgainstEachOther": 119,
+				"PercentageWonByUs": 44.537815126050428,
+				"OpponentDiscordId": "189095395320659969",
+				"OpponentDiscordGlobalName": "Milozaki",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/189095395320659969/8ccdc768e64ec6400c28ec9db1f0e9f6"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			42
+		],
+		"totalGames": 430,
+		"totalGamesWon": 209,
+		"totalSeconds": 131108.8
+	},
+	"151409391046754314": {
+		"mostUsedCaptainId": [
+			7,
+			1
+		],
+		"mostUsedSidekick": [
+			0,
+			2
+		],
+		"headToHeadResult": [
+			"947161846354415636",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 1,
+				"TotalMatchesPlayedAgainstEachOther": 1,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "947161846354415636",
+				"OpponentDiscordGlobalName": "ZUKY",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/947161846354415636/6141bc3691b5b3403d522a7d728f3ef8"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 2,
+		"totalGamesWon": 0,
+		"totalSeconds": 600
+	},
+	"869633392814206977": {
+		"mostUsedCaptainId": [
+			4,
+			3
+		],
+		"mostUsedSidekick": [
+			0,
+			3
+		],
+		"headToHeadResult": [
+			"683777748702855234",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 3,
+				"TotalMatchesPlayedAgainstEachOther": 3,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "683777748702855234",
+				"OpponentDiscordGlobalName": "Dark Justice",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/683777748702855234/167b0082643789fb69f82da201830f16"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 3,
+		"totalGamesWon": 0,
+		"totalSeconds": 900
+	},
+	"696060844491931678": {
+		"mostUsedCaptainId": [
+			1,
+			1
+		],
+		"mostUsedSidekick": [
+			3,
+			1
+		],
+		"headToHeadResult": [
+			"495281989008621590",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 1,
+				"TotalMatchesPlayedAgainstEachOther": 1,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "495281989008621590",
+				"OpponentDiscordGlobalName": "bigdaddy",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/495281989008621590/fdf0654df632fe428be660091768347a"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 1,
+		"totalGamesWon": 0,
+		"totalSeconds": 300
+	},
+	"480006231021453337": {
+		"mostUsedCaptainId": [
+			4,
+			4
+		],
+		"mostUsedSidekick": [
+			0,
+			4
+		],
+		"headToHeadResult": [
+			"247568371103563777",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 4,
+				"TotalMatchesPlayedAgainstEachOther": 4,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "247568371103563777",
+				"OpponentDiscordGlobalName": "Francis",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/247568371103563777/2368fe40262ef5c64aea0609c625759e"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 4,
+		"totalGamesWon": 0,
+		"totalSeconds": 1200
+	},
+	"347069662581751818": {
+		"mostUsedCaptainId": [
+			2,
+			58
+		],
+		"mostUsedSidekick": [
+			3,
+			165
+		],
+		"headToHeadResult": [
+			"234671808027164672",
+			{
+				"WinsByUs": 4,
+				"WinsByOpponent": 25,
+				"TotalMatchesPlayedAgainstEachOther": 29,
+				"PercentageWonByUs": 13.793103448275862,
+				"OpponentDiscordId": "234671808027164672",
+				"OpponentDiscordGlobalName": "Romomo",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/234671808027164672/1da04653c887636a21d1a132eac90950"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			23
+		],
+		"totalGames": 185,
+		"totalGamesWon": 105,
+		"totalSeconds": 55916
+	},
+	"709777875686916210": {
+		"mostUsedCaptainId": [
+			6,
+			13
+		],
+		"mostUsedSidekick": [
+			0,
+			14
+		],
+		"headToHeadResult": [
+			"577133286577405972",
+			{
+				"WinsByUs": 3,
+				"WinsByOpponent": 4,
+				"TotalMatchesPlayedAgainstEachOther": 7,
+				"PercentageWonByUs": 42.857142857142857,
+				"OpponentDiscordId": "577133286577405972",
+				"OpponentDiscordGlobalName": "Vegetrunks",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/577133286577405972/2db334a45ebc15f3d73009c10d9b192b"
+			}
+		],
+		"stadiumWinningResult": [
+			0,
+			2
+		],
+		"totalGames": 14,
+		"totalGamesWon": 3,
+		"totalSeconds": 4200
+	},
+	"356865852454207489": {
+		"mostUsedCaptainId": [
+			4,
+			13
+		],
+		"mostUsedSidekick": [
+			0,
+			19
+		],
+		"headToHeadResult": [
+			"683777748702855234",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 3,
+				"TotalMatchesPlayedAgainstEachOther": 3,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "683777748702855234",
+				"OpponentDiscordGlobalName": "Dark Justice",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/683777748702855234/167b0082643789fb69f82da201830f16"
+			}
+		],
+		"stadiumWinningResult": [
+			4,
+			3
+		],
+		"totalGames": 19,
+		"totalGamesWon": 3,
+		"totalSeconds": 5892.4
+	},
+	"1199157366143320166": {
+		"mostUsedCaptainId": [
+			3,
+			1
+		],
+		"mostUsedSidekick": [
+			0,
+			1
+		],
+		"headToHeadResult": [
+			"409337643617484820",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 1,
+				"TotalMatchesPlayedAgainstEachOther": 1,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "409337643617484820",
+				"OpponentDiscordGlobalName": "22agrd",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/409337643617484820/fcf44a0b0f75312131d894acdd9509f5"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 1,
+		"totalGamesWon": 0,
+		"totalSeconds": 300
+	},
+	"146698260147339265": {
+		"mostUsedCaptainId": [
+			1,
+			5
+		],
+		"mostUsedSidekick": [
+			0,
+			6
+		],
+		"headToHeadResult": [
+			"407187957922136077",
+			{
+				"WinsByUs": 2,
+				"WinsByOpponent": 3,
+				"TotalMatchesPlayedAgainstEachOther": 5,
+				"PercentageWonByUs": 40,
+				"OpponentDiscordId": "407187957922136077",
+				"OpponentDiscordGlobalName": "ries",
+				"OpponentDiscordAvatarLink": null
+			}
+		],
+		"stadiumWinningResult": [
+			4,
+			2
+		],
+		"totalGames": 6,
+		"totalGamesWon": 3,
+		"totalSeconds": 1800
+	},
+	"407187957922136077": {
+		"mostUsedCaptainId": [
+			6,
+			1
+		],
+		"mostUsedSidekick": [
+			0,
+			3
+		],
+		"headToHeadResult": [
+			"270570878109089792",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 2,
+				"TotalMatchesPlayedAgainstEachOther": 2,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "270570878109089792",
+				"OpponentDiscordGlobalName": "Baboss",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/270570878109089792/0726740c438a52b62b25d9054f02aeb7"
+			}
+		],
+		"stadiumWinningResult": [
+			1,
+			1
+		],
+		"totalGames": 3,
+		"totalGamesWon": 1,
+		"totalSeconds": 967.8
+	},
+	"497490346557833236": {
+		"mostUsedCaptainId": [
+			7,
+			2
+		],
+		"mostUsedSidekick": [
+			0,
+			3
+		],
+		"headToHeadResult": [
+			"189095395320659969",
+			{
+				"WinsByUs": 1,
+				"WinsByOpponent": 2,
+				"TotalMatchesPlayedAgainstEachOther": 3,
+				"PercentageWonByUs": 33.33333333333333,
+				"OpponentDiscordId": "189095395320659969",
+				"OpponentDiscordGlobalName": "Milozaki",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/189095395320659969/8ccdc768e64ec6400c28ec9db1f0e9f6"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			1
+		],
+		"totalGames": 3,
+		"totalGamesWon": 1,
+		"totalSeconds": 900
+	},
+	"464466053087363072": {
+		"mostUsedCaptainId": [
+			1,
+			2
+		],
+		"mostUsedSidekick": [
+			0,
+			4
+		],
+		"headToHeadResult": [
+			"151558433332527104",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 3,
+				"TotalMatchesPlayedAgainstEachOther": 3,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "151558433332527104",
+				"OpponentDiscordGlobalName": "ProtagonistG",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/151558433332527104/bf1330fbbfb77c1ae1e834efd109e133"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 4,
+		"totalGamesWon": 0,
+		"totalSeconds": 1217
+	},
+	"271554761415852032": {
+		"mostUsedCaptainId": [
+			7,
+			207
+		],
+		"mostUsedSidekick": [
+			0,
+			220
+		],
+		"headToHeadResult": [
+			"577133286577405972",
+			{
+				"WinsByUs": 39,
+				"WinsByOpponent": 5,
+				"TotalMatchesPlayedAgainstEachOther": 44,
+				"PercentageWonByUs": 88.63636363636364,
+				"OpponentDiscordId": "577133286577405972",
+				"OpponentDiscordGlobalName": "Vegetrunks",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/577133286577405972/2db334a45ebc15f3d73009c10d9b192b"
+			}
+		],
+		"stadiumWinningResult": [
+			1,
+			31
+		],
+		"totalGames": 220,
+		"totalGamesWon": 135,
+		"totalSeconds": 66492.70000000001
+	},
+	"409337643617484820": {
+		"mostUsedCaptainId": [
+			0,
+			225
+		],
+		"mostUsedSidekick": [
+			0,
+			451
+		],
+		"headToHeadResult": [
+			"610690668745981952",
+			{
+				"WinsByUs": 32,
+				"WinsByOpponent": 142,
+				"TotalMatchesPlayedAgainstEachOther": 174,
+				"PercentageWonByUs": 18.39080459770115,
+				"OpponentDiscordId": "610690668745981952",
+				"OpponentDiscordGlobalName": "Febreze (FEBR163)",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/610690668745981952/f92c96fc374640eb153d75c2fbf4cbab"
+			}
+		],
+		"stadiumWinningResult": [
+			1,
+			42
+		],
+		"totalGames": 483,
+		"totalGamesWon": 154,
+		"totalSeconds": 143925.4
+	},
+	"412076093181263894": {
+		"mostUsedCaptainId": [
+			2,
+			74
+		],
+		"mostUsedSidekick": [
+			0,
+			76
+		],
+		"headToHeadResult": [
+			"151554896339009536",
+			{
+				"WinsByUs": 16,
+				"WinsByOpponent": 27,
+				"TotalMatchesPlayedAgainstEachOther": 43,
+				"PercentageWonByUs": 37.2093023255814,
+				"OpponentDiscordId": "151554896339009536",
+				"OpponentDiscordGlobalName": "Pied",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/151554896339009536/3cb979217b56878380afc463442f26a1"
+			}
+		],
+		"stadiumWinningResult": [
+			6,
+			7
+		],
+		"totalGames": 76,
+		"totalGamesWon": 28,
+		"totalSeconds": 24432.200000000004
+	},
+	"193032959585026048": {
+		"mostUsedCaptainId": [
+			2,
+			12
+		],
+		"mostUsedSidekick": [
+			0,
+			12
+		],
+		"headToHeadResult": [
+			"151558433332527104",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 6,
+				"TotalMatchesPlayedAgainstEachOther": 6,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "151558433332527104",
+				"OpponentDiscordGlobalName": "ProtagonistG",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/151558433332527104/bf1330fbbfb77c1ae1e834efd109e133"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 12,
+		"totalGamesWon": 0,
+		"totalSeconds": 3600.7
+	},
+	"201071927937204224": {
+		"mostUsedCaptainId": [
+			5,
+			4
+		],
+		"mostUsedSidekick": [
+			0,
+			4
+		],
+		"headToHeadResult": [
+			"683777748702855234",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 4,
+				"TotalMatchesPlayedAgainstEachOther": 4,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "683777748702855234",
+				"OpponentDiscordGlobalName": "Dark Justice",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/683777748702855234/167b0082643789fb69f82da201830f16"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 4,
+		"totalGamesWon": 0,
+		"totalSeconds": 1200
+	},
+	"689970307963944964": {
+		"mostUsedCaptainId": [
+			3,
+			66
+		],
+		"mostUsedSidekick": [
+			0,
+			113
+		],
+		"headToHeadResult": [
+			"476464087904157708",
+			{
+				"WinsByUs": 6,
+				"WinsByOpponent": 8,
+				"TotalMatchesPlayedAgainstEachOther": 14,
+				"PercentageWonByUs": 42.857142857142857,
+				"OpponentDiscordId": "476464087904157708",
+				"OpponentDiscordGlobalName": null,
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/476464087904157708/7a7408c016e063887264f5eab17b54af"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			10
+		],
+		"totalGames": 114,
+		"totalGamesWon": 34,
+		"totalSeconds": 34555.600000000006
+	},
+	"321320322051866654": {
+		"mostUsedCaptainId": [
+			7,
+			84
+		],
+		"mostUsedSidekick": [
+			0,
+			107
+		],
+		"headToHeadResult": [
+			"442066105914097677",
+			{
+				"WinsByUs": 7,
+				"WinsByOpponent": 9,
+				"TotalMatchesPlayedAgainstEachOther": 16,
+				"PercentageWonByUs": 43.75,
+				"OpponentDiscordId": "442066105914097677",
+				"OpponentDiscordGlobalName": "Shleemy D",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/442066105914097677/3ce7e49afabb305e1158b67674ee536d"
+			}
+		],
+		"stadiumWinningResult": [
+			5,
+			10
+		],
+		"totalGames": 110,
+		"totalGamesWon": 30,
+		"totalSeconds": 33572.7
+	},
+	"862371051409113099": {
+		"mostUsedCaptainId": [
+			2,
+			56
+		],
+		"mostUsedSidekick": [
+			2,
+			57
+		],
+		"headToHeadResult": [
+			"674060927334875176",
+			{
+				"WinsByUs": 18,
+				"WinsByOpponent": 20,
+				"TotalMatchesPlayedAgainstEachOther": 38,
+				"PercentageWonByUs": 47.368421052631578,
+				"OpponentDiscordId": "674060927334875176",
+				"OpponentDiscordGlobalName": "Josef",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/674060927334875176/2653b23e9eab437a34f048fe11975329"
+			}
+		],
+		"stadiumWinningResult": [
+			1,
+			24
+		],
+		"totalGames": 57,
+		"totalGamesWon": 29,
+		"totalSeconds": 17497.3
+	},
+	"432629558748119040": {
+		"mostUsedCaptainId": [
+			3,
+			3
+		],
+		"mostUsedSidekick": [
+			0,
+			3
+		],
+		"headToHeadResult": [
+			"862371051409113099",
+			{
+				"WinsByUs": 2,
+				"WinsByOpponent": 1,
+				"TotalMatchesPlayedAgainstEachOther": 3,
+				"PercentageWonByUs": 66.66666666666666,
+				"OpponentDiscordId": "862371051409113099",
+				"OpponentDiscordGlobalName": null,
+				"OpponentDiscordAvatarLink": null
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			1
+		],
+		"totalGames": 3,
+		"totalGamesWon": 2,
+		"totalSeconds": 905.4
+	},
+	"197707743006556161": {
+		"mostUsedCaptainId": [
+			0,
+			6
+		],
+		"mostUsedSidekick": [
+			0,
+			6
+		],
+		"headToHeadResult": [
+			"683777748702855234",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 6,
+				"TotalMatchesPlayedAgainstEachOther": 6,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "683777748702855234",
+				"OpponentDiscordGlobalName": "Dark Justice",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/683777748702855234/167b0082643789fb69f82da201830f16"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 6,
+		"totalGamesWon": 0,
+		"totalSeconds": 1800.2
+	},
+	"1229935329654607933": {
+		"mostUsedCaptainId": [
+			2,
+			468
+		],
+		"mostUsedSidekick": [
+			0,
+			487
+		],
+		"headToHeadResult": [
+			"610690668745981952",
+			{
+				"WinsByUs": 52,
+				"WinsByOpponent": 65,
+				"TotalMatchesPlayedAgainstEachOther": 117,
+				"PercentageWonByUs": 44.44444444444444,
+				"OpponentDiscordId": "610690668745981952",
+				"OpponentDiscordGlobalName": "Febreze (FEBR163)",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/610690668745981952/f92c96fc374640eb153d75c2fbf4cbab"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			52
+		],
+		"totalGames": 487,
+		"totalGamesWon": 232,
+		"totalSeconds": 148326.10000000004
+	},
+	"342097160122269698": {
+		"mostUsedCaptainId": [
+			7,
+			54
+		],
+		"mostUsedSidekick": [
+			3,
+			71
+		],
+		"headToHeadResult": [
+			"476464087904157708",
+			{
+				"WinsByUs": 6,
+				"WinsByOpponent": 6,
+				"TotalMatchesPlayedAgainstEachOther": 12,
+				"PercentageWonByUs": 50,
+				"OpponentDiscordId": "476464087904157708",
+				"OpponentDiscordGlobalName": null,
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/476464087904157708/7a7408c016e063887264f5eab17b54af"
+			}
+		],
+		"stadiumWinningResult": [
+			5,
+			8
+		],
+		"totalGames": 71,
+		"totalGamesWon": 35,
+		"totalSeconds": 21614
+	},
+	"674060927334875176": {
+		"mostUsedCaptainId": [
+			3,
+			1
+		],
+		"mostUsedSidekick": [
+			2,
+			2
+		],
+		"headToHeadResult": [
+			"862371051409113099",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 1,
+				"TotalMatchesPlayedAgainstEachOther": 1,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "862371051409113099",
+				"OpponentDiscordGlobalName": null,
+				"OpponentDiscordAvatarLink": null
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 2,
+		"totalGamesWon": 0,
+		"totalSeconds": 749.3
+	},
+	"585495749526159392": {
+		"mostUsedCaptainId": [
+			0,
+			7
+		],
+		"mostUsedSidekick": [
+			0,
+			9
+		],
+		"headToHeadResult": [
+			"349113039070560256",
+			{
+				"WinsByUs": 1,
+				"WinsByOpponent": 7,
+				"TotalMatchesPlayedAgainstEachOther": 8,
+				"PercentageWonByUs": 12.5,
+				"OpponentDiscordId": "349113039070560256",
+				"OpponentDiscordGlobalName": "4ierre",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/349113039070560256/454e5d863f102a408b8197ff189b23c0"
+			}
+		],
+		"stadiumWinningResult": [
+			4,
+			1
+		],
+		"totalGames": 13,
+		"totalGamesWon": 2,
+		"totalSeconds": 3902.1
+	},
+	"289157239032250368": {
+		"mostUsedCaptainId": [
+			2,
+			3
+		],
+		"mostUsedSidekick": [
+			0,
+			3
+		],
+		"headToHeadResult": [
+			"774682411052040202",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 3,
+				"TotalMatchesPlayedAgainstEachOther": 3,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "774682411052040202",
+				"OpponentDiscordGlobalName": "TheSweetieMan",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/774682411052040202/e2189b14481133f04da2aaa57c6daffd"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 3,
+		"totalGamesWon": 0,
+		"totalSeconds": 925.2
+	},
+	"275477827825041429": {
+		"mostUsedCaptainId": [
+			4,
+			7
+		],
+		"mostUsedSidekick": [
+			0,
+			13
+		],
+		"headToHeadResult": [
+			"95695672921034752",
+			{
+				"WinsByUs": 3,
+				"WinsByOpponent": 2,
+				"TotalMatchesPlayedAgainstEachOther": 5,
+				"PercentageWonByUs": 60,
+				"OpponentDiscordId": "95695672921034752",
+				"OpponentDiscordGlobalName": "ads",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/95695672921034752/182d747ddccb04a408107f5800f3bf0c"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			2
+		],
+		"totalGames": 13,
+		"totalGamesWon": 7,
+		"totalSeconds": 4044.7
+	},
+	"95695672921034752": {
+		"mostUsedCaptainId": [
+			7,
+			6
+		],
+		"mostUsedSidekick": [
+			0,
+			6
+		],
+		"headToHeadResult": [
+			"388200884766507009",
+			{
+				"WinsByUs": 3,
+				"WinsByOpponent": 0,
+				"TotalMatchesPlayedAgainstEachOther": 3,
+				"PercentageWonByUs": 100,
+				"OpponentDiscordId": "388200884766507009",
+				"OpponentDiscordGlobalName": "SkeeverJensen",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/388200884766507009/208079bf11c10d0710e6d36e75e98535"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			3
+		],
+		"totalGames": 6,
+		"totalGamesWon": 6,
+		"totalSeconds": 1911.3000000000002
+	},
+	"544499948008505344": {
+		"mostUsedCaptainId": [
+			5,
+			2
+		],
+		"mostUsedSidekick": [
+			2,
+			3
+		],
+		"headToHeadResult": [
+			"404126573201981461",
+			{
+				"WinsByUs": 1,
+				"WinsByOpponent": 2,
+				"TotalMatchesPlayedAgainstEachOther": 3,
+				"PercentageWonByUs": 33.33333333333333,
+				"OpponentDiscordId": "404126573201981461",
+				"OpponentDiscordGlobalName": "scream",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/404126573201981461/9fc50875501deb8a5364c4cd0ef147b3"
+			}
+		],
+		"stadiumWinningResult": [
+			0,
+			1
+		],
+		"totalGames": 3,
+		"totalGamesWon": 1,
+		"totalSeconds": 900.8
+	},
+	"404126573201981461": {
+		"mostUsedCaptainId": [
+			1,
+			3
+		],
+		"mostUsedSidekick": [
+			0,
+			3
+		],
+		"headToHeadResult": [
+			"544499948008505344",
+			{
+				"WinsByUs": 3,
+				"WinsByOpponent": 2,
+				"TotalMatchesPlayedAgainstEachOther": 5,
+				"PercentageWonByUs": 60,
+				"OpponentDiscordId": "544499948008505344",
+				"OpponentDiscordGlobalName": "fersannhz",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/544499948008505344/89ad4a1bedf2fa47d9e5b45be44dd21b"
+			}
+		],
+		"stadiumWinningResult": [
+			0,
+			2
+		],
+		"totalGames": 5,
+		"totalGamesWon": 3,
+		"totalSeconds": 1547.1
+	},
+	"750021908053098517": {
+		"mostUsedCaptainId": [
+			1,
+			5
+		],
+		"mostUsedSidekick": [
+			0,
+			7
+		],
+		"headToHeadResult": [
+			"544499948008505344",
+			{
+				"WinsByUs": 3,
+				"WinsByOpponent": 10,
+				"TotalMatchesPlayedAgainstEachOther": 13,
+				"PercentageWonByUs": 23.076923076923078,
+				"OpponentDiscordId": "544499948008505344",
+				"OpponentDiscordGlobalName": "fersannhz",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/544499948008505344/89ad4a1bedf2fa47d9e5b45be44dd21b"
+			}
+		],
+		"stadiumWinningResult": [
+			4,
+			3
+		],
+		"totalGames": 13,
+		"totalGamesWon": 3,
+		"totalSeconds": 4019.6
+	},
+	"663914810399916065": {
+		"mostUsedCaptainId": [
+			7,
+			9
+		],
+		"mostUsedSidekick": [
+			1,
+			9
+		],
+		"headToHeadResult": [
+			"347069662581751818",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 3,
+				"TotalMatchesPlayedAgainstEachOther": 3,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "347069662581751818",
+				"OpponentDiscordGlobalName": "ViFDoR",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/347069662581751818/ea20c81e1816fe4f5784a5817dd21130"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 9,
+		"totalGamesWon": 0,
+		"totalSeconds": 2700
+	},
+	"565412573403676672": {
+		"mostUsedCaptainId": [
+			4,
+			1
+		],
+		"mostUsedSidekick": [
+			0,
+			1
+		],
+		"headToHeadResult": [
+			"947161846354415636",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 1,
+				"TotalMatchesPlayedAgainstEachOther": 1,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "947161846354415636",
+				"OpponentDiscordGlobalName": "ZUKY",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/947161846354415636/6141bc3691b5b3403d522a7d728f3ef8"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 1,
+		"totalGamesWon": 0,
+		"totalSeconds": 300
+	},
+	"155146073302630400": {
+		"mostUsedCaptainId": [
+			1,
+			34
+		],
+		"mostUsedSidekick": [
+			0,
+			34
+		],
+		"headToHeadResult": [
+			"151558433332527104",
+			{
+				"WinsByUs": 3,
+				"WinsByOpponent": 4,
+				"TotalMatchesPlayedAgainstEachOther": 7,
+				"PercentageWonByUs": 42.857142857142857,
+				"OpponentDiscordId": "151558433332527104",
+				"OpponentDiscordGlobalName": "ProtagonistG",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/151558433332527104/bf1330fbbfb77c1ae1e834efd109e133"
+			}
+		],
+		"stadiumWinningResult": [
+			4,
+			4
+		],
+		"totalGames": 34,
+		"totalGamesWon": 16,
+		"totalSeconds": 10595.6
+	},
+	"264060651352096779": {
+		"mostUsedCaptainId": [
+			4,
+			1
+		],
+		"mostUsedSidekick": [
+			0,
+			1
+		],
+		"headToHeadResult": [
+			"270570878109089792",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 2,
+				"TotalMatchesPlayedAgainstEachOther": 2,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "270570878109089792",
+				"OpponentDiscordGlobalName": "Baboss",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/270570878109089792/0726740c438a52b62b25d9054f02aeb7"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 2,
+		"totalGamesWon": 0,
+		"totalSeconds": 600
+	},
+	"372784675359424512": {
+		"mostUsedCaptainId": [
+			7,
+			21
+		],
+		"mostUsedSidekick": [
+			0,
+			21
+		],
+		"headToHeadResult": [
+			"151554896339009536",
+			{
+				"WinsByUs": 3,
+				"WinsByOpponent": 4,
+				"TotalMatchesPlayedAgainstEachOther": 7,
+				"PercentageWonByUs": 42.857142857142857,
+				"OpponentDiscordId": "151554896339009536",
+				"OpponentDiscordGlobalName": "Pied",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/151554896339009536/3cb979217b56878380afc463442f26a1"
+			}
+		],
+		"stadiumWinningResult": [
+			6,
+			3
+		],
+		"totalGames": 21,
+		"totalGamesWon": 12,
+		"totalSeconds": 6560.9
+	},
+	"564610615486840842": {
+		"mostUsedCaptainId": [
+			7,
+			2
+		],
+		"mostUsedSidekick": [
+			0,
+			2
+		],
+		"headToHeadResult": [
+			"495281989008621590",
+			{
+				"WinsByUs": 1,
+				"WinsByOpponent": 1,
+				"TotalMatchesPlayedAgainstEachOther": 2,
+				"PercentageWonByUs": 50,
+				"OpponentDiscordId": "495281989008621590",
+				"OpponentDiscordGlobalName": "bigdaddy",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/495281989008621590/fdf0654df632fe428be660091768347a"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			1
+		],
+		"totalGames": 2,
+		"totalGamesWon": 1,
+		"totalSeconds": 600.8
+	},
+	"692056176036282388": {
+		"mostUsedCaptainId": [
+			2,
+			3
+		],
+		"mostUsedSidekick": [
+			3,
+			3
+		],
+		"headToHeadResult": [
+			"409337643617484820",
+			{
+				"WinsByUs": 2,
+				"WinsByOpponent": 1,
+				"TotalMatchesPlayedAgainstEachOther": 3,
+				"PercentageWonByUs": 66.66666666666666,
+				"OpponentDiscordId": "409337643617484820",
+				"OpponentDiscordGlobalName": "22agrd",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/409337643617484820/fcf44a0b0f75312131d894acdd9509f5"
+			}
+		],
+		"stadiumWinningResult": [
+			3,
+			1
+		],
+		"totalGames": 3,
+		"totalGamesWon": 2,
+		"totalSeconds": 961.3
+	},
+	"588448835202973761": {
+		"mostUsedCaptainId": [
+			5,
+			1
+		],
+		"mostUsedSidekick": [
+			2,
+			1
+		],
+		"headToHeadResult": [
+			"442066105914097677",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 1,
+				"TotalMatchesPlayedAgainstEachOther": 1,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "442066105914097677",
+				"OpponentDiscordGlobalName": "Shleemy D",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/442066105914097677/3ce7e49afabb305e1158b67674ee536d"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 1,
+		"totalGamesWon": 0,
+		"totalSeconds": 300
+	},
+	"722160913255366767": {
+		"mostUsedCaptainId": [
+			7,
+			1
+		],
+		"mostUsedSidekick": [
+			0,
+			1
+		],
+		"headToHeadResult": [
+			"409337643617484820",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 1,
+				"TotalMatchesPlayedAgainstEachOther": 1,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "409337643617484820",
+				"OpponentDiscordGlobalName": "22agrd",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/409337643617484820/fcf44a0b0f75312131d894acdd9509f5"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 1,
+		"totalGamesWon": 0,
+		"totalSeconds": 300.8
+	},
+	"1124781736056864999": {
+		"mostUsedCaptainId": [
+			2,
+			7
+		],
+		"mostUsedSidekick": [
+			0,
+			9
+		],
+		"headToHeadResult": [
+			"349375088119775233",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 8,
+				"TotalMatchesPlayedAgainstEachOther": 8,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "349375088119775233",
+				"OpponentDiscordGlobalName": "JustRun504_",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/349375088119775233/ffc1b4ea2ce8889aae2e05d5259b5a56"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 12,
+		"totalGamesWon": 0,
+		"totalSeconds": 3668.9
+	},
+	"537428787521126410": {
+		"mostUsedCaptainId": [
+			2,
+			2
+		],
+		"mostUsedSidekick": [
+			1,
+			4
+		],
+		"headToHeadResult": [
+			"577133286577405972",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 6,
+				"TotalMatchesPlayedAgainstEachOther": 6,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "577133286577405972",
+				"OpponentDiscordGlobalName": "Vegetrunks",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/577133286577405972/2db334a45ebc15f3d73009c10d9b192b"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 7,
+		"totalGamesWon": 0,
+		"totalSeconds": 2100
+	},
+	"327246218210312203": {
+		"mostUsedCaptainId": [
+			8,
+			3
+		],
+		"mostUsedSidekick": [
+			1,
+			3
+		],
+		"headToHeadResult": [
+			"193973072854908928",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 3,
+				"TotalMatchesPlayedAgainstEachOther": 3,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "193973072854908928",
+				"OpponentDiscordGlobalName": "Rigo",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/193973072854908928/3940edf21af18285993d4dadab26e0c6"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 3,
+		"totalGamesWon": 0,
+		"totalSeconds": 938.2
+	},
+	"388200884766507009": {
+		"mostUsedCaptainId": [
+			3,
+			9
+		],
+		"mostUsedSidekick": [
+			0,
+			9
+		],
+		"headToHeadResult": [
+			"412076093181263894",
+			{
+				"WinsByUs": 2,
+				"WinsByOpponent": 3,
+				"TotalMatchesPlayedAgainstEachOther": 5,
+				"PercentageWonByUs": 40,
+				"OpponentDiscordId": "412076093181263894",
+				"OpponentDiscordGlobalName": "Lizabeth",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/412076093181263894/5f56d3c7efcedcfd634a790be8cf4527"
+			}
+		],
+		"stadiumWinningResult": [
+			2,
+			1
+		],
+		"totalGames": 9,
+		"totalGamesWon": 2,
+		"totalSeconds": 2800.8
+	},
+	"1270846333506556057": {
+		"mostUsedCaptainId": [
+			5,
+			279
+		],
+		"mostUsedSidekick": [
+			3,
+			268
+		],
+		"headToHeadResult": [
+			"774682411052040202",
+			{
+				"WinsByUs": 3,
+				"WinsByOpponent": 66,
+				"TotalMatchesPlayedAgainstEachOther": 69,
+				"PercentageWonByUs": 4.3478260869565219,
+				"OpponentDiscordId": "774682411052040202",
+				"OpponentDiscordGlobalName": "TheSweetieMan",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/774682411052040202/e2189b14481133f04da2aaa57c6daffd"
+			}
+		],
+		"stadiumWinningResult": [
+			5,
+			39
+		],
+		"totalGames": 487,
+		"totalGamesWon": 154,
+		"totalSeconds": 141622.50000000007
+	},
+	"714611352789975070": {
+		"mostUsedCaptainId": [
+			3,
+			37
+		],
+		"mostUsedSidekick": [
+			0,
+			37
+		],
+		"headToHeadResult": [
+			"577133286577405972",
+			{
+				"WinsByUs": 3,
+				"WinsByOpponent": 11,
+				"TotalMatchesPlayedAgainstEachOther": 14,
+				"PercentageWonByUs": 21.428571428571428,
+				"OpponentDiscordId": "577133286577405972",
+				"OpponentDiscordGlobalName": "Vegetrunks",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/577133286577405972/2db334a45ebc15f3d73009c10d9b192b"
+			}
+		],
+		"stadiumWinningResult": [
+			5,
+			4
+		],
+		"totalGames": 37,
+		"totalGamesWon": 5,
+		"totalSeconds": 11187.899999999998
+	},
+	"857428285114023977": {
+		"mostUsedCaptainId": [
+			7,
+			60
+		],
+		"mostUsedSidekick": [
+			3,
+			45
+		],
+		"headToHeadResult": [
+			"577133286577405972",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 16,
+				"TotalMatchesPlayedAgainstEachOther": 16,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "577133286577405972",
+				"OpponentDiscordGlobalName": "Vegetrunks",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/577133286577405972/2db334a45ebc15f3d73009c10d9b192b"
+			}
+		],
+		"stadiumWinningResult": [
+			5,
+			4
+		],
+		"totalGames": 62,
+		"totalGamesWon": 12,
+		"totalSeconds": 18644.800000000003
+	},
+	"806695129221169172": {
+		"mostUsedCaptainId": [
+			7,
+			2
+		],
+		"mostUsedSidekick": [
+			0,
+			2
+		],
+		"headToHeadResult": [
+			"947161846354415636",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 2,
+				"TotalMatchesPlayedAgainstEachOther": 2,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "947161846354415636",
+				"OpponentDiscordGlobalName": "ZUKY",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/947161846354415636/6141bc3691b5b3403d522a7d728f3ef8"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 2,
+		"totalGamesWon": 0,
+		"totalSeconds": 600
+	},
+	"1143058749129498659": {
+		"mostUsedCaptainId": [
+			3,
+			6
+		],
+		"mostUsedSidekick": [
+			0,
+			10
+		],
+		"headToHeadResult": [
+			"1245982913867153410",
+			{
+				"WinsByUs": 6,
+				"WinsByOpponent": 4,
+				"TotalMatchesPlayedAgainstEachOther": 10,
+				"PercentageWonByUs": 60,
+				"OpponentDiscordId": "1245982913867153410",
+				"OpponentDiscordGlobalName": "ReinTR",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/1245982913867153410/e9f43158aa0e9149ff1482956861c059"
+			}
+		],
+		"stadiumWinningResult": [
+			1,
+			6
+		],
+		"totalGames": 10,
+		"totalGamesWon": 6,
+		"totalSeconds": 3076.2999999999999
+	},
+	"1245982913867153410": {
+		"mostUsedCaptainId": [
+			7,
+			9
+		],
+		"mostUsedSidekick": [
+			0,
+			9
+		],
+		"headToHeadResult": [
+			"1143058749129498659",
+			{
+				"WinsByUs": 4,
+				"WinsByOpponent": 5,
+				"TotalMatchesPlayedAgainstEachOther": 9,
+				"PercentageWonByUs": 44.44444444444444,
+				"OpponentDiscordId": "1143058749129498659",
+				"OpponentDiscordGlobalName": "IvanL",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/1143058749129498659/157e517cdbf371a47aaead44675714a3"
+			}
+		],
+		"stadiumWinningResult": [
+			1,
+			4
+		],
+		"totalGames": 9,
+		"totalGamesWon": 4,
+		"totalSeconds": 2776.3
+	},
+	"260112946686984192": {
+		"mostUsedCaptainId": [
+			1,
+			382
+		],
+		"mostUsedSidekick": [
+			0,
+			491
+		],
+		"headToHeadResult": [
+			"151554896339009536",
+			{
+				"WinsByUs": 10,
+				"WinsByOpponent": 70,
+				"TotalMatchesPlayedAgainstEachOther": 80,
+				"PercentageWonByUs": 12.5,
+				"OpponentDiscordId": "151554896339009536",
+				"OpponentDiscordGlobalName": "Pied",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/151554896339009536/3cb979217b56878380afc463442f26a1"
+			}
+		],
+		"stadiumWinningResult": [
+			5,
+			50
+		],
+		"totalGames": 502,
+		"totalGamesWon": 236,
+		"totalSeconds": 147979.99999999995
+	},
+	"408079363624665110": {
+		"mostUsedCaptainId": [
+			0,
+			21
+		],
+		"mostUsedSidekick": [
+			0,
+			26
+		],
+		"headToHeadResult": [
+			"577133286577405972",
+			{
+				"WinsByUs": 6,
+				"WinsByOpponent": 10,
+				"TotalMatchesPlayedAgainstEachOther": 16,
+				"PercentageWonByUs": 37.5,
+				"OpponentDiscordId": "577133286577405972",
+				"OpponentDiscordGlobalName": "Vegetrunks",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/577133286577405972/2db334a45ebc15f3d73009c10d9b192b"
+			}
+		],
+		"stadiumWinningResult": [
+			2,
+			3
+		],
+		"totalGames": 29,
+		"totalGamesWon": 7,
+		"totalSeconds": 8917.800000000001
+	},
+	"114154865218813958": {
+		"mostUsedCaptainId": [
+			5,
+			73
+		],
+		"mostUsedSidekick": [
+			0,
+			74
+		],
+		"headToHeadResult": [
+			"260112946686984192",
+			{
+				"WinsByUs": 4,
+				"WinsByOpponent": 49,
+				"TotalMatchesPlayedAgainstEachOther": 53,
+				"PercentageWonByUs": 7.547169811320755,
+				"OpponentDiscordId": "260112946686984192",
+				"OpponentDiscordGlobalName": "Phorlo",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/260112946686984192/f486beed215659b1ef158aae50f8b3d4"
+			}
+		],
+		"stadiumWinningResult": [
+			4,
+			4
+		],
+		"totalGames": 74,
+		"totalGamesWon": 6,
+		"totalSeconds": 22531.300000000003
+	},
+	"878102528695365672": {
+		"mostUsedCaptainId": [
+			5,
+			5
+		],
+		"mostUsedSidekick": [
+			0,
+			5
+		],
+		"headToHeadResult": [
+			"577133286577405972",
+			{
+				"WinsByUs": 1,
+				"WinsByOpponent": 2,
+				"TotalMatchesPlayedAgainstEachOther": 3,
+				"PercentageWonByUs": 33.33333333333333,
+				"OpponentDiscordId": "577133286577405972",
+				"OpponentDiscordGlobalName": "Vegetrunks",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/577133286577405972/2db334a45ebc15f3d73009c10d9b192b"
+			}
+		],
+		"stadiumWinningResult": [
+			5,
+			1
+		],
+		"totalGames": 5,
+		"totalGamesWon": 1,
+		"totalSeconds": 1500
+	},
+	"204023198197612544": {
+		"mostUsedCaptainId": [
+			4,
+			26
+		],
+		"mostUsedSidekick": [
+			0,
+			51
+		],
+		"headToHeadResult": [
+			"577133286577405972",
+			{
+				"WinsByUs": 8,
+				"WinsByOpponent": 16,
+				"TotalMatchesPlayedAgainstEachOther": 24,
+				"PercentageWonByUs": 33.33333333333333,
+				"OpponentDiscordId": "577133286577405972",
+				"OpponentDiscordGlobalName": "Vegetrunks",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/577133286577405972/2db334a45ebc15f3d73009c10d9b192b"
+			}
+		],
+		"stadiumWinningResult": [
+			5,
+			6
+		],
+		"totalGames": 69,
+		"totalGamesWon": 15,
+		"totalSeconds": 20629.1
+	},
+	"340517266330484756": {
+		"mostUsedCaptainId": [
+			7,
+			1
+		],
+		"mostUsedSidekick": [
+			1,
+			1
+		],
+		"headToHeadResult": [
+			"260112946686984192",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 3,
+				"TotalMatchesPlayedAgainstEachOther": 3,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "260112946686984192",
+				"OpponentDiscordGlobalName": "Phorlo",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/260112946686984192/f486beed215659b1ef158aae50f8b3d4"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 3,
+		"totalGamesWon": 0,
+		"totalSeconds": 900
+	},
+	"277909692569878529": {
+		"mostUsedCaptainId": [
+			0,
+			6
+		],
+		"mostUsedSidekick": [
+			0,
+			9
+		],
+		"headToHeadResult": [
+			"271554761415852032",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 6,
+				"TotalMatchesPlayedAgainstEachOther": 6,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "271554761415852032",
+				"OpponentDiscordGlobalName": "HQdaan",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/271554761415852032/eabbf418fc8c6417fd6c7c7993550209"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 9,
+		"totalGamesWon": 0,
+		"totalSeconds": 2700
+	},
+	"442070792252162049": {
+		"mostUsedCaptainId": [
+			3,
+			124
+		],
+		"mostUsedSidekick": [
+			0,
+			196
+		],
+		"headToHeadResult": [
+			"363345510309822489",
+			{
+				"WinsByUs": 93,
+				"WinsByOpponent": 42,
+				"TotalMatchesPlayedAgainstEachOther": 135,
+				"PercentageWonByUs": 68.88888888888889,
+				"OpponentDiscordId": "363345510309822489",
+				"OpponentDiscordGlobalName": "PAKL",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/363345510309822489/7d8e394d2375d590223f912ed08c7aa5"
+			}
+		],
+		"stadiumWinningResult": [
+			0,
+			48
+		],
+		"totalGames": 196,
+		"totalGamesWon": 114,
+		"totalSeconds": 60687.2
+	},
+	"363345510309822489": {
+		"mostUsedCaptainId": [
+			7,
+			210
+		],
+		"mostUsedSidekick": [
+			0,
+			218
+		],
+		"headToHeadResult": [
+			"442070792252162049",
+			{
+				"WinsByUs": 42,
+				"WinsByOpponent": 93,
+				"TotalMatchesPlayedAgainstEachOther": 135,
+				"PercentageWonByUs": 31.11111111111111,
+				"OpponentDiscordId": "442070792252162049",
+				"OpponentDiscordGlobalName": "Johanhunter",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/442070792252162049/f492ebeb544501b702f24acb415b951c"
+			}
+		],
+		"stadiumWinningResult": [
+			0,
+			52
+		],
+		"totalGames": 237,
+		"totalGamesWon": 80,
+		"totalSeconds": 73138.00000000002
+	},
+	"290355782892126208": {
+		"mostUsedCaptainId": [
+			5,
+			2
+		],
+		"mostUsedSidekick": [
+			2,
+			2
+		],
+		"headToHeadResult": [
+			"683777748702855234",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 5,
+				"TotalMatchesPlayedAgainstEachOther": 5,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "683777748702855234",
+				"OpponentDiscordGlobalName": "Dark Justice",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/683777748702855234/167b0082643789fb69f82da201830f16"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 5,
+		"totalGamesWon": 0,
+		"totalSeconds": 1500
+	},
+	"318336562611879936": {
+		"mostUsedCaptainId": [
+			3,
+			1
+		],
+		"mostUsedSidekick": [
+			2,
+			1
+		],
+		"headToHeadResult": [
+			"270570878109089792",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 1,
+				"TotalMatchesPlayedAgainstEachOther": 1,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "270570878109089792",
+				"OpponentDiscordGlobalName": "Baboss",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/270570878109089792/0726740c438a52b62b25d9054f02aeb7"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 1,
+		"totalGamesWon": 0,
+		"totalSeconds": 300
+	},
+	"886334416790630441": {
+		"mostUsedCaptainId": [
+			3,
+			2
+		],
+		"mostUsedSidekick": [
+			2,
+			2
+		],
+		"headToHeadResult": [
+			"689970307963944964",
+			{
+				"WinsByUs": 0,
+				"WinsByOpponent": 2,
+				"TotalMatchesPlayedAgainstEachOther": 2,
+				"PercentageWonByUs": 0,
+				"OpponentDiscordId": "689970307963944964",
+				"OpponentDiscordGlobalName": "motchete14",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/689970307963944964/4ecee4cf35187421fd058bc1795b6e21"
+			}
+		],
+		"stadiumWinningResult": "No Wins",
+		"totalGames": 2,
+		"totalGamesWon": 0,
+		"totalSeconds": 600
+	},
+	"1312564449718042638": {
+		"mostUsedCaptainId": [
+			2,
+			1
+		],
+		"mostUsedSidekick": [
+			2,
+			1
+		],
+		"headToHeadResult": [
+			"674060927334875176",
+			{
+				"WinsByUs": 1,
+				"WinsByOpponent": 0,
+				"TotalMatchesPlayedAgainstEachOther": 1,
+				"PercentageWonByUs": 100,
+				"OpponentDiscordId": "674060927334875176",
+				"OpponentDiscordGlobalName": "Josef",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/674060927334875176/2653b23e9eab437a34f048fe11975329"
+			}
+		],
+		"stadiumWinningResult": [
+			1,
+			1
+		],
+		"totalGames": 1,
+		"totalGamesWon": 1,
+		"totalSeconds": 300.8
+	},
+	"761669314403106837": {
+		"mostUsedCaptainId": [
+			2,
+			53
+		],
+		"mostUsedSidekick": [
+			0,
+			55
+		],
+		"headToHeadResult": [
+			"363345510309822489",
+			{
+				"WinsByUs": 4,
+				"WinsByOpponent": 26,
+				"TotalMatchesPlayedAgainstEachOther": 30,
+				"PercentageWonByUs": 13.333333333333334,
+				"OpponentDiscordId": "363345510309822489",
+				"OpponentDiscordGlobalName": "PAKL",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/363345510309822489/7d8e394d2375d590223f912ed08c7aa5"
+			}
+		],
+		"stadiumWinningResult": [
+			0,
+			4
+		],
+		"totalGames": 55,
+		"totalGamesWon": 5,
+		"totalSeconds": 16875.600000000002
+	},
+	"756115840222625795": {
+		"mostUsedCaptainId": [
+			7,
+			25
+		],
+		"mostUsedSidekick": [
+			0,
+			25
+		],
+		"headToHeadResult": [
+			"442070792252162049",
+			{
+				"WinsByUs": 1,
+				"WinsByOpponent": 12,
+				"TotalMatchesPlayedAgainstEachOther": 13,
+				"PercentageWonByUs": 7.6923076923076929,
+				"OpponentDiscordId": "442070792252162049",
+				"OpponentDiscordGlobalName": "Johanhunter",
+				"OpponentDiscordAvatarLink": "https://cdn.discordapp.com/avatars/442070792252162049/f492ebeb544501b702f24acb415b951c"
+			}
+		],
+		"stadiumWinningResult": [
+			0,
+			3
+		],
+		"totalGames": 25,
+		"totalGamesWon": 5,
+		"totalSeconds": 7500.7
+	}
+}

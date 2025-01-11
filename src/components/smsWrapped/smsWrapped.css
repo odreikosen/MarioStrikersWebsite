@@ -1,0 +1,42 @@
+.citrusWrappedGeneralText {
+    color: white;
+}
+
+#citrusWrappedHeader {
+    color: rgb(245, 165, 17)
+}
+
+.statistic {
+    font-size: 1.3em;
+    color: yellow;
+}
+
+#citrusWrappedInfoBox span {
+    font-size: 1.3em;   
+}
+
+.notLoggedIn {
+    color: red;
+}
+
+.noUserData {
+    color: #ffc107
+}
+
+.lackingUserInformation {
+    height: 100%
+}
+
+.imageButtonActionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.userName {
+    font-size: 1.3em;
+    color: hotpink;
+    font-weight: bold;
+    
+}
