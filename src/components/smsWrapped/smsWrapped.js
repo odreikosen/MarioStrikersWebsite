@@ -231,7 +231,14 @@ const SMSWrapped = () => {
         //setDiscordId("756535384686461008")
         setDiscordId(discordAccountInfo ? discordAccountInfo["id"].toString() : undefined)
         if (discordId) {
-            setDiscordName(discordAccountInfo["global_name"])
+            // Wata-ish usecase where his name isn't coming back from discord API call lol
+            if (discordId === "476464087904157708") {
+                setDiscordName("watabolt")                
+            } else if (discordId === "270356238695399435") {
+                setDiscordName("babydickerson")  
+            } else {
+                setDiscordName(discordAccountInfo["global_name"])
+            }
             setUserData(Object.entries(smsWrapped).find((entry) => entry[0] === discordId)[1]);
             if (userData) {
                 setCaptainName(captainIDToName(userData["mostUsedCaptainId"][0]));
