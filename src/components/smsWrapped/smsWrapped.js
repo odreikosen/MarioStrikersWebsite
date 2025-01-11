@@ -242,7 +242,7 @@ const SMSWrapped = () => {
                 setStadiumColor(stadiumIDToColor[userData["stadiumWinningResult"][0]]);
                 setTotalGames(parseInt(userData["totalGames"]));
                 setTotalGamesWon(parseInt(userData["totalGamesWon"]));
-                setStadiumWinRate((parseFloat(userData["stadiumWinningResult"][1]) / parseFloat(totalGames) * 100).toFixed(2))
+                setStadiumWinRate((parseFloat(userData["stadiumWinningResult"][1]) / parseFloat(totalGamesWon) * 100).toFixed(2))
                 setGlobalWinPercentage(((totalGamesWon / totalGames) * 100).toFixed(2));
                 setTotalSeconds(parseFloat(userData["totalSeconds"]));
                 setTotalHours((totalSeconds / 3600).toFixed(2));
